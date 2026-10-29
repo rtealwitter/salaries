@@ -2,6 +2,8 @@
 
 A reproducible comparison of the **30 highest-ranked civilian colleges in the 2027 U.S. News National Liberal Arts Colleges table**, using a fixed cohort throughout history. Actual publisher ranks and ties are retained: the cohort ends with the three colleges tied at rank 31. The Naval, Military, and Air Force academies are excluded.
 
+The **four main figures use the top 15 civilian colleges** from that dataset. This fixed plotting cohort runs through publisher rank 16, retaining all three colleges tied there. The full 30-college dataset remains available; its salary-rank columns and the results below refer to all 30. Figure salary ranks, medians, percentile bands, and relative purchasing-power premiums are recalculated within the selected 15.
+
 **Latest common year: 2024–25 salaries and calendar-year 2024 regional prices.** The captured IPEDS catalog has HR/salary files through 2024, despite some other components extending to 2025. BEA's February 19, 2026 release supplies 2024 RPPs and revised 2008–2023 estimates. Files were retrieved October 29, 2026; exact UTC timestamps and SHA-256 checksums are in [data/sources.csv](data/sources.csv).
 
 ## Results in the latest year
@@ -20,14 +22,18 @@ CMC's assistant average is $100,426 nominal and approximately $88,430 after divi
 
 ## Four main figures
 
-Following review, the original set of separate scatterplots, bars, and slope charts was condensed to **four PNG files**. All four cover assistant, associate, and full professors. Every college is labeled in the scatterplots; repeated school labels are shared across aligned panels in the other figures.
+Following review, the original set of separate scatterplots, bars, and slope charts was condensed to **four PNG files**. All four cover assistant, associate, and full professors using the same fixed top-15 civilian cohort. Every college is labeled in the scatterplots, salary comparisons, and heatmaps. College labels repeat in each faculty-rank panel of the latter two figures because their orders differ.
 
-1. [Current salary comparison](figures/current_salary_comparison.png): connected nominal and adjusted dots for every college, with one column per faculty rank. This replaces six bar charts and retains dollar magnitudes. Rows follow the assistant purchasing-power ranking; scales differ across ranks.
+The plotting cohort is Williams, Amherst, Bowdoin, CMC, Pomona, Swarthmore, Harvey Mudd, Wellesley, Vassar, Washington and Lee, Hamilton, Wesleyan, Carleton, Davidson, and Grinnell. “Top 15” counts civilian schools after excluding military academies; it does not mean publisher rank ≤15. The cohort is held fixed across years, rather than selecting the historically top-ranked schools each year. Medians and percentile bands use the available college averages in each year/rank, with equal weight per college, and include CMC. Missing observations can reduce the contributing count.
+
+1. [Current salary comparison](figures/current_salary_comparison.png): connected nominal and adjusted dots for every college, with one column per faculty rank. Each panel is sorted independently by that rank's nominal salary, highest first, and has its own college labels. Scales differ across ranks. CMC's annotated salary ranks are within the 15-school plotting cohort.
 2. [Historical salary trends](figures/historical_salary_trends.png): six panels, with faculty rank in columns and nominal versus cost-adjusted pay in rows. CMC is shown against the median and 10th–90th percentile of college means. The bottom row also adjusts for national inflation to express purchasing power in 2024 dollars. Nominal history begins in 1980; regional purchasing power begins in 2008.
-3. [Relative purchasing-power trends](figures/relative_purchasing_power_trends.png): one heatmap per rank, showing every college's premium or discount relative to that year's cohort median. This reveals persistent differences and changes without drawing 30 overlapping lines. National inflation cancels from these within-year ratios.
-4. [College rank and salary](figures/college_rank_and_salary.png): six panels, rank in columns and nominal versus cost-adjusted salary in rows; identical axes within each column, all 30 colleges labeled. Fine gray lines connect displaced labels to their dots; they do not indicate changes in rank or salary.
+3. [Relative purchasing-power trends](figures/relative_purchasing_power_trends.png): one heatmap per rank, showing every college's premium or discount relative to that year's plotting-cohort median. Each panel is sorted independently by that rank's latest nominal salary, matching the current salary comparison, with its own college labels. National inflation cancels from these within-year ratios.
+4. [College rank and salary](figures/college_rank_and_salary.png): six panels, rank in columns and nominal versus cost-adjusted salary in rows; identical axes within each column, all 15 colleges labeled. Fine gray lines connect displaced labels to their dots; they do not indicate changes in rank or salary.
 
-The original chart designs remain available with `--legacy`, which writes optional PNGs under `figures/legacy/`. They are not part of the four-file main set. Pure national-inflation-adjusted trends, without regional adjustment, are included in that optional set and in the CSVs.
+[figure_cohort.csv](reports/figure_cohort.csv) records the institutions used in the generated figures, and [figure_salary_ranks.csv](reports/figure_salary_ranks.csv) records their latest salaries and recalculated within-cohort ranks. Use `python src/make_figures.py --top-n 30` to regenerate the four main figures for the full dataset; rerun without that option to restore the default 15. Cutoff ties are always retained, so other requested sizes may include more than the requested number of schools.
+
+The original chart designs remain available with `--legacy`, which writes optional PNGs for the full 30-college dataset under `figures/legacy/`, independently of `--top-n`. They are not part of the four-file main set. Pure national-inflation-adjusted trends, without regional adjustment, are included in that optional set and in the CSVs.
 
 ## Coverage actually recovered
 

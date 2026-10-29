@@ -6,12 +6,31 @@ import pandas as pd
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from matplotlib.ticker import FuncFormatter
+from matplotlib.ticker import FuncFormatter, MaxNLocator
 from matplotlib.patches import Rectangle
 from adjustText import adjust_text
 from make_legacy_figures import ROOT,FIG,RED,BLUE,GRAY,INK,FOCUS,name,finish,style_money
 TITLES={'assistant':'Assistant professors','associate':'Associate professors','full':'Full professors'}
 RANKS=list(TITLES)
+
+def select_cohort(d,top_n):
+    """Select civilian institutions by publisher rank, keeping cutoff ties."""
+    colleges=d[['college','unitid','usnews_rank_2027']].drop_duplicates().sort_values(['usnews_rank_2027','college'])
+    if not 1<=top_n<=len(colleges):
+        raise ValueError(f'--top-n must be between 1 and {len(colleges)}')
+    cutoff=colleges.iloc[top_n-1].usnews_rank_2027
+    colleges=colleges[colleges.usnews_rank_2027<=cutoff].copy()
+    selected=d[d.unitid.isin(colleges.unitid)].copy()
+    for measure in ['nominal','cost_adjusted']:
+        selected[f'salary_{measure}_rank']=selected.groupby(['year','academic_rank'])[f'salary_{measure}'].rank(ascending=False,method='min')
+    selected['salary_rank_improvement']=selected.salary_nominal_rank-selected.salary_cost_adjusted_rank
+    return selected,colleges
+
+def cohort_label(d):
+    return f'Fixed cohort: {d.unitid.nunique()} civilian colleges · 2027 U.S. News ranks through {int(d.usnews_rank_2027.max())} (ties retained)'
+
+def nominal_order(d,rank,year):
+    return d[d.year.eq(year)&d.academic_rank.eq(rank)].sort_values(['salary_nominal','college'],ascending=[False,True],na_position='last').college.tolist()
 
 def resolve_label_overlaps(ax,texts,targets):
     """Finish automatic layout with deterministic pixel-space separation and audit."""
@@ -33,17 +52,18 @@ def resolve_label_overlaps(ax,texts,targets):
                     t.set_position(ax.transData.inverted().transform(pos))
         if not overlaps:break
     remaining=sum(a.get_window_extent(renderer).overlaps(b.get_window_extent(renderer)) for j,a in enumerate(texts) for b in texts[j+1:])
-    if remaining:raise ValueError(f'{remaining} unresolved text overlaps in {ax.get_title()}')
+    if remaining:raise ValueError(f'{remaining} unresolved text overlaps in {ax.get_title(loc="left")}')
     for t,target in zip(texts,targets):
         distance=np.linalg.norm(ax.transData.transform(t.get_position())-ax.transData.transform(target))
         if distance>12:
             ax.annotate('',xy=target,xytext=t.get_position(),arrowprops=dict(arrowstyle='-',color='#9ba8b1',lw=.6),zorder=1)
-    print(f'Label audit: {ax.get_title()}: {len(texts)} labels, {remaining} overlaps')
+    print(f'Label audit: {ax.get_title(loc="left")}: {len(texts)} labels, {remaining} overlaps')
 
 def comparison(d,year):
-    latest=d[d.year==year];order=latest[latest.academic_rank=='assistant'].sort_values('salary_cost_adjusted',ascending=False).college.tolist()
-    fig,axes=plt.subplots(1,3,figsize=(18,13),sharey=True);fig.subplots_adjust(left=.17,right=.98,bottom=.13,top=.85,wspace=.20)
+    latest=d[d.year==year]
+    fig,axes=plt.subplots(1,3,figsize=(25,max(9,d.unitid.nunique()*.35+3)));fig.subplots_adjust(left=.09,right=.98,bottom=.17,top=.81,wspace=.65)
     for ax,rank in zip(axes,RANKS):
+        order=nominal_order(d,rank,year)
         h=latest[latest.academic_rank==rank].set_index('college').reindex(order)
         for y,(n,r) in enumerate(h.iterrows()):
             col=RED if n==FOCUS[0] else BLUE
@@ -57,16 +77,16 @@ def comparison(d,year):
         ax.set_yticks(range(len(order)),[name(n) for n in order]);ax.set_ylim(len(order)-.4,-.7)
         ax.xaxis.set_major_formatter(FuncFormatter(lambda x,p:f'${x/1000:,.0f}k'));ax.grid(axis='x',color='#edf0f2');ax.set_axisbelow(True);ax.set_xlabel('Annual salary / purchasing power')
         lo=h[['salary_nominal','salary_cost_adjusted']].min().min();hi=h[['salary_nominal','salary_cost_adjusted']].max().max();ax.set_xlim(lo*.94,hi*1.05)
-    for t,n in zip(axes[0].get_yticklabels(),order):
-        if n==FOCUS[0]:t.set_color(RED);t.set_weight('bold')
+        for t,n in zip(ax.get_yticklabels(),order):
+            if n==FOCUS[0]:t.set_color(RED);t.set_weight('bold')
     handles=[plt.Line2D([],[],marker='o',ls='',markerfacecolor='white',markeredgecolor=BLUE,label='Nominal salary'),plt.Line2D([],[],marker='o',ls='',color=BLUE,label='Cost-adjusted salary'),plt.Line2D([],[],color=RED,lw=2,label='CMC')]
-    fig.legend(handles=handles,loc='upper left',bbox_to_anchor=(.17,.925),ncol=3,frameon=False)
+    fig.legend(handles=handles,loc='upper left',bbox_to_anchor=(.085,.905),ncol=3,frameon=False)
     fig.suptitle('Which colleges pay best after accounting for regional prices?',x=.03,y=.98,ha='left',fontsize=23,weight='bold')
-    fig.text(.03,.945,f'{year}–{str(year+1)[-2:]} salaries · {year} prices · one panel per academic rank',fontsize=13)
-    finish(fig,'current_salary_comparison',f'Sources: NCES IPEDS; BEA {year} all-items RPP; fixed U.S. News 2027 civilian cohort via College Kickstart.\nNine-month-equivalent averages. Cost-adjusted salary = nominal salary ÷ (RPP/100). Rows sorted by assistant-professor purchasing power.\nNonmetro colleges use state nonmetro RPPs. Each panel has its own dollar scale; institutional averages are not starting salaries.')
+    fig.text(.03,.935,f'{year}–{str(year+1)[-2:]} salaries · {year} prices · {cohort_label(d)}',fontsize=13)
+    finish(fig,'current_salary_comparison',f'Sources: NCES IPEDS; BEA {year} all-items RPP; U.S. News 2027 civilian cohort via College Kickstart.\nNine-month-equivalent averages. Cost-adjusted salary = nominal salary ÷ (RPP/100). Each panel sorted independently by nominal salary, highest first.\nSalary ranks are within the plotted cohort. Nonmetro colleges use state nonmetro RPPs. Each panel has its own dollar scale; averages are not starting salaries.')
 
 def long_run(d):
-    fig,axes=plt.subplots(2,3,figsize=(20,12));fig.subplots_adjust(left=.075,right=.98,bottom=.18,top=.88,hspace=.36,wspace=.20)
+    fig,axes=plt.subplots(2,3,figsize=(20,12));fig.subplots_adjust(left=.075,right=.98,bottom=.18,top=.85,hspace=.36,wspace=.20)
     for j,rank in enumerate(RANKS):
         h=d[d.academic_rank==rank]
         for i,col in enumerate(['salary_nominal','salary_real_cost_adjusted_2024']):
@@ -86,16 +106,18 @@ def long_run(d):
             ax.set_ylabel('Nominal annual salary' if i==0 else 'Cost-adjusted salary · 2024 dollars')
             if i==1:ax.set_xticks([2008,2012,2016,2020,2024])
     fig.suptitle('CMC pay over time: nominal salary and regional purchasing power',x=.075,y=.99,ha='left',fontsize=24,weight='bold')
+    fig.text(.075,.945,cohort_label(d),fontsize=12)
     handles=[plt.Line2D([],[],color=RED,lw=2.5,label='CMC'),plt.Line2D([],[],color=BLUE,lw=1.6,label='Cohort median'),Rectangle((0,0),1,1,color='#dce7ed',label='10th–90th percentile across colleges')]
-    fig.legend(handles=handles,bbox_to_anchor=(.065,.965),loc='upper left',ncol=3,frameon=False)
+    fig.legend(handles=handles,bbox_to_anchor=(.065,.925),loc='upper left',ncol=3,frameon=False)
     finish(fig,'historical_salary_trends','Sources: NCES IPEDS/HEGIS (1980–2002 via Urban Institute); BEA RPP; BEA PCE via FRED. Fixed 2027 cohort; unweighted college percentiles.\nTop: nominal dollars, 1980–2024. Bottom: salary ÷ (RPP/100) × PCE2024/PCEyear, 2008–2024. Time ranges differ because RPP starts in 2008.\nHollow CMC point in 2019: all ranks reported as 12-month contracts, unlike 2018/2020; do not read the dip as a verified pay cut.\nEarly contract populations vary. Dotted lines: 2012/2016 conversion changes. Missing years are not interpolated; see README.')
 
 def relative_trends(d):
     h=d[d.year>=2008].copy();h['premium']=100*(h.salary_cost_adjusted/h.groupby(['academic_rank','year']).salary_cost_adjusted.transform('median')-1)
-    latest=int(h.year.max());order=h[(h.year==latest)&h.academic_rank.eq('assistant')].sort_values('premium',ascending=False).college.tolist()
-    years=sorted(h.year.unique());fig,axes=plt.subplots(1,3,figsize=(19,12),sharey=True);fig.subplots_adjust(left=.17,right=.94,bottom=.18,top=.87,wspace=.12)
+    latest=int(h.year.max())
+    years=sorted(h.year.unique());fig,axes=plt.subplots(1,3,figsize=(26,max(10,d.unitid.nunique()*.32+3)));fig.subplots_adjust(left=.09,right=.98,bottom=.21,top=.81,wspace=.65)
     cmap=plt.get_cmap('RdBu_r').copy();cmap.set_bad('#e7e7e7')
     for ax,rank in zip(axes,RANKS):
+        order=nominal_order(d,rank,latest)
         p=h[h.academic_rank==rank].pivot(index='college',columns='year',values='premium').reindex(index=order,columns=years)
         im=ax.imshow(p,aspect='auto',cmap=cmap,vmin=-30,vmax=30,interpolation='nearest')
         ax.set_title(TITLES[rank],loc='left',fontsize=15,pad=15)
@@ -103,12 +125,13 @@ def relative_trends(d):
         i=order.index(FOCUS[0]);ax.text(years.index(2019),i,'×',ha='center',va='center',fontsize=14,color='black')
         ax.add_patch(Rectangle((-.5,i-.5),len(years),1,fill=False,edgecolor=RED,lw=1.8))
         for spine in ax.spines.values():spine.set_visible(False)
-    for t,n in zip(axes[0].get_yticklabels(),order):
-        if n==FOCUS[0]:t.set_color(RED);t.set_weight('bold')
-    cax=fig.add_axes([.36,.095,.4,.017]);cb=fig.colorbar(im,cax=cax,orientation='horizontal',extend='both');cb.set_label('Cost-adjusted salary relative to the cohort median (%)');cb.set_ticks([-30,-15,0,15,30])
+        for t,n in zip(ax.get_yticklabels(),order):
+            if n==FOCUS[0]:t.set_color(RED);t.set_weight('bold')
+    cax=fig.add_axes([.36,.12,.4,.017]);cb=fig.colorbar(im,cax=cax,orientation='horizontal',extend='both');cb.set_label('Cost-adjusted salary relative to the cohort median (%)');cb.set_ticks([-30,-15,0,15,30])
     fig.suptitle('How each college’s purchasing-power position has changed',x=.03,y=.98,ha='left',fontsize=23,weight='bold')
-    fig.text(.03,.937,'Red: above peer median   ·   Blue: below peer median   ·   Gray: unavailable   ·   CMC row outlined; × marks its 2019 contract-reporting break',fontsize=12)
-    finish(fig,'relative_purchasing_power_trends','Sources: NCES IPEDS; BEA RPP. Premium = 100 × [(salary/RPP) ÷ median(salary/RPP) − 1], separately by year and academic rank.\nA relative comparison, not local inflation or individual pay growth. Vassar’s metro RPP is unavailable before 2016. Conversion changes in 2012 and 2016.\nRows follow the latest assistant-professor purchasing-power ranking. Rank-specific cohort medians use available observations; national inflation cancels in the ratio.')
+    fig.text(.03,.93,cohort_label(d),fontsize=13)
+    fig.text(.03,.885,'Red: above peer median   ·   Blue: below peer median   ·   Gray: unavailable   ·   CMC row outlined; × marks its 2019 contract-reporting break',fontsize=12)
+    finish(fig,'relative_purchasing_power_trends',f'Sources: NCES IPEDS; BEA RPP. Premium = 100 × [(salary/RPP) ÷ median(salary/RPP) − 1], separately by year and academic rank.\nA relative comparison, not local inflation or individual pay growth. Vassar’s metro RPP is unavailable before 2016. Conversion changes in 2012 and 2016.\nEach panel sorted independently by {latest} nominal salary, highest first. Cohort medians use available observations; national inflation cancels in the ratio.')
 
 def ranking_relationship(d,year):
     cols=['salary_nominal','salary_cost_adjusted']
@@ -119,18 +142,26 @@ def ranking_relationship(d,year):
         for i,(col,title) in enumerate(zip(cols,['Nominal salary','Cost-adjusted salary'])):
             ax=axes[i,j]
             ax.scatter(h.usnews_rank_2027,h[col],c=[RED if n==FOCUS[0] else BLUE if n in FOCUS else GRAY for n in h.college],s=[70 if n in FOCUS else 35 for n in h.college],edgecolor='white',lw=.5,zorder=3)
-            ax.set(xlim=(-1,35),ylim=(low,high),xlabel='U.S. News rank, 2027');ax.set_title(TITLES[rank]+' · '+title,loc='left',fontsize=16,pad=14);style_money(ax)
+            ax.set(xlim=(-1,d.usnews_rank_2027.max()+4),ylim=(low,high),xlabel='U.S. News rank, 2027');ax.set_title(TITLES[rank]+' · '+title,loc='left',fontsize=16,pad=14);style_money(ax)
+            ax.xaxis.set_major_locator(MaxNLocator(integer=True))
             texts=[ax.text(r.usnews_rank_2027,r[col],name(r.college),fontsize=10,weight='bold' if r.college in FOCUS else 'normal',color=RED if r.college==FOCUS[0] else INK) for _,r in h.iterrows()]
             np.random.seed(42);adjust_text(texts,ax=ax,expand=(1.15,1.3),force_text=(.4,.7),iter_lim=1200)
             resolve_label_overlaps(ax,texts,list(zip(h.usnews_rank_2027,h[col])))
             ax.set_ylabel('Nominal annual salary · dollars' if i==0 else 'Cost-adjusted annual salary · dollars')
     fig.suptitle('College rank and faculty purchasing power',x=.06,y=.98,ha='left',fontsize=28,weight='bold')
-    fig.text(.06,.945,f'{year}–{str(year+1)[-2:]} salaries and {year} regional prices · columns show academic rank · identical axes down each column · all 30 colleges labeled',fontsize=15)
+    fig.text(.06,.945,f'{year}–{str(year+1)[-2:]} salaries and {year} prices · {cohort_label(d)} · all colleges labeled',fontsize=14)
     finish(fig,'college_rank_and_salary',f'Sources: NCES IPEDS; BEA {year} RPP; U.S. News 2027 ranks via College Kickstart. Red: CMC. Bold: the six focal colleges.\nNine-month-equivalent institutional means; ranks and ties preserved. Cost-adjusted salary = salary ÷ (RPP/100).\nEach column compares the same schools with identical axes. This descriptive association is not a causal estimate.')
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--legacy',action='store_true');args=parser.parse_args()
-    d=pd.read_csv(ROOT/'data/processed/combined_long.csv');year=int(d.loc[d.salary_cost_adjusted.notna(),'year'].max())
+    parser=argparse.ArgumentParser();parser.add_argument('--legacy',action='store_true');parser.add_argument('--top-n',type=int,default=15,help='Number of civilian colleges in main figures, including ties at cutoff (default: 15).');args=parser.parse_args()
+    d,colleges=select_cohort(pd.read_csv(ROOT/'data/processed/combined_long.csv'),args.top_n)
+    if FOCUS[0] not in set(colleges.college):
+        parser.error('The CMC-focused figures require a cohort that includes CMC.')
+    year=int(d.loc[d.salary_cost_adjusted.notna(),'year'].max())
+    reports=ROOT/'reports';reports.mkdir(exist_ok=True)
+    colleges.to_csv(reports/'figure_cohort.csv',index=False)
+    d[d.year.eq(year)][['college','unitid','year','academic_rank','salary_nominal','salary_cost_adjusted','salary_nominal_rank','salary_cost_adjusted_rank','salary_rank_improvement']].to_csv(reports/'figure_salary_ranks.csv',index=False)
+    print(cohort_label(d))
     comparison(d,year);long_run(d);relative_trends(d);ranking_relationship(d,year)
     if args.legacy:
         import make_legacy_figures as legacy
