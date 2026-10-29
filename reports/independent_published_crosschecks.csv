@@ -1,0 +1,13 @@
+source,unitid,college,year,arank,published_salary,ipeds_salary,published_count,ipeds_count,salary_matches,count_matches
+"SC CHE 2025 Statistical Abstract, Table 9.1, printed p163",217819,College of Charleston,2024,1,113868.0,113868.0,150,150,True,True
+"SC CHE 2025 Statistical Abstract, Table 9.1, printed p163",217819,College of Charleston,2024,2,94179.0,94179.0,173,173,True,True
+"SC CHE 2025 Statistical Abstract, Table 9.1, printed p163",217819,College of Charleston,2024,3,81141.0,81141.0,127,127,True,True
+"SC CHE 2025 Statistical Abstract, Table 9.1, printed p163",217882,Clemson University,2024,1,163200.0,160372.0,436,403,False,False
+"SC CHE 2025 Statistical Abstract, Table 9.1, printed p163",217882,Clemson University,2024,2,113652.0,113472.0,330,324,False,False
+"SC CHE 2025 Statistical Abstract, Table 9.1, printed p163",217882,Clemson University,2024,3,99968.0,99792.0,292,286,False,False
+"SC CHE 2025 Statistical Abstract, Table 9.1, printed p163",218724,Coastal Carolina University,2024,1,106668.0,105821.0,130,130,False,True
+"SC CHE 2025 Statistical Abstract, Table 9.1, printed p163",218724,Coastal Carolina University,2024,2,88495.0,87761.0,110,109,False,False
+"SC CHE 2025 Statistical Abstract, Table 9.1, printed p163",218724,Coastal Carolina University,2024,3,77661.0,77719.0,107,107,False,True
+"SC CHE 2025 Statistical Abstract, Table 9.1, printed p163",217864,Citadel Military College of South Carolina,2024,1,107397.0,107397.0,65,65,True,True
+"SC CHE 2025 Statistical Abstract, Table 9.1, printed p163",217864,Citadel Military College of South Carolina,2024,2,92126.0,92127.0,66,66,True,True
+"SC CHE 2025 Statistical Abstract, Table 9.1, printed p163",217864,Citadel Military College of South Carolina,2024,3,82749.0,82749.0,51,51,True,True

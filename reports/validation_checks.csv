@@ -1,0 +1,32 @@
+check,passed,detail
+30 fixed civilian colleges,True,
+Published ranking ties retained,True,
+Unique panel keys,True,
+Complete panel grid,True,
+Latest common year,True,
+Calendar and academic years align,True,
+All 30 colleges observed in 2024,True,
+salary_cost_adjusted arithmetic,True,
+salary_real_2024 arithmetic,True,
+salary_real_cost_adjusted_2024 arithmetic,True,
+2024 inflation factor is one,True,
+salary_nominal_rank competition ranks,True,
+salary_cost_adjusted_rank competition ranks,True,
+RPP missing is never extrapolated,True,
+Zero headcount has undefined mean,True,
+Counts nonnegative integers,True,
+2024 geographic joins complete,True,
+Nonmetro is state specific,True,
+Salary values have provenance,True,
+Every archived response checksum matches,True,1033 distinct archived files
+DRVHR matches SAL detail,True,360 rank observations
+Contract-specific outlays reconcile within rounding,True,max difference 0.5000 dollars
+Institution names/IDs reconcile,True,1170 identities checked; explicit historical aliases reviewed by UNITID
+Every observed college-year has directory evidence,True,[]
+Independent published values audited,True,12 rank observations at four external institutions; 6 agree within $1/count; discrepancies retained for review
+CMC secondary published display,True,
+Historical mirror overlap,True,2003; 90 observations; maximum difference 0.0
+All ACS endpoint years recovered,True,
+ACS kept separate from cost index,True,
+CMC 2019 break explicitly flagged,True,
+Four PNG figures only,True,

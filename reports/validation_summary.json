@@ -1,0 +1,13 @@
+{
+  "passed": 31,
+  "failed": 0,
+  "colleges": 30,
+  "survey_years": 39,
+  "college_year_rows": 1170,
+  "college_years_with_salary": 1168,
+  "rank_rows": 3510,
+  "missing_rank_salaries": 6,
+  "salary_rpp_college_years": 502,
+  "salary_rpp_rent_college_years": 462,
+  "latest_common_year": 2024
+}

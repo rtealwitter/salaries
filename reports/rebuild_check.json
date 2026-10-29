@@ -1,0 +1,18 @@
+{
+  "deterministic": true,
+  "csv_files": 12,
+  "sha256": {
+    "combined.csv": "a1d4837dd3cad53f6653d4b26d2f846af0c12ece85fb4fcdc3bf2c3d7174afd4",
+    "coverage.csv": "eb1a30016a57609f62029de9464655b62dc31ca3db9b5d8792aa7e1246d94b90",
+    "data_dictionary.csv": "950f4b1397735522691ac50c301dfd83006ba86381b364685a959bc49eba0dc8",
+    "cost_of_living.csv": "1f34c00c00b14a7d870e3ba4274962e0a8463763cea056e714d9d0e3ef78d79a",
+    "historical_rankings.csv": "6b1790d78fa3ac33919e0c8dfda94108400488246d00785df78aea7f3528fdef",
+    "city_housing.csv": "f7ed309c2edf477a9de7506dc2c3aaa5194ff0545a7463ddb22b0b9ebcd272a9",
+    "colleges.csv": "ce8e106ae505dd31d777b3576d0d88c17fc319fe8dfcafdfeff939772deea91c",
+    "institution_identity_audit.csv": "595b26bda8ce379714adf016d66576a7fd82b34414b0f64caa1f2b636f1e6bd3",
+    "combined_long.csv": "47dc9731ec0b62f28e28e808a872b99d0a9dfe472a66ad33f306aade5315841e",
+    "ipeds_catalog.csv": "a275b693216ae11a9c83e68bc3b22b81a4913a2af5b49b3539346b8874bb33ca",
+    "inflation.csv": "8bedd6aa2ceca131fa54c6b27d00faf83bbba73f2721d97aed8bc990f8e1c670",
+    "faculty_salaries.csv": "d137fddf7c227b9d5a4aaa282c754d1d17be5ea60e5fda2c18a02c83d2006c02"
+  }
+}

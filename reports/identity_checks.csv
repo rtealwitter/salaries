@@ -1,0 +1,1171 @@
+year,unitid,source_name,source,college,matches_current_name,accepted_historical_alias,verified
+2003,112260,CLAREMONT MCKENNA COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Claremont McKenna College,True,False,True
+2003,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Harvey Mudd College,True,False,True
+2003,121345,POMONA COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Pomona College,True,False,True
+2003,130590,TRINITY COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Trinity College,True,False,True
+2003,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Wesleyan University,True,False,True
+2003,153384,GRINNELL COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Grinnell College,True,False,True
+2003,160977,BATES COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Bates College,True,False,True
+2003,161004,BOWDOIN COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Bowdoin College,True,False,True
+2003,161086,COLBY COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Colby College,True,False,True
+2003,164465,AMHERST COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Amherst College,True,False,True
+2003,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/2003/HD2003_files/hd2003.csv,College of the Holy Cross,True,False,True
+2003,167835,SMITH COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Smith College,True,False,True
+2003,168218,WELLESLEY COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Wellesley College,True,False,True
+2003,168342,WILLIAMS COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Williams College,True,False,True
+2003,173258,CARLETON COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Carleton College,True,False,True
+2003,173902,MACALESTER COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Macalester College,True,False,True
+2003,189097,BARNARD COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Barnard College,True,False,True
+2003,190099,COLGATE UNIVERSITY,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Colgate University,True,False,True
+2003,191515,HAMILTON COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Hamilton College,True,False,True
+2003,197133,VASSAR COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Vassar College,True,False,True
+2003,198385,DAVIDSON COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Davidson College,True,False,True
+2003,202523,DENISON UNIVERSITY,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Denison University,True,False,True
+2003,211273,BRYN MAWR COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Bryn Mawr College,True,False,True
+2003,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Bucknell University,True,False,True
+2003,212911,HAVERFORD COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Haverford College,True,False,True
+2003,213385,LAFAYETTE COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Lafayette College,True,False,True
+2003,216287,SWARTHMORE COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Swarthmore College,True,False,True
+2003,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Middlebury College,True,False,True
+2003,233374,UNIVERSITY OF RICHMOND,data/raw/ipeds/2003/HD2003_files/hd2003.csv,University of Richmond,True,False,True
+2003,234207,WASHINGTON AND LEE UNIVERSITY,data/raw/ipeds/2003/HD2003_files/hd2003.csv,Washington and Lee University,True,False,True
+2004,112260,CLAREMONT MCKENNA COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Claremont McKenna College,True,False,True
+2004,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Harvey Mudd College,True,False,True
+2004,121345,POMONA COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Pomona College,True,False,True
+2004,130590,TRINITY COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Trinity College,True,False,True
+2004,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Wesleyan University,True,False,True
+2004,153384,GRINNELL COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Grinnell College,True,False,True
+2004,160977,BATES COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Bates College,True,False,True
+2004,161004,BOWDOIN COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Bowdoin College,True,False,True
+2004,161086,COLBY COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Colby College,True,False,True
+2004,164465,AMHERST COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Amherst College,True,False,True
+2004,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/2004/HD2004_files/hd2004.csv,College of the Holy Cross,True,False,True
+2004,167835,SMITH COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Smith College,True,False,True
+2004,168218,WELLESLEY COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Wellesley College,True,False,True
+2004,168342,WILLIAMS COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Williams College,True,False,True
+2004,173258,CARLETON COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Carleton College,True,False,True
+2004,173902,MACALESTER COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Macalester College,True,False,True
+2004,189097,BARNARD COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Barnard College,True,False,True
+2004,190099,COLGATE UNIVERSITY,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Colgate University,True,False,True
+2004,191515,HAMILTON COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Hamilton College,True,False,True
+2004,197133,VASSAR COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Vassar College,True,False,True
+2004,198385,DAVIDSON COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Davidson College,True,False,True
+2004,202523,DENISON UNIVERSITY,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Denison University,True,False,True
+2004,211273,BRYN MAWR COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Bryn Mawr College,True,False,True
+2004,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Bucknell University,True,False,True
+2004,212911,HAVERFORD COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Haverford College,True,False,True
+2004,213385,LAFAYETTE COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Lafayette College,True,False,True
+2004,216287,SWARTHMORE COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Swarthmore College,True,False,True
+2004,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Middlebury College,True,False,True
+2004,233374,UNIVERSITY OF RICHMOND,data/raw/ipeds/2004/HD2004_files/hd2004.csv,University of Richmond,True,False,True
+2004,234207,WASHINGTON AND LEE UNIVERSITY,data/raw/ipeds/2004/HD2004_files/hd2004.csv,Washington and Lee University,True,False,True
+2005,112260,Claremont McKenna College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Claremont McKenna College,True,False,True
+2005,115409,Harvey Mudd College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Harvey Mudd College,True,False,True
+2005,121345,Pomona College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Pomona College,True,False,True
+2005,130590,Trinity College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Trinity College,True,False,True
+2005,130697,Wesleyan University,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Wesleyan University,True,False,True
+2005,153384,Grinnell College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Grinnell College,True,False,True
+2005,160977,Bates College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Bates College,True,False,True
+2005,161004,Bowdoin College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Bowdoin College,True,False,True
+2005,161086,Colby College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Colby College,True,False,True
+2005,164465,Amherst College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Amherst College,True,False,True
+2005,166124,College of the Holy Cross,data/raw/ipeds/2005/HD2005_files/hd2005.csv,College of the Holy Cross,True,False,True
+2005,167835,Smith College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Smith College,True,False,True
+2005,168218,Wellesley College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Wellesley College,True,False,True
+2005,168342,Williams College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Williams College,True,False,True
+2005,173258,Carleton College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Carleton College,True,False,True
+2005,173902,MacAlester College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Macalester College,True,False,True
+2005,189097,Barnard College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Barnard College,True,False,True
+2005,190099,Colgate University,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Colgate University,True,False,True
+2005,191515,Hamilton College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Hamilton College,True,False,True
+2005,197133,Vassar College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Vassar College,True,False,True
+2005,198385,Davidson College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Davidson College,True,False,True
+2005,202523,Denison University,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Denison University,True,False,True
+2005,211273,Bryn Mawr College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Bryn Mawr College,True,False,True
+2005,211291,Bucknell University,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Bucknell University,True,False,True
+2005,212911,Haverford College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Haverford College,True,False,True
+2005,213385,Lafayette College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Lafayette College,True,False,True
+2005,216287,Swarthmore College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Swarthmore College,True,False,True
+2005,230959,Middlebury College,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Middlebury College,True,False,True
+2005,233374,University of Richmond,data/raw/ipeds/2005/HD2005_files/hd2005.csv,University of Richmond,True,False,True
+2005,234207,Washington and Lee University,data/raw/ipeds/2005/HD2005_files/hd2005.csv,Washington and Lee University,True,False,True
+2006,112260,Claremont McKenna College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Claremont McKenna College,True,False,True
+2006,115409,Harvey Mudd College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Harvey Mudd College,True,False,True
+2006,121345,Pomona College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Pomona College,True,False,True
+2006,130590,Trinity College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Trinity College,True,False,True
+2006,130697,Wesleyan University,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Wesleyan University,True,False,True
+2006,153384,Grinnell College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Grinnell College,True,False,True
+2006,160977,Bates College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Bates College,True,False,True
+2006,161004,Bowdoin College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Bowdoin College,True,False,True
+2006,161086,Colby College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Colby College,True,False,True
+2006,164465,Amherst College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Amherst College,True,False,True
+2006,166124,College of the Holy Cross,data/raw/ipeds/2006/HD2006_files/hd2006.csv,College of the Holy Cross,True,False,True
+2006,167835,Smith College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Smith College,True,False,True
+2006,168218,Wellesley College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Wellesley College,True,False,True
+2006,168342,Williams College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Williams College,True,False,True
+2006,173258,Carleton College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Carleton College,True,False,True
+2006,173902,Macalester College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Macalester College,True,False,True
+2006,189097,Barnard College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Barnard College,True,False,True
+2006,190099,Colgate University,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Colgate University,True,False,True
+2006,191515,Hamilton College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Hamilton College,True,False,True
+2006,197133,Vassar College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Vassar College,True,False,True
+2006,198385,Davidson College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Davidson College,True,False,True
+2006,202523,Denison University,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Denison University,True,False,True
+2006,211273,Bryn Mawr College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Bryn Mawr College,True,False,True
+2006,211291,Bucknell University,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Bucknell University,True,False,True
+2006,212911,Haverford College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Haverford College,True,False,True
+2006,213385,Lafayette College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Lafayette College,True,False,True
+2006,216287,Swarthmore College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Swarthmore College,True,False,True
+2006,230959,Middlebury College,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Middlebury College,True,False,True
+2006,233374,University of Richmond,data/raw/ipeds/2006/HD2006_files/hd2006.csv,University of Richmond,True,False,True
+2006,234207,Washington and Lee University,data/raw/ipeds/2006/HD2006_files/hd2006.csv,Washington and Lee University,True,False,True
+2007,112260,Claremont McKenna College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Claremont McKenna College,True,False,True
+2007,115409,Harvey Mudd College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Harvey Mudd College,True,False,True
+2007,121345,Pomona College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Pomona College,True,False,True
+2007,130590,Trinity College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Trinity College,True,False,True
+2007,130697,Wesleyan University,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Wesleyan University,True,False,True
+2007,153384,Grinnell College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Grinnell College,True,False,True
+2007,160977,Bates College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Bates College,True,False,True
+2007,161004,Bowdoin College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Bowdoin College,True,False,True
+2007,161086,Colby College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Colby College,True,False,True
+2007,164465,Amherst College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Amherst College,True,False,True
+2007,166124,College of the Holy Cross,data/raw/ipeds/2007/HD2007_files/hd2007.csv,College of the Holy Cross,True,False,True
+2007,167835,Smith College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Smith College,True,False,True
+2007,168218,Wellesley College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Wellesley College,True,False,True
+2007,168342,Williams College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Williams College,True,False,True
+2007,173258,Carleton College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Carleton College,True,False,True
+2007,173902,Macalester College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Macalester College,True,False,True
+2007,189097,Barnard College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Barnard College,True,False,True
+2007,190099,Colgate University,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Colgate University,True,False,True
+2007,191515,Hamilton College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Hamilton College,True,False,True
+2007,197133,Vassar College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Vassar College,True,False,True
+2007,198385,Davidson College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Davidson College,True,False,True
+2007,202523,Denison University,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Denison University,True,False,True
+2007,211273,Bryn Mawr College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Bryn Mawr College,True,False,True
+2007,211291,Bucknell University,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Bucknell University,True,False,True
+2007,212911,Haverford College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Haverford College,True,False,True
+2007,213385,Lafayette College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Lafayette College,True,False,True
+2007,216287,Swarthmore College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Swarthmore College,True,False,True
+2007,230959,Middlebury College,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Middlebury College,True,False,True
+2007,233374,University of Richmond,data/raw/ipeds/2007/HD2007_files/hd2007.csv,University of Richmond,True,False,True
+2007,234207,Washington and Lee University,data/raw/ipeds/2007/HD2007_files/hd2007.csv,Washington and Lee University,True,False,True
+2008,112260,Claremont McKenna College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Claremont McKenna College,True,False,True
+2008,115409,Harvey Mudd College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Harvey Mudd College,True,False,True
+2008,121345,Pomona College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Pomona College,True,False,True
+2008,130590,Trinity College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Trinity College,True,False,True
+2008,130697,Wesleyan University,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Wesleyan University,True,False,True
+2008,153384,Grinnell College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Grinnell College,True,False,True
+2008,160977,Bates College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Bates College,True,False,True
+2008,161004,Bowdoin College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Bowdoin College,True,False,True
+2008,161086,Colby College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Colby College,True,False,True
+2008,164465,Amherst College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Amherst College,True,False,True
+2008,166124,College of the Holy Cross,data/raw/ipeds/2008/HD2008_files/hd2008.csv,College of the Holy Cross,True,False,True
+2008,167835,Smith College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Smith College,True,False,True
+2008,168218,Wellesley College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Wellesley College,True,False,True
+2008,168342,Williams College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Williams College,True,False,True
+2008,173258,Carleton College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Carleton College,True,False,True
+2008,173902,Macalester College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Macalester College,True,False,True
+2008,189097,Barnard College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Barnard College,True,False,True
+2008,190099,Colgate University,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Colgate University,True,False,True
+2008,191515,Hamilton College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Hamilton College,True,False,True
+2008,197133,Vassar College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Vassar College,True,False,True
+2008,198385,Davidson College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Davidson College,True,False,True
+2008,202523,Denison University,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Denison University,True,False,True
+2008,211273,Bryn Mawr College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Bryn Mawr College,True,False,True
+2008,211291,Bucknell University,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Bucknell University,True,False,True
+2008,212911,Haverford College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Haverford College,True,False,True
+2008,213385,Lafayette College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Lafayette College,True,False,True
+2008,216287,Swarthmore College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Swarthmore College,True,False,True
+2008,230959,Middlebury College,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Middlebury College,True,False,True
+2008,233374,University of Richmond,data/raw/ipeds/2008/HD2008_files/hd2008.csv,University of Richmond,True,False,True
+2008,234207,Washington and Lee University,data/raw/ipeds/2008/HD2008_files/hd2008.csv,Washington and Lee University,True,False,True
+2009,112260,Claremont McKenna College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Claremont McKenna College,True,False,True
+2009,115409,Harvey Mudd College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Harvey Mudd College,True,False,True
+2009,121345,Pomona College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Pomona College,True,False,True
+2009,130590,Trinity College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Trinity College,True,False,True
+2009,130697,Wesleyan University,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Wesleyan University,True,False,True
+2009,153384,Grinnell College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Grinnell College,True,False,True
+2009,160977,Bates College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Bates College,True,False,True
+2009,161004,Bowdoin College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Bowdoin College,True,False,True
+2009,161086,Colby College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Colby College,True,False,True
+2009,164465,Amherst College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Amherst College,True,False,True
+2009,166124,College of the Holy Cross,data/raw/ipeds/2009/HD2009_files/hd2009.csv,College of the Holy Cross,True,False,True
+2009,167835,Smith College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Smith College,True,False,True
+2009,168218,Wellesley College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Wellesley College,True,False,True
+2009,168342,Williams College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Williams College,True,False,True
+2009,173258,Carleton College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Carleton College,True,False,True
+2009,173902,Macalester College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Macalester College,True,False,True
+2009,189097,Barnard College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Barnard College,True,False,True
+2009,190099,Colgate University,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Colgate University,True,False,True
+2009,191515,Hamilton College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Hamilton College,True,False,True
+2009,197133,Vassar College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Vassar College,True,False,True
+2009,198385,Davidson College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Davidson College,True,False,True
+2009,202523,Denison University,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Denison University,True,False,True
+2009,211273,Bryn Mawr College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Bryn Mawr College,True,False,True
+2009,211291,Bucknell University,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Bucknell University,True,False,True
+2009,212911,Haverford College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Haverford College,True,False,True
+2009,213385,Lafayette College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Lafayette College,True,False,True
+2009,216287,Swarthmore College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Swarthmore College,True,False,True
+2009,230959,Middlebury College,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Middlebury College,True,False,True
+2009,233374,University of Richmond,data/raw/ipeds/2009/HD2009_files/hd2009.csv,University of Richmond,True,False,True
+2009,234207,Washington and Lee University,data/raw/ipeds/2009/HD2009_files/hd2009.csv,Washington and Lee University,True,False,True
+2010,112260,Claremont McKenna College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Claremont McKenna College,True,False,True
+2010,115409,Harvey Mudd College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Harvey Mudd College,True,False,True
+2010,121345,Pomona College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Pomona College,True,False,True
+2010,130590,Trinity College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Trinity College,True,False,True
+2010,130697,Wesleyan University,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Wesleyan University,True,False,True
+2010,153384,Grinnell College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Grinnell College,True,False,True
+2010,160977,Bates College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Bates College,True,False,True
+2010,161004,Bowdoin College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Bowdoin College,True,False,True
+2010,161086,Colby College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Colby College,True,False,True
+2010,164465,Amherst College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Amherst College,True,False,True
+2010,166124,College of the Holy Cross,data/raw/ipeds/2010/HD2010_files/hd2010.csv,College of the Holy Cross,True,False,True
+2010,167835,Smith College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Smith College,True,False,True
+2010,168218,Wellesley College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Wellesley College,True,False,True
+2010,168342,Williams College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Williams College,True,False,True
+2010,173258,Carleton College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Carleton College,True,False,True
+2010,173902,Macalester College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Macalester College,True,False,True
+2010,189097,Barnard College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Barnard College,True,False,True
+2010,190099,Colgate University,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Colgate University,True,False,True
+2010,191515,Hamilton College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Hamilton College,True,False,True
+2010,197133,Vassar College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Vassar College,True,False,True
+2010,198385,Davidson College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Davidson College,True,False,True
+2010,202523,Denison University,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Denison University,True,False,True
+2010,211273,Bryn Mawr College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Bryn Mawr College,True,False,True
+2010,211291,Bucknell University,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Bucknell University,True,False,True
+2010,212911,Haverford College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Haverford College,True,False,True
+2010,213385,Lafayette College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Lafayette College,True,False,True
+2010,216287,Swarthmore College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Swarthmore College,True,False,True
+2010,230959,Middlebury College,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Middlebury College,True,False,True
+2010,233374,University of Richmond,data/raw/ipeds/2010/HD2010_files/hd2010.csv,University of Richmond,True,False,True
+2010,234207,Washington and Lee University,data/raw/ipeds/2010/HD2010_files/hd2010.csv,Washington and Lee University,True,False,True
+2011,112260,Claremont McKenna College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Claremont McKenna College,True,False,True
+2011,115409,Harvey Mudd College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Harvey Mudd College,True,False,True
+2011,121345,Pomona College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Pomona College,True,False,True
+2011,130590,Trinity College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Trinity College,True,False,True
+2011,130697,Wesleyan University,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Wesleyan University,True,False,True
+2011,153384,Grinnell College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Grinnell College,True,False,True
+2011,160977,Bates College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Bates College,True,False,True
+2011,161004,Bowdoin College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Bowdoin College,True,False,True
+2011,161086,Colby College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Colby College,True,False,True
+2011,164465,Amherst College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Amherst College,True,False,True
+2011,166124,College of the Holy Cross,data/raw/ipeds/2011/HD2011_files/hd2011.csv,College of the Holy Cross,True,False,True
+2011,167835,Smith College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Smith College,True,False,True
+2011,168218,Wellesley College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Wellesley College,True,False,True
+2011,168342,Williams College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Williams College,True,False,True
+2011,173258,Carleton College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Carleton College,True,False,True
+2011,173902,Macalester College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Macalester College,True,False,True
+2011,189097,Barnard College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Barnard College,True,False,True
+2011,190099,Colgate University,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Colgate University,True,False,True
+2011,191515,Hamilton College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Hamilton College,True,False,True
+2011,197133,Vassar College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Vassar College,True,False,True
+2011,198385,Davidson College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Davidson College,True,False,True
+2011,202523,Denison University,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Denison University,True,False,True
+2011,211273,Bryn Mawr College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Bryn Mawr College,True,False,True
+2011,211291,Bucknell University,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Bucknell University,True,False,True
+2011,212911,Haverford College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Haverford College,True,False,True
+2011,213385,Lafayette College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Lafayette College,True,False,True
+2011,216287,Swarthmore College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Swarthmore College,True,False,True
+2011,230959,Middlebury College,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Middlebury College,True,False,True
+2011,233374,University of Richmond,data/raw/ipeds/2011/HD2011_files/hd2011.csv,University of Richmond,True,False,True
+2011,234207,Washington and Lee University,data/raw/ipeds/2011/HD2011_files/hd2011.csv,Washington and Lee University,True,False,True
+2012,112260,Claremont McKenna College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Claremont McKenna College,True,False,True
+2012,115409,Harvey Mudd College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Harvey Mudd College,True,False,True
+2012,121345,Pomona College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Pomona College,True,False,True
+2012,130590,Trinity College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Trinity College,True,False,True
+2012,130697,Wesleyan University,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Wesleyan University,True,False,True
+2012,153384,Grinnell College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Grinnell College,True,False,True
+2012,160977,Bates College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Bates College,True,False,True
+2012,161004,Bowdoin College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Bowdoin College,True,False,True
+2012,161086,Colby College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Colby College,True,False,True
+2012,164465,Amherst College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Amherst College,True,False,True
+2012,166124,College of the Holy Cross,data/raw/ipeds/2012/HD2012_files/hd2012.csv,College of the Holy Cross,True,False,True
+2012,167835,Smith College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Smith College,True,False,True
+2012,168218,Wellesley College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Wellesley College,True,False,True
+2012,168342,Williams College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Williams College,True,False,True
+2012,173258,Carleton College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Carleton College,True,False,True
+2012,173902,Macalester College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Macalester College,True,False,True
+2012,189097,Barnard College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Barnard College,True,False,True
+2012,190099,Colgate University,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Colgate University,True,False,True
+2012,191515,Hamilton College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Hamilton College,True,False,True
+2012,197133,Vassar College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Vassar College,True,False,True
+2012,198385,Davidson College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Davidson College,True,False,True
+2012,202523,Denison University,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Denison University,True,False,True
+2012,211273,Bryn Mawr College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Bryn Mawr College,True,False,True
+2012,211291,Bucknell University,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Bucknell University,True,False,True
+2012,212911,Haverford College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Haverford College,True,False,True
+2012,213385,Lafayette College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Lafayette College,True,False,True
+2012,216287,Swarthmore College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Swarthmore College,True,False,True
+2012,230959,Middlebury College,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Middlebury College,True,False,True
+2012,233374,University of Richmond,data/raw/ipeds/2012/HD2012_files/hd2012.csv,University of Richmond,True,False,True
+2012,234207,Washington and Lee University,data/raw/ipeds/2012/HD2012_files/hd2012.csv,Washington and Lee University,True,False,True
+2013,112260,Claremont McKenna College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Claremont McKenna College,True,False,True
+2013,115409,Harvey Mudd College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Harvey Mudd College,True,False,True
+2013,121345,Pomona College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Pomona College,True,False,True
+2013,130590,Trinity College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Trinity College,True,False,True
+2013,130697,Wesleyan University,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Wesleyan University,True,False,True
+2013,153384,Grinnell College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Grinnell College,True,False,True
+2013,160977,Bates College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Bates College,True,False,True
+2013,161004,Bowdoin College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Bowdoin College,True,False,True
+2013,161086,Colby College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Colby College,True,False,True
+2013,164465,Amherst College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Amherst College,True,False,True
+2013,166124,College of the Holy Cross,data/raw/ipeds/2013/HD2013_files/hd2013.csv,College of the Holy Cross,True,False,True
+2013,167835,Smith College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Smith College,True,False,True
+2013,168218,Wellesley College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Wellesley College,True,False,True
+2013,168342,Williams College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Williams College,True,False,True
+2013,173258,Carleton College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Carleton College,True,False,True
+2013,173902,Macalester College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Macalester College,True,False,True
+2013,189097,Barnard College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Barnard College,True,False,True
+2013,190099,Colgate University,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Colgate University,True,False,True
+2013,191515,Hamilton College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Hamilton College,True,False,True
+2013,197133,Vassar College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Vassar College,True,False,True
+2013,198385,Davidson College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Davidson College,True,False,True
+2013,202523,Denison University,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Denison University,True,False,True
+2013,211273,Bryn Mawr College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Bryn Mawr College,True,False,True
+2013,211291,Bucknell University,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Bucknell University,True,False,True
+2013,212911,Haverford College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Haverford College,True,False,True
+2013,213385,Lafayette College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Lafayette College,True,False,True
+2013,216287,Swarthmore College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Swarthmore College,True,False,True
+2013,230959,Middlebury College,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Middlebury College,True,False,True
+2013,233374,University of Richmond,data/raw/ipeds/2013/HD2013_files/hd2013.csv,University of Richmond,True,False,True
+2013,234207,Washington and Lee University,data/raw/ipeds/2013/HD2013_files/hd2013.csv,Washington and Lee University,True,False,True
+2014,112260,Claremont McKenna College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Claremont McKenna College,True,False,True
+2014,115409,Harvey Mudd College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Harvey Mudd College,True,False,True
+2014,121345,Pomona College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Pomona College,True,False,True
+2014,130590,Trinity College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Trinity College,True,False,True
+2014,130697,Wesleyan University,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Wesleyan University,True,False,True
+2014,153384,Grinnell College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Grinnell College,True,False,True
+2014,160977,Bates College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Bates College,True,False,True
+2014,161004,Bowdoin College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Bowdoin College,True,False,True
+2014,161086,Colby College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Colby College,True,False,True
+2014,164465,Amherst College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Amherst College,True,False,True
+2014,166124,College of the Holy Cross,data/raw/ipeds/2014/HD2014_files/hd2014.csv,College of the Holy Cross,True,False,True
+2014,167835,Smith College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Smith College,True,False,True
+2014,168218,Wellesley College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Wellesley College,True,False,True
+2014,168342,Williams College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Williams College,True,False,True
+2014,173258,Carleton College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Carleton College,True,False,True
+2014,173902,Macalester College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Macalester College,True,False,True
+2014,189097,Barnard College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Barnard College,True,False,True
+2014,190099,Colgate University,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Colgate University,True,False,True
+2014,191515,Hamilton College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Hamilton College,True,False,True
+2014,197133,Vassar College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Vassar College,True,False,True
+2014,198385,Davidson College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Davidson College,True,False,True
+2014,202523,Denison University,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Denison University,True,False,True
+2014,211273,Bryn Mawr College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Bryn Mawr College,True,False,True
+2014,211291,Bucknell University,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Bucknell University,True,False,True
+2014,212911,Haverford College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Haverford College,True,False,True
+2014,213385,Lafayette College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Lafayette College,True,False,True
+2014,216287,Swarthmore College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Swarthmore College,True,False,True
+2014,230959,Middlebury College,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Middlebury College,True,False,True
+2014,233374,University of Richmond,data/raw/ipeds/2014/HD2014_files/hd2014.csv,University of Richmond,True,False,True
+2014,234207,Washington and Lee University,data/raw/ipeds/2014/HD2014_files/hd2014.csv,Washington and Lee University,True,False,True
+2015,112260,Claremont McKenna College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Claremont McKenna College,True,False,True
+2015,115409,Harvey Mudd College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Harvey Mudd College,True,False,True
+2015,121345,Pomona College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Pomona College,True,False,True
+2015,130590,Trinity College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Trinity College,True,False,True
+2015,130697,Wesleyan University,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Wesleyan University,True,False,True
+2015,153384,Grinnell College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Grinnell College,True,False,True
+2015,160977,Bates College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Bates College,True,False,True
+2015,161004,Bowdoin College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Bowdoin College,True,False,True
+2015,161086,Colby College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Colby College,True,False,True
+2015,164465,Amherst College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Amherst College,True,False,True
+2015,166124,College of the Holy Cross,data/raw/ipeds/2015/HD2015_files/hd2015.csv,College of the Holy Cross,True,False,True
+2015,167835,Smith College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Smith College,True,False,True
+2015,168218,Wellesley College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Wellesley College,True,False,True
+2015,168342,Williams College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Williams College,True,False,True
+2015,173258,Carleton College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Carleton College,True,False,True
+2015,173902,Macalester College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Macalester College,True,False,True
+2015,189097,Barnard College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Barnard College,True,False,True
+2015,190099,Colgate University,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Colgate University,True,False,True
+2015,191515,Hamilton College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Hamilton College,True,False,True
+2015,197133,Vassar College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Vassar College,True,False,True
+2015,198385,Davidson College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Davidson College,True,False,True
+2015,202523,Denison University,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Denison University,True,False,True
+2015,211273,Bryn Mawr College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Bryn Mawr College,True,False,True
+2015,211291,Bucknell University,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Bucknell University,True,False,True
+2015,212911,Haverford College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Haverford College,True,False,True
+2015,213385,Lafayette College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Lafayette College,True,False,True
+2015,216287,Swarthmore College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Swarthmore College,True,False,True
+2015,230959,Middlebury College,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Middlebury College,True,False,True
+2015,233374,University of Richmond,data/raw/ipeds/2015/HD2015_files/hd2015.csv,University of Richmond,True,False,True
+2015,234207,Washington and Lee University,data/raw/ipeds/2015/HD2015_files/hd2015.csv,Washington and Lee University,True,False,True
+2016,112260,Claremont McKenna College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Claremont McKenna College,True,False,True
+2016,115409,Harvey Mudd College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Harvey Mudd College,True,False,True
+2016,121345,Pomona College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Pomona College,True,False,True
+2016,130590,Trinity College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Trinity College,True,False,True
+2016,130697,Wesleyan University,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Wesleyan University,True,False,True
+2016,153384,Grinnell College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Grinnell College,True,False,True
+2016,160977,Bates College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Bates College,True,False,True
+2016,161004,Bowdoin College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Bowdoin College,True,False,True
+2016,161086,Colby College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Colby College,True,False,True
+2016,164465,Amherst College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Amherst College,True,False,True
+2016,166124,College of the Holy Cross,data/raw/ipeds/2016/HD2016_files/hd2016.csv,College of the Holy Cross,True,False,True
+2016,167835,Smith College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Smith College,True,False,True
+2016,168218,Wellesley College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Wellesley College,True,False,True
+2016,168342,Williams College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Williams College,True,False,True
+2016,173258,Carleton College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Carleton College,True,False,True
+2016,173902,Macalester College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Macalester College,True,False,True
+2016,189097,Barnard College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Barnard College,True,False,True
+2016,190099,Colgate University,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Colgate University,True,False,True
+2016,191515,Hamilton College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Hamilton College,True,False,True
+2016,197133,Vassar College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Vassar College,True,False,True
+2016,198385,Davidson College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Davidson College,True,False,True
+2016,202523,Denison University,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Denison University,True,False,True
+2016,211273,Bryn Mawr College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Bryn Mawr College,True,False,True
+2016,211291,Bucknell University,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Bucknell University,True,False,True
+2016,212911,Haverford College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Haverford College,True,False,True
+2016,213385,Lafayette College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Lafayette College,True,False,True
+2016,216287,Swarthmore College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Swarthmore College,True,False,True
+2016,230959,Middlebury College,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Middlebury College,True,False,True
+2016,233374,University of Richmond,data/raw/ipeds/2016/HD2016_files/hd2016.csv,University of Richmond,True,False,True
+2016,234207,Washington and Lee University,data/raw/ipeds/2016/HD2016_files/hd2016.csv,Washington and Lee University,True,False,True
+2017,112260,Claremont McKenna College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Claremont McKenna College,True,False,True
+2017,115409,Harvey Mudd College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Harvey Mudd College,True,False,True
+2017,121345,Pomona College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Pomona College,True,False,True
+2017,130590,Trinity College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Trinity College,True,False,True
+2017,130697,Wesleyan University,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Wesleyan University,True,False,True
+2017,153384,Grinnell College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Grinnell College,True,False,True
+2017,160977,Bates College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Bates College,True,False,True
+2017,161004,Bowdoin College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Bowdoin College,True,False,True
+2017,161086,Colby College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Colby College,True,False,True
+2017,164465,Amherst College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Amherst College,True,False,True
+2017,166124,College of the Holy Cross,data/raw/ipeds/2017/HD2017_files/hd2017.csv,College of the Holy Cross,True,False,True
+2017,167835,Smith College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Smith College,True,False,True
+2017,168218,Wellesley College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Wellesley College,True,False,True
+2017,168342,Williams College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Williams College,True,False,True
+2017,173258,Carleton College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Carleton College,True,False,True
+2017,173902,Macalester College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Macalester College,True,False,True
+2017,189097,Barnard College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Barnard College,True,False,True
+2017,190099,Colgate University,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Colgate University,True,False,True
+2017,191515,Hamilton College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Hamilton College,True,False,True
+2017,197133,Vassar College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Vassar College,True,False,True
+2017,198385,Davidson College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Davidson College,True,False,True
+2017,202523,Denison University,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Denison University,True,False,True
+2017,211273,Bryn Mawr College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Bryn Mawr College,True,False,True
+2017,211291,Bucknell University,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Bucknell University,True,False,True
+2017,212911,Haverford College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Haverford College,True,False,True
+2017,213385,Lafayette College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Lafayette College,True,False,True
+2017,216287,Swarthmore College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Swarthmore College,True,False,True
+2017,230959,Middlebury College,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Middlebury College,True,False,True
+2017,233374,University of Richmond,data/raw/ipeds/2017/HD2017_files/hd2017.csv,University of Richmond,True,False,True
+2017,234207,Washington and Lee University,data/raw/ipeds/2017/HD2017_files/hd2017.csv,Washington and Lee University,True,False,True
+2018,112260,Claremont McKenna College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Claremont McKenna College,True,False,True
+2018,115409,Harvey Mudd College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Harvey Mudd College,True,False,True
+2018,121345,Pomona College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Pomona College,True,False,True
+2018,130590,Trinity College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Trinity College,True,False,True
+2018,130697,Wesleyan University,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Wesleyan University,True,False,True
+2018,153384,Grinnell College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Grinnell College,True,False,True
+2018,160977,Bates College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Bates College,True,False,True
+2018,161004,Bowdoin College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Bowdoin College,True,False,True
+2018,161086,Colby College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Colby College,True,False,True
+2018,164465,Amherst College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Amherst College,True,False,True
+2018,166124,College of the Holy Cross,data/raw/ipeds/2018/HD2018_files/hd2018.csv,College of the Holy Cross,True,False,True
+2018,167835,Smith College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Smith College,True,False,True
+2018,168218,Wellesley College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Wellesley College,True,False,True
+2018,168342,Williams College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Williams College,True,False,True
+2018,173258,Carleton College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Carleton College,True,False,True
+2018,173902,Macalester College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Macalester College,True,False,True
+2018,189097,Barnard College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Barnard College,True,False,True
+2018,190099,Colgate University,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Colgate University,True,False,True
+2018,191515,Hamilton College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Hamilton College,True,False,True
+2018,197133,Vassar College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Vassar College,True,False,True
+2018,198385,Davidson College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Davidson College,True,False,True
+2018,202523,Denison University,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Denison University,True,False,True
+2018,211273,Bryn Mawr College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Bryn Mawr College,True,False,True
+2018,211291,Bucknell University,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Bucknell University,True,False,True
+2018,212911,Haverford College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Haverford College,True,False,True
+2018,213385,Lafayette College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Lafayette College,True,False,True
+2018,216287,Swarthmore College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Swarthmore College,True,False,True
+2018,230959,Middlebury College,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Middlebury College,True,False,True
+2018,233374,University of Richmond,data/raw/ipeds/2018/HD2018_files/hd2018.csv,University of Richmond,True,False,True
+2018,234207,Washington and Lee University,data/raw/ipeds/2018/HD2018_files/hd2018.csv,Washington and Lee University,True,False,True
+2019,112260,Claremont McKenna College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Claremont McKenna College,True,False,True
+2019,115409,Harvey Mudd College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Harvey Mudd College,True,False,True
+2019,121345,Pomona College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Pomona College,True,False,True
+2019,130590,Trinity College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Trinity College,True,False,True
+2019,130697,Wesleyan University,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Wesleyan University,True,False,True
+2019,153384,Grinnell College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Grinnell College,True,False,True
+2019,160977,Bates College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Bates College,True,False,True
+2019,161004,Bowdoin College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Bowdoin College,True,False,True
+2019,161086,Colby College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Colby College,True,False,True
+2019,164465,Amherst College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Amherst College,True,False,True
+2019,166124,College of the Holy Cross,data/raw/ipeds/2019/HD2019_files/hd2019.csv,College of the Holy Cross,True,False,True
+2019,167835,Smith College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Smith College,True,False,True
+2019,168218,Wellesley College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Wellesley College,True,False,True
+2019,168342,Williams College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Williams College,True,False,True
+2019,173258,Carleton College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Carleton College,True,False,True
+2019,173902,Macalester College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Macalester College,True,False,True
+2019,189097,Barnard College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Barnard College,True,False,True
+2019,190099,Colgate University,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Colgate University,True,False,True
+2019,191515,Hamilton College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Hamilton College,True,False,True
+2019,197133,Vassar College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Vassar College,True,False,True
+2019,198385,Davidson College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Davidson College,True,False,True
+2019,202523,Denison University,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Denison University,True,False,True
+2019,211273,Bryn Mawr College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Bryn Mawr College,True,False,True
+2019,211291,Bucknell University,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Bucknell University,True,False,True
+2019,212911,Haverford College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Haverford College,True,False,True
+2019,213385,Lafayette College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Lafayette College,True,False,True
+2019,216287,Swarthmore College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Swarthmore College,True,False,True
+2019,230959,Middlebury College,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Middlebury College,True,False,True
+2019,233374,University of Richmond,data/raw/ipeds/2019/HD2019_files/hd2019.csv,University of Richmond,True,False,True
+2019,234207,Washington and Lee University,data/raw/ipeds/2019/HD2019_files/hd2019.csv,Washington and Lee University,True,False,True
+2020,112260,Claremont McKenna College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Claremont McKenna College,True,False,True
+2020,115409,Harvey Mudd College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Harvey Mudd College,True,False,True
+2020,121345,Pomona College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Pomona College,True,False,True
+2020,130590,Trinity College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Trinity College,True,False,True
+2020,130697,Wesleyan University,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Wesleyan University,True,False,True
+2020,153384,Grinnell College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Grinnell College,True,False,True
+2020,160977,Bates College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Bates College,True,False,True
+2020,161004,Bowdoin College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Bowdoin College,True,False,True
+2020,161086,Colby College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Colby College,True,False,True
+2020,164465,Amherst College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Amherst College,True,False,True
+2020,166124,College of the Holy Cross,data/raw/ipeds/2020/HD2020_files/hd2020.csv,College of the Holy Cross,True,False,True
+2020,167835,Smith College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Smith College,True,False,True
+2020,168218,Wellesley College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Wellesley College,True,False,True
+2020,168342,Williams College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Williams College,True,False,True
+2020,173258,Carleton College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Carleton College,True,False,True
+2020,173902,Macalester College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Macalester College,True,False,True
+2020,189097,Barnard College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Barnard College,True,False,True
+2020,190099,Colgate University,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Colgate University,True,False,True
+2020,191515,Hamilton College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Hamilton College,True,False,True
+2020,197133,Vassar College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Vassar College,True,False,True
+2020,198385,Davidson College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Davidson College,True,False,True
+2020,202523,Denison University,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Denison University,True,False,True
+2020,211273,Bryn Mawr College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Bryn Mawr College,True,False,True
+2020,211291,Bucknell University,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Bucknell University,True,False,True
+2020,212911,Haverford College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Haverford College,True,False,True
+2020,213385,Lafayette College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Lafayette College,True,False,True
+2020,216287,Swarthmore College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Swarthmore College,True,False,True
+2020,230959,Middlebury College,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Middlebury College,True,False,True
+2020,233374,University of Richmond,data/raw/ipeds/2020/HD2020_files/hd2020.csv,University of Richmond,True,False,True
+2020,234207,Washington and Lee University,data/raw/ipeds/2020/HD2020_files/hd2020.csv,Washington and Lee University,True,False,True
+2021,112260,Claremont McKenna College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Claremont McKenna College,True,False,True
+2021,115409,Harvey Mudd College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Harvey Mudd College,True,False,True
+2021,121345,Pomona College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Pomona College,True,False,True
+2021,130590,Trinity College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Trinity College,True,False,True
+2021,130697,Wesleyan University,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Wesleyan University,True,False,True
+2021,153384,Grinnell College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Grinnell College,True,False,True
+2021,160977,Bates College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Bates College,True,False,True
+2021,161004,Bowdoin College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Bowdoin College,True,False,True
+2021,161086,Colby College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Colby College,True,False,True
+2021,164465,Amherst College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Amherst College,True,False,True
+2021,166124,College of the Holy Cross,data/raw/ipeds/2021/HD2021_files/hd2021.csv,College of the Holy Cross,True,False,True
+2021,167835,Smith College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Smith College,True,False,True
+2021,168218,Wellesley College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Wellesley College,True,False,True
+2021,168342,Williams College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Williams College,True,False,True
+2021,173258,Carleton College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Carleton College,True,False,True
+2021,173902,Macalester College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Macalester College,True,False,True
+2021,189097,Barnard College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Barnard College,True,False,True
+2021,190099,Colgate University,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Colgate University,True,False,True
+2021,191515,Hamilton College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Hamilton College,True,False,True
+2021,197133,Vassar College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Vassar College,True,False,True
+2021,198385,Davidson College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Davidson College,True,False,True
+2021,202523,Denison University,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Denison University,True,False,True
+2021,211273,Bryn Mawr College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Bryn Mawr College,True,False,True
+2021,211291,Bucknell University,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Bucknell University,True,False,True
+2021,212911,Haverford College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Haverford College,True,False,True
+2021,213385,Lafayette College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Lafayette College,True,False,True
+2021,216287,Swarthmore College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Swarthmore College,True,False,True
+2021,230959,Middlebury College,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Middlebury College,True,False,True
+2021,233374,University of Richmond,data/raw/ipeds/2021/HD2021_files/hd2021.csv,University of Richmond,True,False,True
+2021,234207,Washington and Lee University,data/raw/ipeds/2021/HD2021_files/hd2021.csv,Washington and Lee University,True,False,True
+2022,112260,Claremont McKenna College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Claremont McKenna College,True,False,True
+2022,115409,Harvey Mudd College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Harvey Mudd College,True,False,True
+2022,121345,Pomona College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Pomona College,True,False,True
+2022,130590,Trinity College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Trinity College,True,False,True
+2022,130697,Wesleyan University,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Wesleyan University,True,False,True
+2022,153384,Grinnell College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Grinnell College,True,False,True
+2022,160977,Bates College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Bates College,True,False,True
+2022,161004,Bowdoin College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Bowdoin College,True,False,True
+2022,161086,Colby College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Colby College,True,False,True
+2022,164465,Amherst College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Amherst College,True,False,True
+2022,166124,College of the Holy Cross,data/raw/ipeds/2022/HD2022_files/hd2022.csv,College of the Holy Cross,True,False,True
+2022,167835,Smith College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Smith College,True,False,True
+2022,168218,Wellesley College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Wellesley College,True,False,True
+2022,168342,Williams College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Williams College,True,False,True
+2022,173258,Carleton College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Carleton College,True,False,True
+2022,173902,Macalester College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Macalester College,True,False,True
+2022,189097,Barnard College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Barnard College,True,False,True
+2022,190099,Colgate University,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Colgate University,True,False,True
+2022,191515,Hamilton College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Hamilton College,True,False,True
+2022,197133,Vassar College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Vassar College,True,False,True
+2022,198385,Davidson College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Davidson College,True,False,True
+2022,202523,Denison University,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Denison University,True,False,True
+2022,211273,Bryn Mawr College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Bryn Mawr College,True,False,True
+2022,211291,Bucknell University,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Bucknell University,True,False,True
+2022,212911,Haverford College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Haverford College,True,False,True
+2022,213385,Lafayette College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Lafayette College,True,False,True
+2022,216287,Swarthmore College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Swarthmore College,True,False,True
+2022,230959,Middlebury College,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Middlebury College,True,False,True
+2022,233374,University of Richmond,data/raw/ipeds/2022/HD2022_files/hd2022.csv,University of Richmond,True,False,True
+2022,234207,Washington and Lee University,data/raw/ipeds/2022/HD2022_files/hd2022.csv,Washington and Lee University,True,False,True
+2023,112260,Claremont McKenna College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Claremont McKenna College,True,False,True
+2023,115409,Harvey Mudd College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Harvey Mudd College,True,False,True
+2023,121345,Pomona College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Pomona College,True,False,True
+2023,130590,Trinity College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Trinity College,True,False,True
+2023,130697,Wesleyan University,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Wesleyan University,True,False,True
+2023,153384,Grinnell College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Grinnell College,True,False,True
+2023,160977,Bates College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Bates College,True,False,True
+2023,161004,Bowdoin College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Bowdoin College,True,False,True
+2023,161086,Colby College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Colby College,True,False,True
+2023,164465,Amherst College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Amherst College,True,False,True
+2023,166124,College of the Holy Cross,data/raw/ipeds/2023/HD2023_files/hd2023.csv,College of the Holy Cross,True,False,True
+2023,167835,Smith College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Smith College,True,False,True
+2023,168218,Wellesley College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Wellesley College,True,False,True
+2023,168342,Williams College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Williams College,True,False,True
+2023,173258,Carleton College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Carleton College,True,False,True
+2023,173902,Macalester College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Macalester College,True,False,True
+2023,189097,Barnard College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Barnard College,True,False,True
+2023,190099,Colgate University,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Colgate University,True,False,True
+2023,191515,Hamilton College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Hamilton College,True,False,True
+2023,197133,Vassar College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Vassar College,True,False,True
+2023,198385,Davidson College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Davidson College,True,False,True
+2023,202523,Denison University,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Denison University,True,False,True
+2023,211273,Bryn Mawr College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Bryn Mawr College,True,False,True
+2023,211291,Bucknell University,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Bucknell University,True,False,True
+2023,212911,Haverford College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Haverford College,True,False,True
+2023,213385,Lafayette College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Lafayette College,True,False,True
+2023,216287,Swarthmore College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Swarthmore College,True,False,True
+2023,230959,Middlebury College,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Middlebury College,True,False,True
+2023,233374,University of Richmond,data/raw/ipeds/2023/HD2023_files/hd2023.csv,University of Richmond,True,False,True
+2023,234207,Washington and Lee University,data/raw/ipeds/2023/HD2023_files/hd2023.csv,Washington and Lee University,True,False,True
+2024,112260,Claremont McKenna College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Claremont McKenna College,True,False,True
+2024,115409,Harvey Mudd College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Harvey Mudd College,True,False,True
+2024,121345,Pomona College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Pomona College,True,False,True
+2024,130590,Trinity College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Trinity College,True,False,True
+2024,130697,Wesleyan University,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Wesleyan University,True,False,True
+2024,153384,Grinnell College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Grinnell College,True,False,True
+2024,160977,Bates College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Bates College,True,False,True
+2024,161004,Bowdoin College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Bowdoin College,True,False,True
+2024,161086,Colby College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Colby College,True,False,True
+2024,164465,Amherst College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Amherst College,True,False,True
+2024,166124,College of the Holy Cross,data/raw/ipeds/2024/HD2024_files/hd2024.csv,College of the Holy Cross,True,False,True
+2024,167835,Smith College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Smith College,True,False,True
+2024,168218,Wellesley College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Wellesley College,True,False,True
+2024,168342,Williams College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Williams College,True,False,True
+2024,173258,Carleton College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Carleton College,True,False,True
+2024,173902,Macalester College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Macalester College,True,False,True
+2024,189097,Barnard College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Barnard College,True,False,True
+2024,190099,Colgate University,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Colgate University,True,False,True
+2024,191515,Hamilton College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Hamilton College,True,False,True
+2024,197133,Vassar College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Vassar College,True,False,True
+2024,198385,Davidson College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Davidson College,True,False,True
+2024,202523,Denison University,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Denison University,True,False,True
+2024,211273,Bryn Mawr College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Bryn Mawr College,True,False,True
+2024,211291,Bucknell University,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Bucknell University,True,False,True
+2024,212911,Haverford College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Haverford College,True,False,True
+2024,213385,Lafayette College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Lafayette College,True,False,True
+2024,216287,Swarthmore College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Swarthmore College,True,False,True
+2024,230959,Middlebury College,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Middlebury College,True,False,True
+2024,233374,University of Richmond,data/raw/ipeds/2024/HD2024_files/hd2024.csv,University of Richmond,True,False,True
+2024,234207,Washington and Lee University,data/raw/ipeds/2024/HD2024_files/hd2024.csv,Washington and Lee University,True,False,True
+1980,112260,CLAREMONT MEN'S COLLEGE,data/raw/ipeds/1980/urban_directory.json,Claremont McKenna College,False,True,True
+1980,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/1980/urban_directory.json,Harvey Mudd College,True,False,True
+1980,121345,POMONA COLLEGE,data/raw/ipeds/1980/urban_directory.json,Pomona College,True,False,True
+1980,130590,TRINITY COLLEGE,data/raw/ipeds/1980/urban_directory.json,Trinity College,True,False,True
+1980,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/1980/urban_directory.json,Wesleyan University,True,False,True
+1980,153384,GRINNELL COLLEGE,data/raw/ipeds/1980/urban_directory.json,Grinnell College,True,False,True
+1980,160977,BATES COLLEGE,data/raw/ipeds/1980/urban_directory.json,Bates College,True,False,True
+1980,161004,BOWDOIN COLLEGE,data/raw/ipeds/1980/urban_directory.json,Bowdoin College,True,False,True
+1980,161086,COLBY COLLEGE,data/raw/ipeds/1980/urban_directory.json,Colby College,True,False,True
+1980,164465,AMHERST COLLEGE,data/raw/ipeds/1980/urban_directory.json,Amherst College,True,False,True
+1980,166124,"HOLY CROSS,COLLEGE OF THE",data/raw/ipeds/1980/urban_directory.json,College of the Holy Cross,False,True,True
+1980,167835,SMITH COLLEGE,data/raw/ipeds/1980/urban_directory.json,Smith College,True,False,True
+1980,168218,WELLESLEY COLLEGE,data/raw/ipeds/1980/urban_directory.json,Wellesley College,True,False,True
+1980,168342,WILLIAMS COLLEGE,data/raw/ipeds/1980/urban_directory.json,Williams College,True,False,True
+1980,173258,CARLETON COLLEGE,data/raw/ipeds/1980/urban_directory.json,Carleton College,True,False,True
+1980,173902,MACALESTER COLLEGE,data/raw/ipeds/1980/urban_directory.json,Macalester College,True,False,True
+1980,189097,BARNARD COLLEGE,data/raw/ipeds/1980/urban_directory.json,Barnard College,True,False,True
+1980,190099,COLGATE UNIVERSITY,data/raw/ipeds/1980/urban_directory.json,Colgate University,True,False,True
+1980,191515,HAMILTON COLLEGE,data/raw/ipeds/1980/urban_directory.json,Hamilton College,True,False,True
+1980,197133,VASSAR COLLEGE,data/raw/ipeds/1980/urban_directory.json,Vassar College,True,False,True
+1980,198385,DAVIDSON COLLEGE,data/raw/ipeds/1980/urban_directory.json,Davidson College,True,False,True
+1980,202523,DENISON UNIVERSITY,data/raw/ipeds/1980/urban_directory.json,Denison University,True,False,True
+1980,211273,BRYN MAWR COLLEGE,data/raw/ipeds/1980/urban_directory.json,Bryn Mawr College,True,False,True
+1980,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/1980/urban_directory.json,Bucknell University,True,False,True
+1980,212911,HAVERFORD COLLEGE,data/raw/ipeds/1980/urban_directory.json,Haverford College,True,False,True
+1980,213385,LAFAYETTE COLLEGE,data/raw/ipeds/1980/urban_directory.json,Lafayette College,True,False,True
+1980,216287,SWARTHMORE COLLEGE,data/raw/ipeds/1980/urban_directory.json,Swarthmore College,True,False,True
+1980,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/1980/urban_directory.json,Middlebury College,True,False,True
+1980,233374,"RICHMOND,UNIVERSITY OF",data/raw/ipeds/1980/urban_directory.json,University of Richmond,False,True,True
+1980,234207,WASHINGTON AND LEE U,data/raw/ipeds/1980/urban_directory.json,Washington and Lee University,False,True,True
+1984,112260,CLAREMONT MCKENNA C,data/raw/ipeds/1984/urban_directory.json,Claremont McKenna College,False,True,True
+1984,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/1984/urban_directory.json,Harvey Mudd College,True,False,True
+1984,121345,POMONA COLLEGE,data/raw/ipeds/1984/urban_directory.json,Pomona College,True,False,True
+1984,130590,TRINITY COLLEGE,data/raw/ipeds/1984/urban_directory.json,Trinity College,True,False,True
+1984,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/1984/urban_directory.json,Wesleyan University,True,False,True
+1984,153384,GRINNELL COLLEGE,data/raw/ipeds/1984/urban_directory.json,Grinnell College,True,False,True
+1984,160977,BATES COLLEGE,data/raw/ipeds/1984/urban_directory.json,Bates College,True,False,True
+1984,161004,BOWDOIN COLLEGE,data/raw/ipeds/1984/urban_directory.json,Bowdoin College,True,False,True
+1984,161086,COLBY COLLEGE,data/raw/ipeds/1984/urban_directory.json,Colby College,True,False,True
+1984,164465,AMHERST COLLEGE,data/raw/ipeds/1984/urban_directory.json,Amherst College,True,False,True
+1984,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/1984/urban_directory.json,College of the Holy Cross,True,False,True
+1984,167835,SMITH COLLEGE,data/raw/ipeds/1984/urban_directory.json,Smith College,True,False,True
+1984,168218,WELLESLEY COLLEGE,data/raw/ipeds/1984/urban_directory.json,Wellesley College,True,False,True
+1984,168342,WILLIAMS COLLEGE,data/raw/ipeds/1984/urban_directory.json,Williams College,True,False,True
+1984,173258,CARLETON COLLEGE,data/raw/ipeds/1984/urban_directory.json,Carleton College,True,False,True
+1984,173902,MACALESTER COLLEGE,data/raw/ipeds/1984/urban_directory.json,Macalester College,True,False,True
+1984,189097,BARNARD COLLEGE,data/raw/ipeds/1984/urban_directory.json,Barnard College,True,False,True
+1984,190099,COLGATE UNIVERSITY,data/raw/ipeds/1984/urban_directory.json,Colgate University,True,False,True
+1984,191515,HAMILTON COLLEGE,data/raw/ipeds/1984/urban_directory.json,Hamilton College,True,False,True
+1984,197133,VASSAR COLLEGE,data/raw/ipeds/1984/urban_directory.json,Vassar College,True,False,True
+1984,198385,DAVIDSON COLLEGE,data/raw/ipeds/1984/urban_directory.json,Davidson College,True,False,True
+1984,202523,DENISON UNIVERSITY,data/raw/ipeds/1984/urban_directory.json,Denison University,True,False,True
+1984,211273,BRYN MAWR COLLEGE,data/raw/ipeds/1984/urban_directory.json,Bryn Mawr College,True,False,True
+1984,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/1984/urban_directory.json,Bucknell University,True,False,True
+1984,212911,HAVERFORD COLLEGE,data/raw/ipeds/1984/urban_directory.json,Haverford College,True,False,True
+1984,213385,LAFAYETTE COLLEGE,data/raw/ipeds/1984/urban_directory.json,Lafayette College,True,False,True
+1984,216287,SWARTHMORE COLLEGE,data/raw/ipeds/1984/urban_directory.json,Swarthmore College,True,False,True
+1984,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/1984/urban_directory.json,Middlebury College,True,False,True
+1984,233374,UNIV OF RICHMOND,data/raw/ipeds/1984/urban_directory.json,University of Richmond,False,True,True
+1984,234207,WASHINGTON AND LEE U,data/raw/ipeds/1984/urban_directory.json,Washington and Lee University,False,True,True
+1985,112260,CLAREMONT MCKENNA C,data/raw/ipeds/1985/urban_directory.json,Claremont McKenna College,False,True,True
+1985,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/1985/urban_directory.json,Harvey Mudd College,True,False,True
+1985,121345,POMONA COLLEGE,data/raw/ipeds/1985/urban_directory.json,Pomona College,True,False,True
+1985,130590,TRINITY COLLEGE,data/raw/ipeds/1985/urban_directory.json,Trinity College,True,False,True
+1985,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/1985/urban_directory.json,Wesleyan University,True,False,True
+1985,153384,GRINNELL COLLEGE,data/raw/ipeds/1985/urban_directory.json,Grinnell College,True,False,True
+1985,160977,BATES COLLEGE,data/raw/ipeds/1985/urban_directory.json,Bates College,True,False,True
+1985,161004,BOWDOIN COLLEGE,data/raw/ipeds/1985/urban_directory.json,Bowdoin College,True,False,True
+1985,161086,COLBY COLLEGE,data/raw/ipeds/1985/urban_directory.json,Colby College,True,False,True
+1985,164465,AMHERST COLLEGE,data/raw/ipeds/1985/urban_directory.json,Amherst College,True,False,True
+1985,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/1985/urban_directory.json,College of the Holy Cross,True,False,True
+1985,167835,SMITH COLLEGE,data/raw/ipeds/1985/urban_directory.json,Smith College,True,False,True
+1985,168218,WELLESLEY COLLEGE,data/raw/ipeds/1985/urban_directory.json,Wellesley College,True,False,True
+1985,168342,WILLIAMS COLLEGE,data/raw/ipeds/1985/urban_directory.json,Williams College,True,False,True
+1985,173258,CARLETON COLLEGE,data/raw/ipeds/1985/urban_directory.json,Carleton College,True,False,True
+1985,173902,MACALESTER COLLEGE,data/raw/ipeds/1985/urban_directory.json,Macalester College,True,False,True
+1985,189097,BARNARD COLLEGE,data/raw/ipeds/1985/urban_directory.json,Barnard College,True,False,True
+1985,190099,COLGATE UNIVERSITY,data/raw/ipeds/1985/urban_directory.json,Colgate University,True,False,True
+1985,191515,HAMILTON COLLEGE,data/raw/ipeds/1985/urban_directory.json,Hamilton College,True,False,True
+1985,197133,VASSAR COLLEGE,data/raw/ipeds/1985/urban_directory.json,Vassar College,True,False,True
+1985,198385,DAVIDSON COLLEGE,data/raw/ipeds/1985/urban_directory.json,Davidson College,True,False,True
+1985,202523,DENISON UNIVERSITY,data/raw/ipeds/1985/urban_directory.json,Denison University,True,False,True
+1985,211273,BRYN MAWR COLLEGE,data/raw/ipeds/1985/urban_directory.json,Bryn Mawr College,True,False,True
+1985,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/1985/urban_directory.json,Bucknell University,True,False,True
+1985,212911,HAVERFORD COLLEGE,data/raw/ipeds/1985/urban_directory.json,Haverford College,True,False,True
+1985,213385,LAFAYETTE COLLEGE,data/raw/ipeds/1985/urban_directory.json,Lafayette College,True,False,True
+1985,216287,SWARTHMORE COLLEGE,data/raw/ipeds/1985/urban_directory.json,Swarthmore College,True,False,True
+1985,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/1985/urban_directory.json,Middlebury College,True,False,True
+1985,233374,UNIV OF RICHMOND,data/raw/ipeds/1985/urban_directory.json,University of Richmond,False,True,True
+1985,234207,WASHINGTON AND LEE U,data/raw/ipeds/1985/urban_directory.json,Washington and Lee University,False,True,True
+1987,112260,CLAREMONT MCKENNA COLLEGE,data/raw/ipeds/1987/urban_directory.json,Claremont McKenna College,True,False,True
+1987,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/1987/urban_directory.json,Harvey Mudd College,True,False,True
+1987,121345,POMONA COLLEGE,data/raw/ipeds/1987/urban_directory.json,Pomona College,True,False,True
+1987,130590,TRINITY COLLEGE,data/raw/ipeds/1987/urban_directory.json,Trinity College,True,False,True
+1987,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/1987/urban_directory.json,Wesleyan University,True,False,True
+1987,153384,GRINNELL COLLEGE,data/raw/ipeds/1987/urban_directory.json,Grinnell College,True,False,True
+1987,160977,BATES COLLEGE,data/raw/ipeds/1987/urban_directory.json,Bates College,True,False,True
+1987,161004,BOWDOIN COLLEGE,data/raw/ipeds/1987/urban_directory.json,Bowdoin College,True,False,True
+1987,161086,COLBY COLLEGE,data/raw/ipeds/1987/urban_directory.json,Colby College,True,False,True
+1987,164465,AMHERST COLLEGE,data/raw/ipeds/1987/urban_directory.json,Amherst College,True,False,True
+1987,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/1987/urban_directory.json,College of the Holy Cross,True,False,True
+1987,167835,SMITH COLLEGE,data/raw/ipeds/1987/urban_directory.json,Smith College,True,False,True
+1987,168218,WELLESLEY COLLEGE,data/raw/ipeds/1987/urban_directory.json,Wellesley College,True,False,True
+1987,168342,WILLIAMS COLLEGE,data/raw/ipeds/1987/urban_directory.json,Williams College,True,False,True
+1987,173258,CARLETON COLLEGE,data/raw/ipeds/1987/urban_directory.json,Carleton College,True,False,True
+1987,173902,MACALESTER COLLEGE,data/raw/ipeds/1987/urban_directory.json,Macalester College,True,False,True
+1987,189097,BARNARD COLLEGE,data/raw/ipeds/1987/urban_directory.json,Barnard College,True,False,True
+1987,190099,COLGATE UNIVERSITY,data/raw/ipeds/1987/urban_directory.json,Colgate University,True,False,True
+1987,191515,HAMILTON COLLEGE,data/raw/ipeds/1987/urban_directory.json,Hamilton College,True,False,True
+1987,197133,VASSAR COLLEGE,data/raw/ipeds/1987/urban_directory.json,Vassar College,True,False,True
+1987,198385,DAVIDSON COLLEGE,data/raw/ipeds/1987/urban_directory.json,Davidson College,True,False,True
+1987,202523,DENISON UNIVERSITY,data/raw/ipeds/1987/urban_directory.json,Denison University,True,False,True
+1987,211273,BRYN MAWR COLLEGE,data/raw/ipeds/1987/urban_directory.json,Bryn Mawr College,True,False,True
+1987,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/1987/urban_directory.json,Bucknell University,True,False,True
+1987,212911,HAVERFORD COLLEGE,data/raw/ipeds/1987/urban_directory.json,Haverford College,True,False,True
+1987,213385,LAFAYETTE COLLEGE,data/raw/ipeds/1987/urban_directory.json,Lafayette College,True,False,True
+1987,216287,SWARTHMORE COLLEGE,data/raw/ipeds/1987/urban_directory.json,Swarthmore College,True,False,True
+1987,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/1987/urban_directory.json,Middlebury College,True,False,True
+1987,233374,UNIVERSITY OF RICHMOND,data/raw/ipeds/1987/urban_directory.json,University of Richmond,True,False,True
+1987,234207,WASHINGTON AND LEE UNIVERSITY,data/raw/ipeds/1987/urban_directory.json,Washington and Lee University,True,False,True
+1989,112260,CLAREMONT MCKENNA COLLEGE,data/raw/ipeds/1989/urban_directory.json,Claremont McKenna College,True,False,True
+1989,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/1989/urban_directory.json,Harvey Mudd College,True,False,True
+1989,121345,POMONA COLLEGE,data/raw/ipeds/1989/urban_directory.json,Pomona College,True,False,True
+1989,130590,TRINITY COLLEGE,data/raw/ipeds/1989/urban_directory.json,Trinity College,True,False,True
+1989,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/1989/urban_directory.json,Wesleyan University,True,False,True
+1989,153384,GRINNELL COLLEGE,data/raw/ipeds/1989/urban_directory.json,Grinnell College,True,False,True
+1989,160977,BATES COLLEGE,data/raw/ipeds/1989/urban_directory.json,Bates College,True,False,True
+1989,161004,BOWDOIN COLLEGE,data/raw/ipeds/1989/urban_directory.json,Bowdoin College,True,False,True
+1989,161086,COLBY COLLEGE,data/raw/ipeds/1989/urban_directory.json,Colby College,True,False,True
+1989,164465,AMHERST COLLEGE,data/raw/ipeds/1989/urban_directory.json,Amherst College,True,False,True
+1989,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/1989/urban_directory.json,College of the Holy Cross,True,False,True
+1989,167835,SMITH COLLEGE,data/raw/ipeds/1989/urban_directory.json,Smith College,True,False,True
+1989,168218,WELLESLEY COLLEGE,data/raw/ipeds/1989/urban_directory.json,Wellesley College,True,False,True
+1989,168342,WILLIAMS COLLEGE,data/raw/ipeds/1989/urban_directory.json,Williams College,True,False,True
+1989,173258,CARLETON COLLEGE,data/raw/ipeds/1989/urban_directory.json,Carleton College,True,False,True
+1989,173902,MACALESTER COLLEGE,data/raw/ipeds/1989/urban_directory.json,Macalester College,True,False,True
+1989,189097,BARNARD COLLEGE,data/raw/ipeds/1989/urban_directory.json,Barnard College,True,False,True
+1989,190099,COLGATE UNIVERSITY,data/raw/ipeds/1989/urban_directory.json,Colgate University,True,False,True
+1989,191515,HAMILTON COLLEGE,data/raw/ipeds/1989/urban_directory.json,Hamilton College,True,False,True
+1989,197133,VASSAR COLLEGE,data/raw/ipeds/1989/urban_directory.json,Vassar College,True,False,True
+1989,198385,DAVIDSON COLLEGE,data/raw/ipeds/1989/urban_directory.json,Davidson College,True,False,True
+1989,202523,DENISON UNIVERSITY,data/raw/ipeds/1989/urban_directory.json,Denison University,True,False,True
+1989,211273,BRYN MAWR COLLEGE,data/raw/ipeds/1989/urban_directory.json,Bryn Mawr College,True,False,True
+1989,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/1989/urban_directory.json,Bucknell University,True,False,True
+1989,212911,HAVERFORD COLLEGE,data/raw/ipeds/1989/urban_directory.json,Haverford College,True,False,True
+1989,213385,LAFAYETTE COLLEGE,data/raw/ipeds/1989/urban_directory.json,Lafayette College,True,False,True
+1989,216287,SWARTHMORE COLLEGE,data/raw/ipeds/1989/urban_directory.json,Swarthmore College,True,False,True
+1989,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/1989/urban_directory.json,Middlebury College,True,False,True
+1989,233374,UNIVERSITY OF RICHMOND,data/raw/ipeds/1989/urban_directory.json,University of Richmond,True,False,True
+1989,234207,WASHINGTON AND LEE UNIVERSITY,data/raw/ipeds/1989/urban_directory.json,Washington and Lee University,True,False,True
+1990,112260,CLAREMONT MCKENNA COLLEGE,data/raw/ipeds/1990/urban_directory.json,Claremont McKenna College,True,False,True
+1990,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/1990/urban_directory.json,Harvey Mudd College,True,False,True
+1990,121345,POMONA COLLEGE,data/raw/ipeds/1990/urban_directory.json,Pomona College,True,False,True
+1990,130590,TRINITY COLLEGE,data/raw/ipeds/1990/urban_directory.json,Trinity College,True,False,True
+1990,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/1990/urban_directory.json,Wesleyan University,True,False,True
+1990,153384,GRINNELL COLLEGE,data/raw/ipeds/1990/urban_directory.json,Grinnell College,True,False,True
+1990,160977,BATES COLLEGE,data/raw/ipeds/1990/urban_directory.json,Bates College,True,False,True
+1990,161004,BOWDOIN COLLEGE,data/raw/ipeds/1990/urban_directory.json,Bowdoin College,True,False,True
+1990,161086,COLBY COLLEGE,data/raw/ipeds/1990/urban_directory.json,Colby College,True,False,True
+1990,164465,AMHERST COLLEGE,data/raw/ipeds/1990/urban_directory.json,Amherst College,True,False,True
+1990,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/1990/urban_directory.json,College of the Holy Cross,True,False,True
+1990,167835,SMITH COLLEGE,data/raw/ipeds/1990/urban_directory.json,Smith College,True,False,True
+1990,168218,WELLESLEY COLLEGE,data/raw/ipeds/1990/urban_directory.json,Wellesley College,True,False,True
+1990,168342,WILLIAMS COLLEGE,data/raw/ipeds/1990/urban_directory.json,Williams College,True,False,True
+1990,173258,CARLETON COLLEGE,data/raw/ipeds/1990/urban_directory.json,Carleton College,True,False,True
+1990,173902,MACALESTER COLLEGE,data/raw/ipeds/1990/urban_directory.json,Macalester College,True,False,True
+1990,189097,BARNARD COLLEGE,data/raw/ipeds/1990/urban_directory.json,Barnard College,True,False,True
+1990,190099,COLGATE UNIVERSITY,data/raw/ipeds/1990/urban_directory.json,Colgate University,True,False,True
+1990,191515,HAMILTON COLLEGE,data/raw/ipeds/1990/urban_directory.json,Hamilton College,True,False,True
+1990,197133,VASSAR COLLEGE,data/raw/ipeds/1990/urban_directory.json,Vassar College,True,False,True
+1990,198385,DAVIDSON COLLEGE,data/raw/ipeds/1990/urban_directory.json,Davidson College,True,False,True
+1990,202523,DENISON UNIVERSITY,data/raw/ipeds/1990/urban_directory.json,Denison University,True,False,True
+1990,211273,BRYN MAWR COLLEGE,data/raw/ipeds/1990/urban_directory.json,Bryn Mawr College,True,False,True
+1990,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/1990/urban_directory.json,Bucknell University,True,False,True
+1990,212911,HAVERFORD COLLEGE,data/raw/ipeds/1990/urban_directory.json,Haverford College,True,False,True
+1990,213385,LAFAYETTE COLLEGE,data/raw/ipeds/1990/urban_directory.json,Lafayette College,True,False,True
+1990,216287,SWARTHMORE COLLEGE,data/raw/ipeds/1990/urban_directory.json,Swarthmore College,True,False,True
+1990,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/1990/urban_directory.json,Middlebury College,True,False,True
+1990,233374,UNIVERSITY OF RICHMOND,data/raw/ipeds/1990/urban_directory.json,University of Richmond,True,False,True
+1990,234207,WASHINGTON AND LEE UNIVERSITY,data/raw/ipeds/1990/urban_directory.json,Washington and Lee University,True,False,True
+1991,112260,CLAREMONT MCKENNA COLLEGE,data/raw/ipeds/1991/urban_directory.json,Claremont McKenna College,True,False,True
+1991,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/1991/urban_directory.json,Harvey Mudd College,True,False,True
+1991,121345,POMONA COLLEGE,data/raw/ipeds/1991/urban_directory.json,Pomona College,True,False,True
+1991,130590,TRINITY COLLEGE,data/raw/ipeds/1991/urban_directory.json,Trinity College,True,False,True
+1991,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/1991/urban_directory.json,Wesleyan University,True,False,True
+1991,153384,GRINNELL COLLEGE,data/raw/ipeds/1991/urban_directory.json,Grinnell College,True,False,True
+1991,160977,BATES COLLEGE,data/raw/ipeds/1991/urban_directory.json,Bates College,True,False,True
+1991,161004,BOWDOIN COLLEGE,data/raw/ipeds/1991/urban_directory.json,Bowdoin College,True,False,True
+1991,161086,COLBY COLLEGE,data/raw/ipeds/1991/urban_directory.json,Colby College,True,False,True
+1991,164465,AMHERST COLLEGE,data/raw/ipeds/1991/urban_directory.json,Amherst College,True,False,True
+1991,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/1991/urban_directory.json,College of the Holy Cross,True,False,True
+1991,167835,SMITH COLLEGE,data/raw/ipeds/1991/urban_directory.json,Smith College,True,False,True
+1991,168218,WELLESLEY COLLEGE,data/raw/ipeds/1991/urban_directory.json,Wellesley College,True,False,True
+1991,168342,WILLIAMS COLLEGE,data/raw/ipeds/1991/urban_directory.json,Williams College,True,False,True
+1991,173258,CARLETON COLLEGE,data/raw/ipeds/1991/urban_directory.json,Carleton College,True,False,True
+1991,173902,MACALESTER COLLEGE,data/raw/ipeds/1991/urban_directory.json,Macalester College,True,False,True
+1991,189097,BARNARD COLLEGE,data/raw/ipeds/1991/urban_directory.json,Barnard College,True,False,True
+1991,190099,COLGATE UNIVERSITY,data/raw/ipeds/1991/urban_directory.json,Colgate University,True,False,True
+1991,191515,HAMILTON COLLEGE,data/raw/ipeds/1991/urban_directory.json,Hamilton College,True,False,True
+1991,197133,VASSAR COLLEGE,data/raw/ipeds/1991/urban_directory.json,Vassar College,True,False,True
+1991,198385,DAVIDSON COLLEGE,data/raw/ipeds/1991/urban_directory.json,Davidson College,True,False,True
+1991,202523,DENISON UNIVERSITY,data/raw/ipeds/1991/urban_directory.json,Denison University,True,False,True
+1991,211273,BRYN MAWR COLLEGE,data/raw/ipeds/1991/urban_directory.json,Bryn Mawr College,True,False,True
+1991,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/1991/urban_directory.json,Bucknell University,True,False,True
+1991,212911,HAVERFORD COLLEGE,data/raw/ipeds/1991/urban_directory.json,Haverford College,True,False,True
+1991,213385,LAFAYETTE COLLEGE,data/raw/ipeds/1991/urban_directory.json,Lafayette College,True,False,True
+1991,216287,SWARTHMORE COLLEGE,data/raw/ipeds/1991/urban_directory.json,Swarthmore College,True,False,True
+1991,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/1991/urban_directory.json,Middlebury College,True,False,True
+1991,233374,UNIVERSITY OF RICHMOND,data/raw/ipeds/1991/urban_directory.json,University of Richmond,True,False,True
+1991,234207,WASHINGTON AND LEE UNIVERSITY,data/raw/ipeds/1991/urban_directory.json,Washington and Lee University,True,False,True
+1992,112260,CLAREMONT MCKENNA COLLEGE,data/raw/ipeds/1992/urban_directory.json,Claremont McKenna College,True,False,True
+1992,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/1992/urban_directory.json,Harvey Mudd College,True,False,True
+1992,121345,POMONA COLLEGE,data/raw/ipeds/1992/urban_directory.json,Pomona College,True,False,True
+1992,130590,TRINITY COLLEGE,data/raw/ipeds/1992/urban_directory.json,Trinity College,True,False,True
+1992,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/1992/urban_directory.json,Wesleyan University,True,False,True
+1992,153384,GRINNELL COLLEGE,data/raw/ipeds/1992/urban_directory.json,Grinnell College,True,False,True
+1992,160977,BATES COLLEGE,data/raw/ipeds/1992/urban_directory.json,Bates College,True,False,True
+1992,161004,BOWDOIN COLLEGE,data/raw/ipeds/1992/urban_directory.json,Bowdoin College,True,False,True
+1992,161086,COLBY COLLEGE,data/raw/ipeds/1992/urban_directory.json,Colby College,True,False,True
+1992,164465,AMHERST COLLEGE,data/raw/ipeds/1992/urban_directory.json,Amherst College,True,False,True
+1992,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/1992/urban_directory.json,College of the Holy Cross,True,False,True
+1992,167835,SMITH COLLEGE,data/raw/ipeds/1992/urban_directory.json,Smith College,True,False,True
+1992,168218,WELLESLEY COLLEGE,data/raw/ipeds/1992/urban_directory.json,Wellesley College,True,False,True
+1992,168342,WILLIAMS COLLEGE,data/raw/ipeds/1992/urban_directory.json,Williams College,True,False,True
+1992,173258,CARLETON COLLEGE,data/raw/ipeds/1992/urban_directory.json,Carleton College,True,False,True
+1992,173902,MACALESTER COLLEGE,data/raw/ipeds/1992/urban_directory.json,Macalester College,True,False,True
+1992,189097,BARNARD COLLEGE,data/raw/ipeds/1992/urban_directory.json,Barnard College,True,False,True
+1992,190099,COLGATE UNIVERSITY,data/raw/ipeds/1992/urban_directory.json,Colgate University,True,False,True
+1992,191515,HAMILTON COLLEGE,data/raw/ipeds/1992/urban_directory.json,Hamilton College,True,False,True
+1992,197133,VASSAR COLLEGE,data/raw/ipeds/1992/urban_directory.json,Vassar College,True,False,True
+1992,198385,DAVIDSON COLLEGE,data/raw/ipeds/1992/urban_directory.json,Davidson College,True,False,True
+1992,202523,DENISON UNIVERSITY,data/raw/ipeds/1992/urban_directory.json,Denison University,True,False,True
+1992,211273,BRYN MAWR COLLEGE,data/raw/ipeds/1992/urban_directory.json,Bryn Mawr College,True,False,True
+1992,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/1992/urban_directory.json,Bucknell University,True,False,True
+1992,212911,HAVERFORD COLLEGE,data/raw/ipeds/1992/urban_directory.json,Haverford College,True,False,True
+1992,213385,LAFAYETTE COLLEGE,data/raw/ipeds/1992/urban_directory.json,Lafayette College,True,False,True
+1992,216287,SWARTHMORE COLLEGE,data/raw/ipeds/1992/urban_directory.json,Swarthmore College,True,False,True
+1992,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/1992/urban_directory.json,Middlebury College,True,False,True
+1992,233374,UNIVERSITY OF RICHMOND,data/raw/ipeds/1992/urban_directory.json,University of Richmond,True,False,True
+1992,234207,WASHINGTON AND LEE UNIVERSITY,data/raw/ipeds/1992/urban_directory.json,Washington and Lee University,True,False,True
+1993,112260,CLAREMONT MCKENNA COLLEGE,data/raw/ipeds/1993/urban_directory.json,Claremont McKenna College,True,False,True
+1993,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/1993/urban_directory.json,Harvey Mudd College,True,False,True
+1993,121345,POMONA COLLEGE,data/raw/ipeds/1993/urban_directory.json,Pomona College,True,False,True
+1993,130590,TRINITY COLLEGE,data/raw/ipeds/1993/urban_directory.json,Trinity College,True,False,True
+1993,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/1993/urban_directory.json,Wesleyan University,True,False,True
+1993,153384,GRINNELL COLLEGE,data/raw/ipeds/1993/urban_directory.json,Grinnell College,True,False,True
+1993,160977,BATES COLLEGE,data/raw/ipeds/1993/urban_directory.json,Bates College,True,False,True
+1993,161004,BOWDOIN COLLEGE,data/raw/ipeds/1993/urban_directory.json,Bowdoin College,True,False,True
+1993,161086,COLBY COLLEGE,data/raw/ipeds/1993/urban_directory.json,Colby College,True,False,True
+1993,164465,AMHERST COLLEGE,data/raw/ipeds/1993/urban_directory.json,Amherst College,True,False,True
+1993,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/1993/urban_directory.json,College of the Holy Cross,True,False,True
+1993,167835,SMITH COLLEGE,data/raw/ipeds/1993/urban_directory.json,Smith College,True,False,True
+1993,168218,WELLESLEY COLLEGE,data/raw/ipeds/1993/urban_directory.json,Wellesley College,True,False,True
+1993,168342,WILLIAMS COLLEGE,data/raw/ipeds/1993/urban_directory.json,Williams College,True,False,True
+1993,173258,CARLETON COLLEGE,data/raw/ipeds/1993/urban_directory.json,Carleton College,True,False,True
+1993,173902,MACALESTER COLLEGE,data/raw/ipeds/1993/urban_directory.json,Macalester College,True,False,True
+1993,189097,BARNARD COLLEGE,data/raw/ipeds/1993/urban_directory.json,Barnard College,True,False,True
+1993,190099,COLGATE UNIVERSITY,data/raw/ipeds/1993/urban_directory.json,Colgate University,True,False,True
+1993,191515,HAMILTON COLLEGE,data/raw/ipeds/1993/urban_directory.json,Hamilton College,True,False,True
+1993,197133,VASSAR COLLEGE,data/raw/ipeds/1993/urban_directory.json,Vassar College,True,False,True
+1993,198385,DAVIDSON COLLEGE,data/raw/ipeds/1993/urban_directory.json,Davidson College,True,False,True
+1993,202523,DENISON UNIVERSITY,data/raw/ipeds/1993/urban_directory.json,Denison University,True,False,True
+1993,211273,BRYN MAWR COLLEGE,data/raw/ipeds/1993/urban_directory.json,Bryn Mawr College,True,False,True
+1993,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/1993/urban_directory.json,Bucknell University,True,False,True
+1993,212911,HAVERFORD COLLEGE,data/raw/ipeds/1993/urban_directory.json,Haverford College,True,False,True
+1993,213385,LAFAYETTE COLLEGE,data/raw/ipeds/1993/urban_directory.json,Lafayette College,True,False,True
+1993,216287,SWARTHMORE COLLEGE,data/raw/ipeds/1993/urban_directory.json,Swarthmore College,True,False,True
+1993,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/1993/urban_directory.json,Middlebury College,True,False,True
+1993,233374,UNIVERSITY OF RICHMOND,data/raw/ipeds/1993/urban_directory.json,University of Richmond,True,False,True
+1993,234207,WASHINGTON AND LEE UNIVERSITY,data/raw/ipeds/1993/urban_directory.json,Washington and Lee University,True,False,True
+1994,112260,CLAREMONT MCKENNA COLLEGE,data/raw/ipeds/1994/urban_directory.json,Claremont McKenna College,True,False,True
+1994,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/1994/urban_directory.json,Harvey Mudd College,True,False,True
+1994,121345,POMONA COLLEGE,data/raw/ipeds/1994/urban_directory.json,Pomona College,True,False,True
+1994,130590,TRINITY COLLEGE,data/raw/ipeds/1994/urban_directory.json,Trinity College,True,False,True
+1994,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/1994/urban_directory.json,Wesleyan University,True,False,True
+1994,153384,GRINNELL COLLEGE,data/raw/ipeds/1994/urban_directory.json,Grinnell College,True,False,True
+1994,160977,BATES COLLEGE,data/raw/ipeds/1994/urban_directory.json,Bates College,True,False,True
+1994,161004,BOWDOIN COLLEGE,data/raw/ipeds/1994/urban_directory.json,Bowdoin College,True,False,True
+1994,161086,COLBY COLLEGE,data/raw/ipeds/1994/urban_directory.json,Colby College,True,False,True
+1994,164465,AMHERST COLLEGE,data/raw/ipeds/1994/urban_directory.json,Amherst College,True,False,True
+1994,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/1994/urban_directory.json,College of the Holy Cross,True,False,True
+1994,167835,SMITH COLLEGE,data/raw/ipeds/1994/urban_directory.json,Smith College,True,False,True
+1994,168218,WELLESLEY COLLEGE,data/raw/ipeds/1994/urban_directory.json,Wellesley College,True,False,True
+1994,168342,WILLIAMS COLLEGE,data/raw/ipeds/1994/urban_directory.json,Williams College,True,False,True
+1994,173258,CARLETON COLLEGE,data/raw/ipeds/1994/urban_directory.json,Carleton College,True,False,True
+1994,173902,MACALESTER COLLEGE,data/raw/ipeds/1994/urban_directory.json,Macalester College,True,False,True
+1994,189097,BARNARD COLLEGE,data/raw/ipeds/1994/urban_directory.json,Barnard College,True,False,True
+1994,190099,COLGATE UNIVERSITY,data/raw/ipeds/1994/urban_directory.json,Colgate University,True,False,True
+1994,191515,HAMILTON COLLEGE,data/raw/ipeds/1994/urban_directory.json,Hamilton College,True,False,True
+1994,197133,VASSAR COLLEGE,data/raw/ipeds/1994/urban_directory.json,Vassar College,True,False,True
+1994,198385,DAVIDSON COLLEGE,data/raw/ipeds/1994/urban_directory.json,Davidson College,True,False,True
+1994,202523,DENISON UNIVERSITY,data/raw/ipeds/1994/urban_directory.json,Denison University,True,False,True
+1994,211273,BRYN MAWR COLLEGE,data/raw/ipeds/1994/urban_directory.json,Bryn Mawr College,True,False,True
+1994,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/1994/urban_directory.json,Bucknell University,True,False,True
+1994,212911,HAVERFORD COLLEGE,data/raw/ipeds/1994/urban_directory.json,Haverford College,True,False,True
+1994,213385,LAFAYETTE COLLEGE,data/raw/ipeds/1994/urban_directory.json,Lafayette College,True,False,True
+1994,216287,SWARTHMORE COLLEGE,data/raw/ipeds/1994/urban_directory.json,Swarthmore College,True,False,True
+1994,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/1994/urban_directory.json,Middlebury College,True,False,True
+1994,233374,UNIVERSITY OF RICHMOND,data/raw/ipeds/1994/urban_directory.json,University of Richmond,True,False,True
+1994,234207,WASHINGTON AND LEE UNIVERSITY,data/raw/ipeds/1994/urban_directory.json,Washington and Lee University,True,False,True
+1995,112260,CLAREMONT MCKENNA COLLEGE,data/raw/ipeds/1995/urban_directory.json,Claremont McKenna College,True,False,True
+1995,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/1995/urban_directory.json,Harvey Mudd College,True,False,True
+1995,121345,POMONA COLLEGE,data/raw/ipeds/1995/urban_directory.json,Pomona College,True,False,True
+1995,130590,TRINITY COLLEGE,data/raw/ipeds/1995/urban_directory.json,Trinity College,True,False,True
+1995,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/1995/urban_directory.json,Wesleyan University,True,False,True
+1995,153384,GRINNELL COLLEGE,data/raw/ipeds/1995/urban_directory.json,Grinnell College,True,False,True
+1995,160977,BATES COLLEGE,data/raw/ipeds/1995/urban_directory.json,Bates College,True,False,True
+1995,161004,BOWDOIN COLLEGE,data/raw/ipeds/1995/urban_directory.json,Bowdoin College,True,False,True
+1995,161086,COLBY COLLEGE,data/raw/ipeds/1995/urban_directory.json,Colby College,True,False,True
+1995,164465,AMHERST COLLEGE,data/raw/ipeds/1995/urban_directory.json,Amherst College,True,False,True
+1995,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/1995/urban_directory.json,College of the Holy Cross,True,False,True
+1995,167835,SMITH COLLEGE,data/raw/ipeds/1995/urban_directory.json,Smith College,True,False,True
+1995,168218,WELLESLEY COLLEGE,data/raw/ipeds/1995/urban_directory.json,Wellesley College,True,False,True
+1995,168342,WILLIAMS COLLEGE,data/raw/ipeds/1995/urban_directory.json,Williams College,True,False,True
+1995,173258,CARLETON COLLEGE,data/raw/ipeds/1995/urban_directory.json,Carleton College,True,False,True
+1995,173902,MACALESTER COLLEGE,data/raw/ipeds/1995/urban_directory.json,Macalester College,True,False,True
+1995,189097,BARNARD COLLEGE,data/raw/ipeds/1995/urban_directory.json,Barnard College,True,False,True
+1995,190099,COLGATE UNIVERSITY,data/raw/ipeds/1995/urban_directory.json,Colgate University,True,False,True
+1995,191515,HAMILTON COLLEGE,data/raw/ipeds/1995/urban_directory.json,Hamilton College,True,False,True
+1995,197133,VASSAR COLLEGE,data/raw/ipeds/1995/urban_directory.json,Vassar College,True,False,True
+1995,198385,DAVIDSON COLLEGE,data/raw/ipeds/1995/urban_directory.json,Davidson College,True,False,True
+1995,202523,DENISON UNIVERSITY,data/raw/ipeds/1995/urban_directory.json,Denison University,True,False,True
+1995,211273,BRYN MAWR COLLEGE,data/raw/ipeds/1995/urban_directory.json,Bryn Mawr College,True,False,True
+1995,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/1995/urban_directory.json,Bucknell University,True,False,True
+1995,212911,HAVERFORD COLLEGE,data/raw/ipeds/1995/urban_directory.json,Haverford College,True,False,True
+1995,213385,LAFAYETTE COLLEGE,data/raw/ipeds/1995/urban_directory.json,Lafayette College,True,False,True
+1995,216287,SWARTHMORE COLLEGE,data/raw/ipeds/1995/urban_directory.json,Swarthmore College,True,False,True
+1995,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/1995/urban_directory.json,Middlebury College,True,False,True
+1995,233374,UNIVERSITY OF RICHMOND,data/raw/ipeds/1995/urban_directory.json,University of Richmond,True,False,True
+1995,234207,WASHINGTON AND LEE UNIVERSITY,data/raw/ipeds/1995/urban_directory.json,Washington and Lee University,True,False,True
+1996,112260,CLAREMONT MCKENNA COLLEGE,data/raw/ipeds/1996/urban_directory.json,Claremont McKenna College,True,False,True
+1996,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/1996/urban_directory.json,Harvey Mudd College,True,False,True
+1996,121345,POMONA COLLEGE,data/raw/ipeds/1996/urban_directory.json,Pomona College,True,False,True
+1996,130590,TRINITY COLLEGE,data/raw/ipeds/1996/urban_directory.json,Trinity College,True,False,True
+1996,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/1996/urban_directory.json,Wesleyan University,True,False,True
+1996,153384,GRINNELL COLLEGE,data/raw/ipeds/1996/urban_directory.json,Grinnell College,True,False,True
+1996,160977,BATES COLLEGE,data/raw/ipeds/1996/urban_directory.json,Bates College,True,False,True
+1996,161004,BOWDOIN COLLEGE,data/raw/ipeds/1996/urban_directory.json,Bowdoin College,True,False,True
+1996,161086,COLBY COLLEGE,data/raw/ipeds/1996/urban_directory.json,Colby College,True,False,True
+1996,164465,AMHERST COLLEGE,data/raw/ipeds/1996/urban_directory.json,Amherst College,True,False,True
+1996,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/1996/urban_directory.json,College of the Holy Cross,True,False,True
+1996,167835,SMITH COLLEGE,data/raw/ipeds/1996/urban_directory.json,Smith College,True,False,True
+1996,168218,WELLESLEY COLLEGE,data/raw/ipeds/1996/urban_directory.json,Wellesley College,True,False,True
+1996,168342,WILLIAMS COLLEGE,data/raw/ipeds/1996/urban_directory.json,Williams College,True,False,True
+1996,173258,CARLETON COLLEGE,data/raw/ipeds/1996/urban_directory.json,Carleton College,True,False,True
+1996,173902,MACALESTER COLLEGE,data/raw/ipeds/1996/urban_directory.json,Macalester College,True,False,True
+1996,189097,BARNARD COLLEGE,data/raw/ipeds/1996/urban_directory.json,Barnard College,True,False,True
+1996,190099,COLGATE UNIVERSITY,data/raw/ipeds/1996/urban_directory.json,Colgate University,True,False,True
+1996,191515,HAMILTON COLLEGE,data/raw/ipeds/1996/urban_directory.json,Hamilton College,True,False,True
+1996,197133,VASSAR COLLEGE,data/raw/ipeds/1996/urban_directory.json,Vassar College,True,False,True
+1996,198385,DAVIDSON COLLEGE,data/raw/ipeds/1996/urban_directory.json,Davidson College,True,False,True
+1996,202523,DENISON UNIVERSITY,data/raw/ipeds/1996/urban_directory.json,Denison University,True,False,True
+1996,211273,BRYN MAWR COLLEGE,data/raw/ipeds/1996/urban_directory.json,Bryn Mawr College,True,False,True
+1996,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/1996/urban_directory.json,Bucknell University,True,False,True
+1996,212911,HAVERFORD COLLEGE,data/raw/ipeds/1996/urban_directory.json,Haverford College,True,False,True
+1996,213385,LAFAYETTE COLLEGE,data/raw/ipeds/1996/urban_directory.json,Lafayette College,True,False,True
+1996,216287,SWARTHMORE COLLEGE,data/raw/ipeds/1996/urban_directory.json,Swarthmore College,True,False,True
+1996,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/1996/urban_directory.json,Middlebury College,True,False,True
+1996,233374,UNIVERSITY OF RICHMOND,data/raw/ipeds/1996/urban_directory.json,University of Richmond,True,False,True
+1996,234207,WASHINGTON AND LEE UNIVERSITY,data/raw/ipeds/1996/urban_directory.json,Washington and Lee University,True,False,True
+1997,112260,CLAREMONT MCKENNA COLLEGE,data/raw/ipeds/1997/urban_directory.json,Claremont McKenna College,True,False,True
+1997,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/1997/urban_directory.json,Harvey Mudd College,True,False,True
+1997,121345,POMONA COLLEGE,data/raw/ipeds/1997/urban_directory.json,Pomona College,True,False,True
+1997,130590,TRINITY COLLEGE,data/raw/ipeds/1997/urban_directory.json,Trinity College,True,False,True
+1997,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/1997/urban_directory.json,Wesleyan University,True,False,True
+1997,153384,GRINNELL COLLEGE,data/raw/ipeds/1997/urban_directory.json,Grinnell College,True,False,True
+1997,160977,BATES COLLEGE,data/raw/ipeds/1997/urban_directory.json,Bates College,True,False,True
+1997,161004,BOWDOIN COLLEGE,data/raw/ipeds/1997/urban_directory.json,Bowdoin College,True,False,True
+1997,161086,COLBY COLLEGE,data/raw/ipeds/1997/urban_directory.json,Colby College,True,False,True
+1997,164465,AMHERST COLLEGE,data/raw/ipeds/1997/urban_directory.json,Amherst College,True,False,True
+1997,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/1997/urban_directory.json,College of the Holy Cross,True,False,True
+1997,167835,SMITH COLLEGE,data/raw/ipeds/1997/urban_directory.json,Smith College,True,False,True
+1997,168218,WELLESLEY COLLEGE,data/raw/ipeds/1997/urban_directory.json,Wellesley College,True,False,True
+1997,168342,WILLIAMS COLLEGE,data/raw/ipeds/1997/urban_directory.json,Williams College,True,False,True
+1997,173258,CARLETON COLLEGE,data/raw/ipeds/1997/urban_directory.json,Carleton College,True,False,True
+1997,173902,MACALESTER COLLEGE,data/raw/ipeds/1997/urban_directory.json,Macalester College,True,False,True
+1997,189097,BARNARD COLLEGE,data/raw/ipeds/1997/urban_directory.json,Barnard College,True,False,True
+1997,190099,COLGATE UNIVERSITY,data/raw/ipeds/1997/urban_directory.json,Colgate University,True,False,True
+1997,191515,HAMILTON COLLEGE,data/raw/ipeds/1997/urban_directory.json,Hamilton College,True,False,True
+1997,197133,VASSAR COLLEGE,data/raw/ipeds/1997/urban_directory.json,Vassar College,True,False,True
+1997,198385,DAVIDSON COLLEGE,data/raw/ipeds/1997/urban_directory.json,Davidson College,True,False,True
+1997,202523,DENISON UNIVERSITY,data/raw/ipeds/1997/urban_directory.json,Denison University,True,False,True
+1997,211273,BRYN MAWR COLLEGE,data/raw/ipeds/1997/urban_directory.json,Bryn Mawr College,True,False,True
+1997,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/1997/urban_directory.json,Bucknell University,True,False,True
+1997,212911,HAVERFORD COLLEGE,data/raw/ipeds/1997/urban_directory.json,Haverford College,True,False,True
+1997,213385,LAFAYETTE COLLEGE,data/raw/ipeds/1997/urban_directory.json,Lafayette College,True,False,True
+1997,216287,SWARTHMORE COLLEGE,data/raw/ipeds/1997/urban_directory.json,Swarthmore College,True,False,True
+1997,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/1997/urban_directory.json,Middlebury College,True,False,True
+1997,233374,UNIVERSITY OF RICHMOND,data/raw/ipeds/1997/urban_directory.json,University of Richmond,True,False,True
+1997,234207,WASHINGTON AND LEE UNIVERSITY,data/raw/ipeds/1997/urban_directory.json,Washington and Lee University,True,False,True
+1998,112260,CLAREMONT MCKENNA COLLEGE,data/raw/ipeds/1998/urban_directory.json,Claremont McKenna College,True,False,True
+1998,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/1998/urban_directory.json,Harvey Mudd College,True,False,True
+1998,121345,POMONA COLLEGE,data/raw/ipeds/1998/urban_directory.json,Pomona College,True,False,True
+1998,130590,TRINITY COLLEGE,data/raw/ipeds/1998/urban_directory.json,Trinity College,True,False,True
+1998,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/1998/urban_directory.json,Wesleyan University,True,False,True
+1998,153384,GRINNELL COLLEGE,data/raw/ipeds/1998/urban_directory.json,Grinnell College,True,False,True
+1998,160977,BATES COLLEGE,data/raw/ipeds/1998/urban_directory.json,Bates College,True,False,True
+1998,161004,BOWDOIN COLLEGE,data/raw/ipeds/1998/urban_directory.json,Bowdoin College,True,False,True
+1998,161086,COLBY COLLEGE,data/raw/ipeds/1998/urban_directory.json,Colby College,True,False,True
+1998,164465,AMHERST COLLEGE,data/raw/ipeds/1998/urban_directory.json,Amherst College,True,False,True
+1998,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/1998/urban_directory.json,College of the Holy Cross,True,False,True
+1998,167835,SMITH COLLEGE,data/raw/ipeds/1998/urban_directory.json,Smith College,True,False,True
+1998,168218,WELLESLEY COLLEGE,data/raw/ipeds/1998/urban_directory.json,Wellesley College,True,False,True
+1998,168342,WILLIAMS COLLEGE,data/raw/ipeds/1998/urban_directory.json,Williams College,True,False,True
+1998,173258,CARLETON COLLEGE,data/raw/ipeds/1998/urban_directory.json,Carleton College,True,False,True
+1998,173902,MACALESTER COLLEGE,data/raw/ipeds/1998/urban_directory.json,Macalester College,True,False,True
+1998,189097,BARNARD COLLEGE,data/raw/ipeds/1998/urban_directory.json,Barnard College,True,False,True
+1998,190099,COLGATE UNIVERSITY,data/raw/ipeds/1998/urban_directory.json,Colgate University,True,False,True
+1998,191515,HAMILTON COLLEGE,data/raw/ipeds/1998/urban_directory.json,Hamilton College,True,False,True
+1998,197133,VASSAR COLLEGE,data/raw/ipeds/1998/urban_directory.json,Vassar College,True,False,True
+1998,198385,DAVIDSON COLLEGE,data/raw/ipeds/1998/urban_directory.json,Davidson College,True,False,True
+1998,202523,DENISON UNIVERSITY,data/raw/ipeds/1998/urban_directory.json,Denison University,True,False,True
+1998,211273,BRYN MAWR COLLEGE,data/raw/ipeds/1998/urban_directory.json,Bryn Mawr College,True,False,True
+1998,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/1998/urban_directory.json,Bucknell University,True,False,True
+1998,212911,HAVERFORD COLLEGE,data/raw/ipeds/1998/urban_directory.json,Haverford College,True,False,True
+1998,213385,LAFAYETTE COLLEGE,data/raw/ipeds/1998/urban_directory.json,Lafayette College,True,False,True
+1998,216287,SWARTHMORE COLLEGE,data/raw/ipeds/1998/urban_directory.json,Swarthmore College,True,False,True
+1998,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/1998/urban_directory.json,Middlebury College,True,False,True
+1998,233374,UNIVERSITY OF RICHMOND,data/raw/ipeds/1998/urban_directory.json,University of Richmond,True,False,True
+1998,234207,WASHINGTON AND LEE UNIVERSITY,data/raw/ipeds/1998/urban_directory.json,Washington and Lee University,True,False,True
+1999,112260,CLAREMONT MCKENNA COLLEGE,data/raw/ipeds/1999/urban_directory.json,Claremont McKenna College,True,False,True
+1999,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/1999/urban_directory.json,Harvey Mudd College,True,False,True
+1999,121345,POMONA COLLEGE,data/raw/ipeds/1999/urban_directory.json,Pomona College,True,False,True
+1999,130590,TRINITY COLLEGE,data/raw/ipeds/1999/urban_directory.json,Trinity College,True,False,True
+1999,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/1999/urban_directory.json,Wesleyan University,True,False,True
+1999,153384,GRINNELL COLLEGE,data/raw/ipeds/1999/urban_directory.json,Grinnell College,True,False,True
+1999,160977,BATES COLLEGE,data/raw/ipeds/1999/urban_directory.json,Bates College,True,False,True
+1999,161004,BOWDOIN COLLEGE,data/raw/ipeds/1999/urban_directory.json,Bowdoin College,True,False,True
+1999,161086,COLBY COLLEGE,data/raw/ipeds/1999/urban_directory.json,Colby College,True,False,True
+1999,164465,AMHERST COLLEGE,data/raw/ipeds/1999/urban_directory.json,Amherst College,True,False,True
+1999,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/1999/urban_directory.json,College of the Holy Cross,True,False,True
+1999,167835,SMITH COLLEGE,data/raw/ipeds/1999/urban_directory.json,Smith College,True,False,True
+1999,168218,WELLESLEY COLLEGE,data/raw/ipeds/1999/urban_directory.json,Wellesley College,True,False,True
+1999,168342,WILLIAMS COLLEGE,data/raw/ipeds/1999/urban_directory.json,Williams College,True,False,True
+1999,173258,CARLETON COLLEGE,data/raw/ipeds/1999/urban_directory.json,Carleton College,True,False,True
+1999,173902,MACALESTER COLLEGE,data/raw/ipeds/1999/urban_directory.json,Macalester College,True,False,True
+1999,189097,BARNARD COLLEGE,data/raw/ipeds/1999/urban_directory.json,Barnard College,True,False,True
+1999,190099,COLGATE UNIVERSITY,data/raw/ipeds/1999/urban_directory.json,Colgate University,True,False,True
+1999,191515,HAMILTON COLLEGE,data/raw/ipeds/1999/urban_directory.json,Hamilton College,True,False,True
+1999,197133,VASSAR COLLEGE,data/raw/ipeds/1999/urban_directory.json,Vassar College,True,False,True
+1999,198385,DAVIDSON COLLEGE,data/raw/ipeds/1999/urban_directory.json,Davidson College,True,False,True
+1999,202523,DENISON UNIVERSITY,data/raw/ipeds/1999/urban_directory.json,Denison University,True,False,True
+1999,211273,BRYN MAWR COLLEGE,data/raw/ipeds/1999/urban_directory.json,Bryn Mawr College,True,False,True
+1999,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/1999/urban_directory.json,Bucknell University,True,False,True
+1999,212911,HAVERFORD COLLEGE,data/raw/ipeds/1999/urban_directory.json,Haverford College,True,False,True
+1999,213385,LAFAYETTE COLLEGE,data/raw/ipeds/1999/urban_directory.json,Lafayette College,True,False,True
+1999,216287,SWARTHMORE COLLEGE,data/raw/ipeds/1999/urban_directory.json,Swarthmore College,True,False,True
+1999,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/1999/urban_directory.json,Middlebury College,True,False,True
+1999,233374,UNIVERSITY OF RICHMOND,data/raw/ipeds/1999/urban_directory.json,University of Richmond,True,False,True
+1999,234207,WASHINGTON AND LEE UNIVERSITY,data/raw/ipeds/1999/urban_directory.json,Washington and Lee University,True,False,True
+2001,112260,CLAREMONT MCKENNA COLLEGE,data/raw/ipeds/2001/urban_directory.json,Claremont McKenna College,True,False,True
+2001,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/2001/urban_directory.json,Harvey Mudd College,True,False,True
+2001,121345,POMONA COLLEGE,data/raw/ipeds/2001/urban_directory.json,Pomona College,True,False,True
+2001,130590,TRINITY COLLEGE,data/raw/ipeds/2001/urban_directory.json,Trinity College,True,False,True
+2001,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/2001/urban_directory.json,Wesleyan University,True,False,True
+2001,153384,GRINNELL COLLEGE,data/raw/ipeds/2001/urban_directory.json,Grinnell College,True,False,True
+2001,160977,BATES COLLEGE,data/raw/ipeds/2001/urban_directory.json,Bates College,True,False,True
+2001,161004,BOWDOIN COLLEGE,data/raw/ipeds/2001/urban_directory.json,Bowdoin College,True,False,True
+2001,161086,COLBY COLLEGE,data/raw/ipeds/2001/urban_directory.json,Colby College,True,False,True
+2001,164465,AMHERST COLLEGE,data/raw/ipeds/2001/urban_directory.json,Amherst College,True,False,True
+2001,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/2001/urban_directory.json,College of the Holy Cross,True,False,True
+2001,167835,SMITH COLLEGE,data/raw/ipeds/2001/urban_directory.json,Smith College,True,False,True
+2001,168218,WELLESLEY COLLEGE,data/raw/ipeds/2001/urban_directory.json,Wellesley College,True,False,True
+2001,168342,WILLIAMS COLLEGE,data/raw/ipeds/2001/urban_directory.json,Williams College,True,False,True
+2001,173258,CARLETON COLLEGE,data/raw/ipeds/2001/urban_directory.json,Carleton College,True,False,True
+2001,173902,MACALESTER COLLEGE,data/raw/ipeds/2001/urban_directory.json,Macalester College,True,False,True
+2001,189097,BARNARD COLLEGE,data/raw/ipeds/2001/urban_directory.json,Barnard College,True,False,True
+2001,190099,COLGATE UNIVERSITY,data/raw/ipeds/2001/urban_directory.json,Colgate University,True,False,True
+2001,191515,HAMILTON COLLEGE,data/raw/ipeds/2001/urban_directory.json,Hamilton College,True,False,True
+2001,197133,VASSAR COLLEGE,data/raw/ipeds/2001/urban_directory.json,Vassar College,True,False,True
+2001,198385,DAVIDSON COLLEGE,data/raw/ipeds/2001/urban_directory.json,Davidson College,True,False,True
+2001,202523,DENISON UNIVERSITY,data/raw/ipeds/2001/urban_directory.json,Denison University,True,False,True
+2001,211273,BRYN MAWR COLLEGE,data/raw/ipeds/2001/urban_directory.json,Bryn Mawr College,True,False,True
+2001,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/2001/urban_directory.json,Bucknell University,True,False,True
+2001,212911,HAVERFORD COLLEGE,data/raw/ipeds/2001/urban_directory.json,Haverford College,True,False,True
+2001,213385,LAFAYETTE COLLEGE,data/raw/ipeds/2001/urban_directory.json,Lafayette College,True,False,True
+2001,216287,SWARTHMORE COLLEGE,data/raw/ipeds/2001/urban_directory.json,Swarthmore College,True,False,True
+2001,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/2001/urban_directory.json,Middlebury College,True,False,True
+2001,233374,UNIVERSITY OF RICHMOND,data/raw/ipeds/2001/urban_directory.json,University of Richmond,True,False,True
+2001,234207,WASHINGTON AND LEE UNIVERSITY,data/raw/ipeds/2001/urban_directory.json,Washington and Lee University,True,False,True
+2002,112260,CLAREMONT MCKENNA COLLEGE,data/raw/ipeds/2002/urban_directory.json,Claremont McKenna College,True,False,True
+2002,115409,HARVEY MUDD COLLEGE,data/raw/ipeds/2002/urban_directory.json,Harvey Mudd College,True,False,True
+2002,121345,POMONA COLLEGE,data/raw/ipeds/2002/urban_directory.json,Pomona College,True,False,True
+2002,130590,TRINITY COLLEGE,data/raw/ipeds/2002/urban_directory.json,Trinity College,True,False,True
+2002,130697,WESLEYAN UNIVERSITY,data/raw/ipeds/2002/urban_directory.json,Wesleyan University,True,False,True
+2002,153384,GRINNELL COLLEGE,data/raw/ipeds/2002/urban_directory.json,Grinnell College,True,False,True
+2002,160977,BATES COLLEGE,data/raw/ipeds/2002/urban_directory.json,Bates College,True,False,True
+2002,161004,BOWDOIN COLLEGE,data/raw/ipeds/2002/urban_directory.json,Bowdoin College,True,False,True
+2002,161086,COLBY COLLEGE,data/raw/ipeds/2002/urban_directory.json,Colby College,True,False,True
+2002,164465,AMHERST COLLEGE,data/raw/ipeds/2002/urban_directory.json,Amherst College,True,False,True
+2002,166124,COLLEGE OF THE HOLY CROSS,data/raw/ipeds/2002/urban_directory.json,College of the Holy Cross,True,False,True
+2002,167835,SMITH COLLEGE,data/raw/ipeds/2002/urban_directory.json,Smith College,True,False,True
+2002,168218,WELLESLEY COLLEGE,data/raw/ipeds/2002/urban_directory.json,Wellesley College,True,False,True
+2002,168342,WILLIAMS COLLEGE,data/raw/ipeds/2002/urban_directory.json,Williams College,True,False,True
+2002,173258,CARLETON COLLEGE,data/raw/ipeds/2002/urban_directory.json,Carleton College,True,False,True
+2002,173902,MACALESTER COLLEGE,data/raw/ipeds/2002/urban_directory.json,Macalester College,True,False,True
+2002,189097,BARNARD COLLEGE,data/raw/ipeds/2002/urban_directory.json,Barnard College,True,False,True
+2002,190099,COLGATE UNIVERSITY,data/raw/ipeds/2002/urban_directory.json,Colgate University,True,False,True
+2002,191515,HAMILTON COLLEGE,data/raw/ipeds/2002/urban_directory.json,Hamilton College,True,False,True
+2002,197133,VASSAR COLLEGE,data/raw/ipeds/2002/urban_directory.json,Vassar College,True,False,True
+2002,198385,DAVIDSON COLLEGE,data/raw/ipeds/2002/urban_directory.json,Davidson College,True,False,True
+2002,202523,DENISON UNIVERSITY,data/raw/ipeds/2002/urban_directory.json,Denison University,True,False,True
+2002,211273,BRYN MAWR COLLEGE,data/raw/ipeds/2002/urban_directory.json,Bryn Mawr College,True,False,True
+2002,211291,BUCKNELL UNIVERSITY,data/raw/ipeds/2002/urban_directory.json,Bucknell University,True,False,True
+2002,212911,HAVERFORD COLLEGE,data/raw/ipeds/2002/urban_directory.json,Haverford College,True,False,True
+2002,213385,LAFAYETTE COLLEGE,data/raw/ipeds/2002/urban_directory.json,Lafayette College,True,False,True
+2002,216287,SWARTHMORE COLLEGE,data/raw/ipeds/2002/urban_directory.json,Swarthmore College,True,False,True
+2002,230959,MIDDLEBURY COLLEGE,data/raw/ipeds/2002/urban_directory.json,Middlebury College,True,False,True
+2002,233374,UNIVERSITY OF RICHMOND,data/raw/ipeds/2002/urban_directory.json,University of Richmond,True,False,True
+2002,234207,WASHINGTON AND LEE UNIVERSITY,data/raw/ipeds/2002/urban_directory.json,Washington and Lee University,True,False,True

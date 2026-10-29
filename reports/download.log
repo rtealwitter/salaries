@@ -1,0 +1,243 @@
+ok data/raw/ipeds/catalog.html
+ok data/raw/ipeds/2025/IC2025_Dict.zip
+ok data/raw/ipeds/2024/IC2024_Dict.zip
+ok data/raw/ipeds/2025/HD2025_Dict.zip
+ok data/raw/ipeds/2024/HD2024_Dict.zip
+ok data/raw/ipeds/2025/IC2025.zip
+ok data/raw/ipeds/2024/IC2024.zip
+ok data/raw/ipeds/2024/SAL2024_IS_Dict.zip
+ok data/raw/ipeds/2024/DRVHR2024_Dict.zip
+ok data/raw/ipeds/2023/HD2023_Dict.zip
+ok data/raw/ipeds/2023/IC2023_Dict.zip
+ok data/raw/ipeds/2024/DRVHR2024.zip
+ok data/raw/ipeds/2023/IC2023.zip
+ok data/raw/ipeds/2023/SAL2023_IS_Dict.zip
+ok data/raw/ipeds/2023/DRVHR2023_Dict.zip
+ok data/raw/ipeds/2023/DRVHR2023.zip
+ok data/raw/ipeds/2025/HD2025.zip
+ok data/raw/ipeds/2024/HD2024.zip
+ok data/raw/ipeds/2022/HD2022_Dict.zip
+ok data/raw/ipeds/2022/HD2022.zip
+ok data/raw/ipeds/2022/IC2022_Dict.zip
+ok data/raw/ipeds/2022/SAL2022_IS_Dict.zip
+ok data/raw/ipeds/2022/IC2022.zip
+ok data/raw/ipeds/2024/SAL2024_IS.zip
+ok data/raw/ipeds/2022/DRVHR2022_Dict.zip
+ok data/raw/ipeds/2022/DRVHR2022.zip
+ok data/raw/ipeds/2021/HD2021_Dict.zip
+ok data/raw/ipeds/2021/IC2021_Dict.zip
+ok data/raw/ipeds/2023/HD2023.zip
+ok data/raw/ipeds/2021/IC2021.zip
+ok data/raw/ipeds/2022/SAL2022_IS.zip
+ok data/raw/ipeds/2021/SAL2021_IS_Dict.zip
+ok data/raw/ipeds/2021/HD2021.zip
+ok data/raw/ipeds/2021/DRVHR2021_Dict.zip
+ok data/raw/ipeds/2021/DRVHR2021.zip
+ok data/raw/ipeds/2020/IC2020.zip
+ok data/raw/ipeds/2020/SAL2020_IS_Dict.zip
+ok data/raw/ipeds/2020/IC2020_Dict.zip
+ok data/raw/ipeds/2020/HD2020_Dict.zip
+ok data/raw/ipeds/2019/HD2019_Dict.zip
+ok data/raw/ipeds/2019/IC2019.zip
+ok data/raw/ipeds/2019/SAL2019_IS_Dict.zip
+ok data/raw/ipeds/2019/IC2019_Dict.zip
+ok data/raw/ipeds/2023/SAL2023_IS.zip
+ok data/raw/ipeds/2020/HD2020.zip
+ok data/raw/ipeds/2018/HD2018_Dict.zip
+ok data/raw/ipeds/2021/SAL2021_IS.zip
+ok data/raw/ipeds/2018/IC2018.zip
+ok data/raw/ipeds/2018/IC2018_Dict.zip
+ok data/raw/ipeds/2018/SAL2018_IS_Dict.zip
+ok data/raw/ipeds/2020/SAL2020_IS.zip
+ok data/raw/ipeds/2019/HD2019.zip
+ok data/raw/ipeds/2017/HD2017_Dict.zip
+ok data/raw/ipeds/2017/IC2017_Dict.zip
+ok data/raw/ipeds/2017/IC2017.zip
+ok data/raw/ipeds/2017/SAL2017_IS_Dict.zip
+ok data/raw/ipeds/2016/HD2016_Dict.zip
+ok data/raw/ipeds/2019/SAL2019_IS.zip
+ok data/raw/ipeds/2016/IC2016.zip
+ok data/raw/ipeds/2016/IC2016_Dict.zip
+ok data/raw/ipeds/2016/SAL2016_IS_Dict.zip
+ok data/raw/ipeds/2017/HD2017.zip
+ok data/raw/ipeds/2017/SAL2017_IS.zip
+ok data/raw/ipeds/2015/HD2015_Dict.zip
+ok data/raw/ipeds/2018/SAL2018_IS.zip
+ok data/raw/ipeds/2018/HD2018.zip
+ok data/raw/ipeds/2015/SAL2015_IS_Dict.zip
+ok data/raw/ipeds/2015/IC2015.zip
+ok data/raw/ipeds/2016/HD2016.zip
+ok data/raw/ipeds/2015/IC2015_Dict.zip
+ok data/raw/ipeds/2014/HD2014_Dict.zip
+ok data/raw/ipeds/2014/IC2014_Dict.zip
+ok data/raw/ipeds/2014/IC2014.zip
+ok data/raw/ipeds/2014/SAL2014_IS_Dict.zip
+ok data/raw/ipeds/2013/HD2013_Dict.zip
+ok data/raw/ipeds/2014/HD2014.zip
+ok data/raw/ipeds/2015/HD2015.zip
+ok data/raw/ipeds/2013/IC2013_Dict.zip
+ok data/raw/ipeds/2013/IC2013.zip
+ok data/raw/ipeds/2013/IC2013_Dict.zip
+ok data/raw/ipeds/2013/IC2013.zip
+ok data/raw/ipeds/2014/SAL2014_IS.zip
+ok data/raw/ipeds/2015/SAL2015_IS.zip
+ok data/raw/ipeds/2013/SAL2013_IS_Dict.zip
+ok data/raw/ipeds/2016/SAL2016_IS.zip
+ok data/raw/ipeds/2012/HD2012_Dict.zip
+ok data/raw/ipeds/2012/IC2012_Dict.zip
+ok data/raw/ipeds/2012/SAL2012_IS_Dict.zip
+ok data/raw/ipeds/2012/IC2012.zip
+ok data/raw/ipeds/2012/IC2012_Dict.zip
+ok data/raw/ipeds/2013/HD2013.zip
+ok data/raw/ipeds/2011/HD2011_Dict.zip
+ok data/raw/ipeds/2011/IC2011_Dict.zip
+ok data/raw/ipeds/2013/SAL2013_IS.zip
+ok data/raw/ipeds/2012/IC2012.zip
+ok data/raw/ipeds/2012/HD2012.zip
+ok data/raw/ipeds/2011/SAL2011_A_Dict.zip
+ok data/raw/ipeds/2012/SAL2012_IS.zip
+ok data/raw/ipeds/2011/HD2011.zip
+ok data/raw/ipeds/2010/HD2010_Dict.zip
+ok data/raw/ipeds/2011/IC2011.zip
+ok data/raw/ipeds/2010/IC2010_Dict.zip
+ok data/raw/ipeds/2010/IC2010.zip
+ok data/raw/ipeds/2010/IC2010_Dict.zip
+ok data/raw/ipeds/2010/SAL2010_A_Dict.zip
+ok data/raw/ipeds/2011/IC2011.zip
+ok data/raw/ipeds/2010/HD2010.zip
+ok data/raw/ipeds/2009/HD2009_Dict.zip
+ok data/raw/ipeds/2010/IC2010.zip
+ok data/raw/ipeds/2009/IC2009_Dict.zip
+ok data/raw/ipeds/2009/IC2009_Dict.zip
+ok data/raw/ipeds/2009/IC2009.zip
+ok data/raw/ipeds/2009/SAL2009_A_Dict.zip
+ok data/raw/ipeds/2008/HD2008_Dict.zip
+ok data/raw/ipeds/2011/SAL2011_A.zip
+ok data/raw/ipeds/2009/HD2009.zip
+ok data/raw/ipeds/2009/IC2009.zip
+ok data/raw/ipeds/2008/HD2008.zip
+ok data/raw/ipeds/2008/IC2008_Dict.zip
+ok data/raw/ipeds/2008/IC2008_Dict.zip
+ok data/raw/ipeds/2008/SAL2008_A_Dict.zip
+ok data/raw/ipeds/2008/IC2008.zip
+ok data/raw/ipeds/2008/IC2008.zip
+ok data/raw/ipeds/2007/HD2007_Dict.zip
+ok data/raw/ipeds/2010/SAL2010_A.zip
+ok data/raw/ipeds/2007/HD2007.zip
+ok data/raw/ipeds/2007/IC2007.zip
+ok data/raw/ipeds/2007/IC2007_Dict.zip
+ok data/raw/ipeds/2007/IC2007_Dict.zip
+ok data/raw/ipeds/2007/SAL2007_A_Dict.zip
+ok data/raw/ipeds/2007/IC2007.zip
+ok data/raw/ipeds/2009/SAL2009_A.zip
+ok data/raw/ipeds/2006/HD2006_Dict.zip
+ok data/raw/ipeds/2006/IC2006_Dict.zip
+ok data/raw/ipeds/2006/IC2006.zip
+ok data/raw/ipeds/2006/IC2006_Dict.zip
+ok data/raw/ipeds/2006/IC2006.zip
+ok data/raw/ipeds/2006/SAL2006_A_Dict.zip
+ok data/raw/ipeds/2006/HD2006.zip
+ok data/raw/ipeds/2005/HD2005_Dict.zip
+ok data/raw/ipeds/2008/SAL2008_A.zip
+ok data/raw/ipeds/2005/IC2005_Dict.zip
+ok data/raw/ipeds/2005/HD2005.zip
+ok data/raw/ipeds/2005/IC2005.zip
+ok data/raw/ipeds/2005/IC2005_Dict.zip
+ok data/raw/ipeds/2005/IC2005.zip
+ok data/raw/ipeds/2007/SAL2007_A.zip
+ok data/raw/ipeds/2005/SAL2005_A_Dict.zip
+ok data/raw/ipeds/2004/HD2004_Dict.zip
+ok data/raw/ipeds/2004/IC2004_Dict.zip
+ok data/raw/ipeds/2004/IC2004_Dict.zip
+ok data/raw/ipeds/2004/IC2004.zip
+ok data/raw/ipeds/2004/SAL2004_A_Dict.zip
+ok data/raw/ipeds/2003/HD2003_Dict.zip
+ok data/raw/ipeds/2004/IC2004.zip
+ok data/raw/ipeds/2003/IC2003_Dict.zip
+ok data/raw/ipeds/2004/HD2004.zip
+ok data/raw/ipeds/2003/HD2003.zip
+ok data/raw/ipeds/2003/IC2003.zip
+ok data/raw/ipeds/2003/IC2003.zip
+ok data/raw/ipeds/2003/SAL2003_A_Dict.zip
+ERROR https://nces.ed.gov/ipeds/datacenter/data/HD2002.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/HD2002_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ok data/raw/ipeds/2004/SAL2004_A.zip
+ok data/raw/ipeds/2005/SAL2005_A.zip
+ok data/raw/ipeds/2006/SAL2006_A.zip
+ok data/raw/ipeds/2003/SAL2003_A.zip
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC2002.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC2002.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC2002_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC2002_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL2002_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL2002_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC2001_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC2001.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC2001_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL2001_A_S.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC2001.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL2001_A_S_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC2000.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC2000_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1999_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1999_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL98_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL97_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL98_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL97_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/ic9697_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/ic9697_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL96_a_1.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL96_a_1_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/ic9596_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/ic9596_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL95_a_1.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL95_a_1_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1994_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1994_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1994_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1994_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1993_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1993_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1993_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1993_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1992_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1992_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1992_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1992_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1989_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1989_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1988_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1988_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1987_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1987_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1987_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/sal1991_a_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL90_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/sal1991_a.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL90_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1989_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1989_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1984.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1984_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1984_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1987_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1986_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1984_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1980.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1980_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1980_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1980_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ok data/raw/bea/pce_fred_graph.html
+ok data/raw/bea/rpp_page.html
+ok data/raw/bea/revisions_2023.html
+ok data/raw/bea/methodology.pdf
+ERROR https://nces.ed.gov/programs/digest/d22/app_a2_14.asp ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ok data/raw/ipeds/salaries_1977_1987.pdf
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1986_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1985_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/IC1985.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1985_A.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://nces.ed.gov/ipeds/datacenter/data/SAL1985_A_Dict.zip ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+ERROR https://www.usnews.com/best-colleges/rankings/national-liberal-arts-colleges HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=90)
+ERROR https://www.usnews.com/education/best-colleges/articles/how-us-news-calculated-the-rankings HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=90)

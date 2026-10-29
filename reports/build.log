@@ -1,0 +1,14 @@
+/hopper/home/rwitter/salaries/src/build_dataset.py:116: FutureWarning: The behavior of DataFrame.idxmax with all-NA values, or any-NA and skipna=False, is deprecated. In a future version this will raise ValueError
+  out['dominant_months_worked']=out[countcols].idxmax(axis=1,skipna=True).str.extract(r'count_(\d+)_')[0].astype(float)
+30 colleges; 1170 college-years; 1980–2024
+                      college  assistant_salary_nominal     rpp  assistant_salary_cost_adjusted  assistant_salary_nominal_rank  assistant_salary_cost_adjusted_rank
+             Williams College                  113622.0  95.106                   119468.803230                            3.0                                  1.0
+       University of Richmond                  115901.0  97.858                   118437.940690                            2.0                                  2.0
+Washington and Lee University                   99676.0  88.361                   112805.423207                           15.0                                  3.0
+          Bucknell University                   99779.0  90.331                   110459.310757                           14.0                                  4.0
+             Carleton College                   94160.0  85.852                   109677.118763                           20.0                                  5.0
+                Colby College                   99884.0  91.645                   108990.124939                           13.0                                  6.0
+           Middlebury College                  102691.0  96.350                   106581.214323                            8.0                                  7.0
+           Swarthmore College                  107116.0 102.554                   104448.388166                            6.0                                  8.0
+             Hamilton College                   95865.0  92.678                   103438.788062                           19.0                                  9.0
+             Grinnell College                   86680.0  84.077                   103095.971550                           25.0                                 10.0

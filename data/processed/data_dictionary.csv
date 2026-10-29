@@ -1,0 +1,190 @@
+table,column,units,definition
+combined_long.csv,unitid,identifier,Stable NCES institution identifier; annual names audited.
+combined_long.csv,year,year,Academic-year start/fall year.
+combined_long.csv,academic_rank,category,"assistant, associate, or full professor."
+combined_long.csv,faculty_count_9_month,people,Headcount at this rank with the stated months worked; source SAxxMCT.
+combined_long.csv,faculty_count_10_month,people,Headcount at this rank with the stated months worked; source SAxxMCT.
+combined_long.csv,faculty_count_11_month,people,Headcount at this rank with the stated months worked; source SAxxMCT.
+combined_long.csv,faculty_count_12_month,people,Headcount at this rank with the stated months worked; source SAxxMCT.
+combined_long.csv,academic_year,academic year,Start year through following spring/summer year.
+combined_long.csv,salary_nominal,current USD/year,Published/derived average for the population in salary_method; see early contract restrictions.
+combined_long.csv,faculty_count,people,Staff denominator corresponding to the salary measure; true zeros retained.
+combined_long.csv,faculty_count_all_contracts,people,"All full-time instructional staff at rank, including less than 9 months, where reported."
+combined_long.csv,faculty_count_less_than_9_months,people,Less-than-9-month staff; excluded from salary mean.
+combined_long.csv,source_salary_value,USD/year,Value before masking undefined zero-headcount means; derived when salary is reconstructed.
+combined_long.csv,salary_method,category,Definition/conversion regime; consult README.
+combined_long.csv,salary_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined_long.csv,salary_variable,source variable/expression,Field or expression defining salary from the original source.
+combined_long.csv,count_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined_long.csv,count_variable,source variable/expression,Field(s) defining matching headcount.
+combined_long.csv,source_row_key,key,UNITID/rank/contract/gender identifiers selecting source rows.
+combined_long.csv,salary_imputation_flags,IPEDS code(s),Original flags for salary or numerator/denominator; unavailable in Urban mirror.
+combined_long.csv,count_imputation_flag,IPEDS code,"Original headcount flag, when available."
+combined_long.csv,quality_flags,semicolon-separated flags,"Missing values, small counts, imputation/correction, contract changes, proxies and other cautions."
+combined_long.csv,salary_nominal_yoy_pct,percent,Change from preceding calendar year only; gaps not bridged.
+combined_long.csv,dominant_months_worked,months,Category with largest reported headcount among 9/10/11/12; unavailable early.
+combined_long.csv,college,text,Current institution name; fixed 2027 cohort.
+combined_long.csv,city,text,HD2024 campus mailing city; fixed across years.
+combined_long.csv,state,postal abbreviation,HD2024 state.
+combined_long.csv,county_fips,5-digit FIPS,HD2024 campus county; Connecticut planning regions used as county equivalents.
+combined_long.csv,county_name,text,HD2024 county/equivalent name.
+combined_long.csv,ipeds_cbsa_2024,identifier,CBSA reported in HD2024; OMB delineations control the final BEA join.
+combined_long.csv,ipeds_cbsa_type_2024,category,"IPEDS CBSA type: metropolitan=1, micropolitan=2; negative codes not applicable."
+combined_long.csv,usnews_rank_2027,rank,"Published 2027 U.S. News rank with ties, via secondary transcription."
+combined_long.csv,usnews_rank_2026,rank,Published 2026 rank in separate comparison table; not contemporaneous with salary years.
+combined_long.csv,state_fips,2-digit FIPS,State identifier.
+combined_long.csv,ranking_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined_long.csv,ranking_quality,flag,Secondary ranking transcription; publisher inaccessible.
+combined_long.csv,location_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined_long.csv,bea_geofips,5-digit identifier,BEA metro code or state FIPS + 999 for state nonmetropolitan portion.
+combined_long.csv,geography_type,category,Metropolitan or state_nonmetropolitan.
+combined_long.csv,geography_vintage,text,Fixed current campus county and OMB July 2023 delineations.
+combined_long.csv,geography_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined_long.csv,cost_year,calendar year,"Year of RPP, equal to salary start year."
+combined_long.csv,cost_geography,text,BEA geography name.
+combined_long.csv,rpp,US=100,All-items spatial price parity; not a local inflation index.
+combined_long.csv,rpp_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined_long.csv,rpp_line_code,identifier,BEA line code 1 = all items.
+combined_long.csv,pce_price_index,index,Annual arithmetic mean of 12 monthly BEA PCEPI observations via FRED.
+combined_long.csv,months,count,Number of PCE monthly observations; must be 12.
+combined_long.csv,inflation_factor_2024,ratio,PCE2024/PCEyear.
+combined_long.csv,pce_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined_long.csv,salary_cost_adjusted,national-price-level USD/year,"salary_nominal/(rpp/100), relative purchasing power in that year."
+combined_long.csv,salary_real_2024,2024 USD/year,salary_nominal*inflation_factor_2024; no regional adjustment.
+combined_long.csv,salary_real_cost_adjusted_2024,2024 national purchasing-power USD/year,salary_nominal/(rpp/100)*inflation_factor_2024.
+combined_long.csv,salary_nominal_rank,rank,Within year/rank/cohort; descending salary; competition ties=min; missing excluded.
+combined_long.csv,salary_cost_adjusted_rank,rank,Within year/rank/cohort; descending cost-adjusted salary; competition ties=min.
+combined_long.csv,salary_rank_improvement,places,Nominal rank minus adjusted rank; positive means improved position.
+combined_long.csv,historical_usnews_rank,rank,Contemporaneous salary-year rank; unavailable in this capture and left missing.
+combined_long.csv,acs_geo_id,Census identifier,Explicit city/town geography in config/housing_geographies.csv.
+combined_long.csv,acs_geography,text,Census geography name.
+combined_long.csv,acs_period,five-year period,Pooled ACS period ending in year; not a single-year estimate.
+combined_long.csv,median_gross_rent,USD/month,ACS B25064 median gross rent; kept separate from all-items adjustment.
+combined_long.csv,median_gross_rent_moe90,USD/month,ACS 90% margin of error for rent estimate.
+combined_long.csv,rent_estimate_raw,source text,"Raw Census estimate, including special value if any."
+combined_long.csv,rent_moe_raw,source text,Raw Census margin of error.
+combined_long.csv,rent_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined_long.csv,rent_source_row_key,key,Census GEO_ID or LOGRECNO and sequence.
+combined_long.csv,rent_variable,source variable/position,B25064 field name or 1-based sequence-file column.
+combined_long.csv,housing_quality_flags,semicolon-separated flags,Unavailable geography/estimate/MOE or large relative MOE.
+combined_long.csv,housing_geography_note,text,"Host geography context, not actual faculty residence."
+combined.csv,unitid,identifier,Stable NCES institution identifier; annual names audited.
+combined.csv,year,year,Academic-year start/fall year.
+combined.csv,academic_year,academic year,Start year through following spring/summer year.
+combined.csv,college,text,Current institution name; fixed 2027 cohort.
+combined.csv,city,text,HD2024 campus mailing city; fixed across years.
+combined.csv,state,postal abbreviation,HD2024 state.
+combined.csv,county_fips,5-digit FIPS,HD2024 campus county; Connecticut planning regions used as county equivalents.
+combined.csv,county_name,text,HD2024 county/equivalent name.
+combined.csv,ipeds_cbsa_2024,identifier,CBSA reported in HD2024; OMB delineations control the final BEA join.
+combined.csv,ipeds_cbsa_type_2024,category,"IPEDS CBSA type: metropolitan=1, micropolitan=2; negative codes not applicable."
+combined.csv,usnews_rank_2027,rank,"Published 2027 U.S. News rank with ties, via secondary transcription."
+combined.csv,usnews_rank_2026,rank,Published 2026 rank in separate comparison table; not contemporaneous with salary years.
+combined.csv,state_fips,2-digit FIPS,State identifier.
+combined.csv,ranking_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined.csv,ranking_quality,flag,Secondary ranking transcription; publisher inaccessible.
+combined.csv,location_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined.csv,bea_geofips,5-digit identifier,BEA metro code or state FIPS + 999 for state nonmetropolitan portion.
+combined.csv,geography_type,category,Metropolitan or state_nonmetropolitan.
+combined.csv,geography_vintage,text,Fixed current campus county and OMB July 2023 delineations.
+combined.csv,geography_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined.csv,cost_year,calendar year,"Year of RPP, equal to salary start year."
+combined.csv,cost_geography,text,BEA geography name.
+combined.csv,rpp,US=100,All-items spatial price parity; not a local inflation index.
+combined.csv,rpp_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined.csv,rpp_line_code,identifier,BEA line code 1 = all items.
+combined.csv,pce_price_index,index,Annual arithmetic mean of 12 monthly BEA PCEPI observations via FRED.
+combined.csv,months,count,Number of PCE monthly observations; must be 12.
+combined.csv,inflation_factor_2024,ratio,PCE2024/PCEyear.
+combined.csv,pce_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined.csv,historical_usnews_rank,rank,Contemporaneous salary-year rank; unavailable in this capture and left missing.
+combined.csv,acs_geo_id,Census identifier,Explicit city/town geography in config/housing_geographies.csv.
+combined.csv,acs_geography,text,Census geography name.
+combined.csv,acs_period,five-year period,Pooled ACS period ending in year; not a single-year estimate.
+combined.csv,median_gross_rent,USD/month,ACS B25064 median gross rent; kept separate from all-items adjustment.
+combined.csv,median_gross_rent_moe90,USD/month,ACS 90% margin of error for rent estimate.
+combined.csv,rent_estimate_raw,source text,"Raw Census estimate, including special value if any."
+combined.csv,rent_moe_raw,source text,Raw Census margin of error.
+combined.csv,rent_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined.csv,rent_source_row_key,key,Census GEO_ID or LOGRECNO and sequence.
+combined.csv,rent_variable,source variable/position,B25064 field name or 1-based sequence-file column.
+combined.csv,housing_quality_flags,semicolon-separated flags,Unavailable geography/estimate/MOE or large relative MOE.
+combined.csv,housing_geography_note,text,"Host geography context, not actual faculty residence."
+combined.csv,assistant_dominant_months_worked,months,Category with largest reported headcount among 9/10/11/12; unavailable early.
+combined.csv,assistant_salary_nominal_yoy_pct,percent,Change from preceding calendar year only; gaps not bridged.
+combined.csv,assistant_faculty_count_9_month,people,Headcount at this rank with the stated months worked; source SAxxMCT.
+combined.csv,assistant_faculty_count_10_month,people,Headcount at this rank with the stated months worked; source SAxxMCT.
+combined.csv,assistant_faculty_count_11_month,people,Headcount at this rank with the stated months worked; source SAxxMCT.
+combined.csv,assistant_faculty_count_12_month,people,Headcount at this rank with the stated months worked; source SAxxMCT.
+combined.csv,assistant_salary_nominal,current USD/year,Published/derived average for the population in salary_method; see early contract restrictions.
+combined.csv,assistant_faculty_count,people,Staff denominator corresponding to the salary measure; true zeros retained.
+combined.csv,assistant_faculty_count_all_contracts,people,"All full-time instructional staff at rank, including less than 9 months, where reported."
+combined.csv,assistant_faculty_count_less_than_9_months,people,Less-than-9-month staff; excluded from salary mean.
+combined.csv,assistant_source_salary_value,USD/year,Value before masking undefined zero-headcount means; derived when salary is reconstructed.
+combined.csv,assistant_salary_method,category,Definition/conversion regime; consult README.
+combined.csv,assistant_salary_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined.csv,assistant_salary_variable,source variable/expression,Field or expression defining salary from the original source.
+combined.csv,assistant_count_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined.csv,assistant_count_variable,source variable/expression,Field(s) defining matching headcount.
+combined.csv,assistant_source_row_key,key,UNITID/rank/contract/gender identifiers selecting source rows.
+combined.csv,assistant_salary_imputation_flags,IPEDS code(s),Original flags for salary or numerator/denominator; unavailable in Urban mirror.
+combined.csv,assistant_count_imputation_flag,IPEDS code,"Original headcount flag, when available."
+combined.csv,assistant_quality_flags,semicolon-separated flags,"Missing values, small counts, imputation/correction, contract changes, proxies and other cautions."
+combined.csv,assistant_salary_cost_adjusted,national-price-level USD/year,"salary_nominal/(rpp/100), relative purchasing power in that year."
+combined.csv,assistant_salary_real_2024,2024 USD/year,salary_nominal*inflation_factor_2024; no regional adjustment.
+combined.csv,assistant_salary_real_cost_adjusted_2024,2024 national purchasing-power USD/year,salary_nominal/(rpp/100)*inflation_factor_2024.
+combined.csv,assistant_salary_nominal_rank,rank,Within year/rank/cohort; descending salary; competition ties=min; missing excluded.
+combined.csv,assistant_salary_cost_adjusted_rank,rank,Within year/rank/cohort; descending cost-adjusted salary; competition ties=min.
+combined.csv,assistant_salary_rank_improvement,places,Nominal rank minus adjusted rank; positive means improved position.
+combined.csv,associate_dominant_months_worked,months,Category with largest reported headcount among 9/10/11/12; unavailable early.
+combined.csv,associate_salary_nominal_yoy_pct,percent,Change from preceding calendar year only; gaps not bridged.
+combined.csv,associate_faculty_count_9_month,people,Headcount at this rank with the stated months worked; source SAxxMCT.
+combined.csv,associate_faculty_count_10_month,people,Headcount at this rank with the stated months worked; source SAxxMCT.
+combined.csv,associate_faculty_count_11_month,people,Headcount at this rank with the stated months worked; source SAxxMCT.
+combined.csv,associate_faculty_count_12_month,people,Headcount at this rank with the stated months worked; source SAxxMCT.
+combined.csv,associate_salary_nominal,current USD/year,Published/derived average for the population in salary_method; see early contract restrictions.
+combined.csv,associate_faculty_count,people,Staff denominator corresponding to the salary measure; true zeros retained.
+combined.csv,associate_faculty_count_all_contracts,people,"All full-time instructional staff at rank, including less than 9 months, where reported."
+combined.csv,associate_faculty_count_less_than_9_months,people,Less-than-9-month staff; excluded from salary mean.
+combined.csv,associate_source_salary_value,USD/year,Value before masking undefined zero-headcount means; derived when salary is reconstructed.
+combined.csv,associate_salary_method,category,Definition/conversion regime; consult README.
+combined.csv,associate_salary_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined.csv,associate_salary_variable,source variable/expression,Field or expression defining salary from the original source.
+combined.csv,associate_count_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined.csv,associate_count_variable,source variable/expression,Field(s) defining matching headcount.
+combined.csv,associate_source_row_key,key,UNITID/rank/contract/gender identifiers selecting source rows.
+combined.csv,associate_salary_imputation_flags,IPEDS code(s),Original flags for salary or numerator/denominator; unavailable in Urban mirror.
+combined.csv,associate_count_imputation_flag,IPEDS code,"Original headcount flag, when available."
+combined.csv,associate_quality_flags,semicolon-separated flags,"Missing values, small counts, imputation/correction, contract changes, proxies and other cautions."
+combined.csv,associate_salary_cost_adjusted,national-price-level USD/year,"salary_nominal/(rpp/100), relative purchasing power in that year."
+combined.csv,associate_salary_real_2024,2024 USD/year,salary_nominal*inflation_factor_2024; no regional adjustment.
+combined.csv,associate_salary_real_cost_adjusted_2024,2024 national purchasing-power USD/year,salary_nominal/(rpp/100)*inflation_factor_2024.
+combined.csv,associate_salary_nominal_rank,rank,Within year/rank/cohort; descending salary; competition ties=min; missing excluded.
+combined.csv,associate_salary_cost_adjusted_rank,rank,Within year/rank/cohort; descending cost-adjusted salary; competition ties=min.
+combined.csv,associate_salary_rank_improvement,places,Nominal rank minus adjusted rank; positive means improved position.
+combined.csv,full_dominant_months_worked,months,Category with largest reported headcount among 9/10/11/12; unavailable early.
+combined.csv,full_salary_nominal_yoy_pct,percent,Change from preceding calendar year only; gaps not bridged.
+combined.csv,full_faculty_count_9_month,people,Headcount at this rank with the stated months worked; source SAxxMCT.
+combined.csv,full_faculty_count_10_month,people,Headcount at this rank with the stated months worked; source SAxxMCT.
+combined.csv,full_faculty_count_11_month,people,Headcount at this rank with the stated months worked; source SAxxMCT.
+combined.csv,full_faculty_count_12_month,people,Headcount at this rank with the stated months worked; source SAxxMCT.
+combined.csv,full_salary_nominal,current USD/year,Published/derived average for the population in salary_method; see early contract restrictions.
+combined.csv,full_faculty_count,people,Staff denominator corresponding to the salary measure; true zeros retained.
+combined.csv,full_faculty_count_all_contracts,people,"All full-time instructional staff at rank, including less than 9 months, where reported."
+combined.csv,full_faculty_count_less_than_9_months,people,Less-than-9-month staff; excluded from salary mean.
+combined.csv,full_source_salary_value,USD/year,Value before masking undefined zero-headcount means; derived when salary is reconstructed.
+combined.csv,full_salary_method,category,Definition/conversion regime; consult README.
+combined.csv,full_salary_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined.csv,full_salary_variable,source variable/expression,Field or expression defining salary from the original source.
+combined.csv,full_count_source,relative path,"Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256."
+combined.csv,full_count_variable,source variable/expression,Field(s) defining matching headcount.
+combined.csv,full_source_row_key,key,UNITID/rank/contract/gender identifiers selecting source rows.
+combined.csv,full_salary_imputation_flags,IPEDS code(s),Original flags for salary or numerator/denominator; unavailable in Urban mirror.
+combined.csv,full_count_imputation_flag,IPEDS code,"Original headcount flag, when available."
+combined.csv,full_quality_flags,semicolon-separated flags,"Missing values, small counts, imputation/correction, contract changes, proxies and other cautions."
+combined.csv,full_salary_cost_adjusted,national-price-level USD/year,"salary_nominal/(rpp/100), relative purchasing power in that year."
+combined.csv,full_salary_real_2024,2024 USD/year,salary_nominal*inflation_factor_2024; no regional adjustment.
+combined.csv,full_salary_real_cost_adjusted_2024,2024 national purchasing-power USD/year,salary_nominal/(rpp/100)*inflation_factor_2024.
+combined.csv,full_salary_nominal_rank,rank,Within year/rank/cohort; descending salary; competition ties=min; missing excluded.
+combined.csv,full_salary_cost_adjusted_rank,rank,Within year/rank/cohort; descending cost-adjusted salary; competition ties=min.
+combined.csv,full_salary_rank_improvement,places,Nominal rank minus adjusted rank; positive means improved position.

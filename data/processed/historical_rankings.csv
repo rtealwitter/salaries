@@ -1,0 +1,61 @@
+unitid,college,ranking_source,ranking_quality,edition,usnews_rank
+168342,Williams College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,1
+164465,Amherst College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,2
+161004,Bowdoin College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,5
+112260,Claremont McKenna College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,7
+121345,Pomona College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,7
+216287,Swarthmore College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,4
+115409,Harvey Mudd College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,10
+168218,Wellesley College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,7
+197133,Vassar College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,13
+234207,Washington and Lee University,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,21
+191515,Hamilton College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,13
+130697,Wesleyan University,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,13
+173258,Carleton College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,10
+198385,Davidson College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,13
+153384,Grinnell College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,13
+189097,Barnard College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,13
+230959,Middlebury College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,13
+233374,University of Richmond,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,22
+161086,Colby College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,24
+190099,Colgate University,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,22
+166124,College of the Holy Cross,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,27
+167835,Smith College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,13
+160977,Bates College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,24
+212911,Haverford College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,24
+173902,Macalester College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,28
+211291,Bucknell University,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,30
+213385,Lafayette College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,30
+211273,Bryn Mawr College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,30
+202523,Denison University,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,34
+130590,Trinity College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2026,37
+168342,Williams College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,1
+164465,Amherst College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,2
+161004,Bowdoin College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,3
+112260,Claremont McKenna College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,3
+121345,Pomona College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,3
+216287,Swarthmore College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,3
+115409,Harvey Mudd College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,8
+168218,Wellesley College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,10
+197133,Vassar College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,12
+234207,Washington and Lee University,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,12
+191515,Hamilton College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,14
+130697,Wesleyan University,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,14
+173258,Carleton College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,16
+198385,Davidson College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,16
+153384,Grinnell College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,16
+189097,Barnard College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,19
+230959,Middlebury College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,19
+233374,University of Richmond,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,21
+161086,Colby College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,22
+190099,Colgate University,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,22
+166124,College of the Holy Cross,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,22
+167835,Smith College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,22
+160977,Bates College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,26
+212911,Haverford College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,26
+173902,Macalester College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,28
+211291,Bucknell University,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,29
+213385,Lafayette College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,30
+211273,Bryn Mawr College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,31
+202523,Denison University,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,31
+130590,Trinity College,data/raw/rankings/kickstart_2027.html,secondary_transcription_publisher_access_blocked,2027,31
