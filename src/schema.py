@@ -1,20 +1,208 @@
 """Human-readable column dictionary generated for both panel formats."""
+
 import pandas as pd
-from build_dataset import OUT
-DEFINITIONS={
-'unitid':('identifier','Stable NCES institution identifier; annual names audited.'),
-'year':('year','Academic-year start/fall year.'),'academic_year':('academic year','Start year through following spring/summer year.'),'academic_rank':('category','assistant, associate, or full professor.'),'college':('text','Current institution name; fixed 2027 cohort.'),'city':('text','HD2024 campus mailing city; fixed across years.'),'state':('postal abbreviation','HD2024 state.'),'county_fips':('5-digit FIPS','HD2024 campus county; Connecticut planning regions used as county equivalents.'),'county_name':('text','HD2024 county/equivalent name.'),'state_fips':('2-digit FIPS','State identifier.'),'ipeds_cbsa_2024':('identifier','CBSA reported in HD2024; OMB delineations control the final BEA join.'),'ipeds_cbsa_type_2024':('category','IPEDS CBSA type: metropolitan=1, micropolitan=2; negative codes not applicable.'),'usnews_rank_2027':('rank','Published 2027 U.S. News rank with ties, via secondary transcription.'),'usnews_rank_2026':('rank','Published 2026 rank in separate comparison table; not contemporaneous with salary years.'),'historical_usnews_rank':('rank','Contemporaneous salary-year rank; unavailable in this capture and left missing.'),'ranking_quality':('flag','Secondary ranking transcription; publisher inaccessible.'),'bea_geofips':('5-digit identifier','BEA metro code or state FIPS + 999 for state nonmetropolitan portion.'),'geography_type':('category','Metropolitan or state_nonmetropolitan.'),'geography_vintage':('text','Fixed current campus county and OMB July 2023 delineations.'),'cost_year':('calendar year','Year of RPP, equal to salary start year.'),'cost_geography':('text','BEA geography name.'),'rpp':('US=100','All-items spatial price parity; not a local inflation index.'),'rpp_line_code':('identifier','BEA line code 1 = all items.'),'pce_price_index':('index','Annual arithmetic mean of 12 monthly BEA PCEPI observations via FRED.'),'months':('count','Number of PCE monthly observations; must be 12.'),'inflation_factor_2024':('ratio','PCE2024/PCEyear.'),'salary_nominal':('current USD/year','Published/derived average for the population in salary_method; see early contract restrictions.'),'salary_cost_adjusted':('national-price-level USD/year','salary_nominal/(rpp/100), relative purchasing power in that year.'),'salary_real_2024':('2024 USD/year','salary_nominal*inflation_factor_2024; no regional adjustment.'),'salary_real_cost_adjusted_2024':('2024 national purchasing-power USD/year','salary_nominal/(rpp/100)*inflation_factor_2024.'),'salary_nominal_rank':('rank','Within year/rank/cohort; descending salary; competition ties=min; missing excluded.'),'salary_cost_adjusted_rank':('rank','Within year/rank/cohort; descending cost-adjusted salary; competition ties=min.'),'salary_rank_improvement':('places','Nominal rank minus adjusted rank; positive means improved position.'),'faculty_count':('people','Staff denominator corresponding to the salary measure; true zeros retained.'),'faculty_count_all_contracts':('people','All full-time instructional staff at rank, including less than 9 months, where reported.'),'faculty_count_less_than_9_months':('people','Less-than-9-month staff; excluded from salary mean.'),'dominant_months_worked':('months','Category with largest reported headcount among 9/10/11/12; unavailable early.'),'salary_nominal_yoy_pct':('percent','Change from preceding calendar year only; gaps not bridged.'),'source_salary_value':('USD/year','Value before masking undefined zero-headcount means; derived when salary is reconstructed.'),'salary_method':('category','Definition/conversion regime; consult README.'),'salary_variable':('source variable/expression','Field or expression defining salary from the original source.'),'count_variable':('source variable/expression','Field(s) defining matching headcount.'),'source_row_key':('key','UNITID/rank/contract/gender identifiers selecting source rows.'),'salary_imputation_flags':('IPEDS code(s)','Original flags for salary or numerator/denominator; unavailable in Urban mirror.'),'count_imputation_flag':('IPEDS code','Original headcount flag, when available.'),'quality_flags':('semicolon-separated flags','Missing values, small counts, imputation/correction, contract changes, proxies and other cautions.'),'acs_geo_id':('Census identifier','Explicit city/town geography in config/housing_geographies.csv.'),'acs_geography':('text','Census geography name.'),'acs_period':('five-year period','Pooled ACS period ending in year; not a single-year estimate.'),'median_gross_rent':('USD/month','ACS B25064 median gross rent; kept separate from all-items adjustment.'),'median_gross_rent_moe90':('USD/month','ACS 90% margin of error for rent estimate.'),'rent_estimate_raw':('source text','Raw Census estimate, including special value if any.'),'rent_moe_raw':('source text','Raw Census margin of error.'),'rent_source_row_key':('key','Census GEO_ID or LOGRECNO and sequence.'),'rent_variable':('source variable/position','B25064 field name or 1-based sequence-file column.'),'housing_quality_flags':('semicolon-separated flags','Unavailable geography/estimate/MOE or large relative MOE.'),'housing_geography_note':('text','Host geography context, not actual faculty residence.'),
+
+from common import OUT
+
+DEFINITIONS = {
+    "unitid": (
+        "identifier",
+        "Stable NCES institution identifier; annual names audited.",
+    ),
+    "year": ("year", "Academic-year start/fall year."),
+    "academic_year": (
+        "academic year",
+        "Start year through following spring/summer year.",
+    ),
+    "academic_rank": ("category", "assistant, associate, or full professor."),
+    "college": ("text", "Current institution name; fixed 2027 cohort."),
+    "city": ("text", "HD2024 campus mailing city; fixed across years."),
+    "state": ("postal abbreviation", "HD2024 state."),
+    "county_fips": (
+        "5-digit FIPS",
+        "HD2024 campus county; Connecticut planning regions used as county equivalents.",
+    ),
+    "county_name": ("text", "HD2024 county/equivalent name."),
+    "state_fips": ("2-digit FIPS", "State identifier."),
+    "ipeds_cbsa_2024": (
+        "identifier",
+        "CBSA reported in HD2024; OMB delineations control the final BEA join.",
+    ),
+    "ipeds_cbsa_type_2024": (
+        "category",
+        "IPEDS CBSA type: metropolitan=1, micropolitan=2; negative codes not applicable.",
+    ),
+    "usnews_rank_2027": (
+        "rank",
+        "Published 2027 U.S. News rank with ties, via secondary transcription.",
+    ),
+    "usnews_rank_2026": (
+        "rank",
+        "Published 2026 rank in separate comparison table; not contemporaneous with salary years.",
+    ),
+    "historical_usnews_rank": (
+        "rank",
+        "Contemporaneous salary-year rank; unavailable in this capture and left missing.",
+    ),
+    "ranking_quality": (
+        "flag",
+        "Secondary ranking transcription; publisher inaccessible.",
+    ),
+    "bea_geofips": (
+        "5-digit identifier",
+        "BEA metro code or state FIPS + 999 for state nonmetropolitan portion.",
+    ),
+    "geography_type": ("category", "Metropolitan or state_nonmetropolitan."),
+    "geography_vintage": (
+        "text",
+        "Fixed current campus county and OMB July 2023 delineations.",
+    ),
+    "cost_year": ("calendar year", "Year of RPP, equal to salary start year."),
+    "cost_geography": ("text", "BEA geography name."),
+    "rpp": ("US=100", "All-items spatial price parity; not a local inflation index."),
+    "rpp_line_code": ("identifier", "BEA line code 1 = all items."),
+    "pce_price_index": (
+        "index",
+        "Annual arithmetic mean of 12 monthly BEA PCEPI observations via FRED.",
+    ),
+    "months": ("count", "Number of PCE monthly observations; must be 12."),
+    "inflation_factor_2024": ("ratio", "PCE2024/PCEyear."),
+    "salary_nominal": (
+        "current USD/year",
+        "Published/derived average for the population in salary_method; see early contract restrictions.",
+    ),
+    "salary_cost_adjusted": (
+        "national-price-level USD/year",
+        "salary_nominal/(rpp/100), relative purchasing power in that year.",
+    ),
+    "salary_real_2024": (
+        "2024 USD/year",
+        "salary_nominal*inflation_factor_2024; no regional adjustment.",
+    ),
+    "salary_real_cost_adjusted_2024": (
+        "2024 national purchasing-power USD/year",
+        "salary_nominal/(rpp/100)*inflation_factor_2024.",
+    ),
+    "salary_nominal_rank": (
+        "rank",
+        "Within year/rank/cohort; descending salary; competition ties=min; missing excluded.",
+    ),
+    "salary_cost_adjusted_rank": (
+        "rank",
+        "Within year/rank/cohort; descending cost-adjusted salary; competition ties=min.",
+    ),
+    "salary_rank_improvement": (
+        "places",
+        "Nominal rank minus adjusted rank; positive means improved position.",
+    ),
+    "faculty_count": (
+        "people",
+        "Staff denominator corresponding to the salary measure; true zeros retained.",
+    ),
+    "faculty_count_all_contracts": (
+        "people",
+        "All full-time instructional staff at rank, including less than 9 months, where reported.",
+    ),
+    "faculty_count_less_than_9_months": (
+        "people",
+        "Less-than-9-month staff; excluded from salary mean.",
+    ),
+    "dominant_months_worked": (
+        "months",
+        "Category with largest reported headcount among 9/10/11/12; unavailable early.",
+    ),
+    "salary_nominal_yoy_pct": (
+        "percent",
+        "Change from preceding calendar year only; gaps not bridged.",
+    ),
+    "source_salary_value": (
+        "USD/year",
+        "Value before masking undefined zero-headcount means; derived when salary is reconstructed.",
+    ),
+    "salary_method": ("category", "Definition/conversion regime; consult README."),
+    "salary_variable": (
+        "source variable/expression",
+        "Field or expression defining salary from the original source.",
+    ),
+    "count_variable": (
+        "source variable/expression",
+        "Field(s) defining matching headcount.",
+    ),
+    "source_row_key": (
+        "key",
+        "UNITID/rank/contract/gender identifiers selecting source rows.",
+    ),
+    "salary_imputation_flags": (
+        "IPEDS code(s)",
+        "Original flags for salary or numerator/denominator; unavailable in Urban mirror.",
+    ),
+    "count_imputation_flag": ("IPEDS code", "Original headcount flag, when available."),
+    "quality_flags": (
+        "semicolon-separated flags",
+        "Missing values, small counts, imputation/correction, contract changes, proxies and other cautions.",
+    ),
+    "acs_geo_id": (
+        "Census identifier",
+        "Explicit city/town geography in config/housing_geographies.csv.",
+    ),
+    "acs_geography": ("text", "Census geography name."),
+    "acs_period": (
+        "five-year period",
+        "Pooled ACS period ending in year; not a single-year estimate.",
+    ),
+    "median_gross_rent": (
+        "USD/month",
+        "ACS B25064 median gross rent; kept separate from all-items adjustment.",
+    ),
+    "median_gross_rent_moe90": (
+        "USD/month",
+        "ACS 90% margin of error for rent estimate.",
+    ),
+    "rent_estimate_raw": (
+        "source text",
+        "Raw Census estimate, including special value if any.",
+    ),
+    "rent_moe_raw": ("source text", "Raw Census margin of error."),
+    "rent_source_row_key": ("key", "Census GEO_ID or LOGRECNO and sequence."),
+    "rent_variable": (
+        "source variable/position",
+        "B25064 field name or 1-based sequence-file column.",
+    ),
+    "housing_quality_flags": (
+        "semicolon-separated flags",
+        "Unavailable geography/estimate/MOE or large relative MOE.",
+    ),
+    "housing_geography_note": (
+        "text",
+        "Host geography context, not actual faculty residence.",
+    ),
 }
-def write_dictionary(long,wide):
-    records=[]
-    for table,frame in [('combined_long.csv',long),('combined.csv',wide)]:
+
+
+def write_dictionary(long, wide):
+    records = []
+    for table, frame in [("combined_long.csv", long), ("combined.csv", wide)]:
         for col in frame:
-            stem=col
-            for rank in ['assistant','associate','full']:
-                if stem.startswith(rank+'_'):stem=stem[len(rank)+1:];break
-            if stem in DEFINITIONS:units,definition=DEFINITIONS[stem]
-            elif stem.endswith('_source'):units,definition='relative path','Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256.'
-            elif stem.startswith('faculty_count_') and stem.endswith('_month'):units,definition='people','Headcount at this rank with the stated months worked; source SAxxMCT.'
-            else:units,definition='text','Source/context metadata.'
-            records.append(dict(table=table,column=col,units=units,definition=definition))
-    pd.DataFrame(records).to_csv(OUT/'data_dictionary.csv',index=False)
+            stem = col
+            for rank in ["assistant", "associate", "full"]:
+                if stem.startswith(rank + "_"):
+                    stem = stem[len(rank) + 1 :]
+                    break
+            if stem in DEFINITIONS:
+                units, definition = DEFINITIONS[stem]
+            elif stem.endswith("_source"):
+                units, definition = (
+                    "relative path",
+                    "Archived source path(s); join to data/sources.csv for URL, timestamp and SHA-256.",
+                )
+            elif stem.startswith("faculty_count_") and stem.endswith("_month"):
+                units, definition = (
+                    "people",
+                    "Headcount at this rank with the stated months worked; source SAxxMCT.",
+                )
+            else:
+                units, definition = "text", "Source/context metadata."
+            records.append(
+                dict(table=table, column=col, units=units, definition=definition)
+            )
+    pd.DataFrame(records).to_csv(OUT / "data_dictionary.csv", index=False)

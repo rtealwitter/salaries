@@ -1,0 +1,30 @@
+[
+  {
+    "figure": "current_salary_comparison",
+    "text_items": 79,
+    "overlapping_pairs": [],
+    "clipped_text": [],
+    "png_sha256": "0c9cba8606a5774b3f15fc71d880a4902dc00e37892ba3c9003d23220b6af7f4"
+  },
+  {
+    "figure": "historical_salary_trends",
+    "text_items": 84,
+    "overlapping_pairs": [],
+    "clipped_text": [],
+    "png_sha256": "35138ab9b62d72caba5d52147a28a5d6ddc5eb8e08ea91d3f3cd6ef5da5a9531"
+  },
+  {
+    "figure": "relative_purchasing_power_trends",
+    "text_items": 76,
+    "overlapping_pairs": [],
+    "clipped_text": [],
+    "png_sha256": "d2e6efb84ae00bf02cc4f8588e4662dd2ba3553edd2dcb46602cfae3eba9e0c5"
+  },
+  {
+    "figure": "college_rank_and_salary",
+    "text_items": 177,
+    "overlapping_pairs": [],
+    "clipped_text": [],
+    "png_sha256": "518fff151bee947260098b74d61b0ebdac8ee1918c64d14299f00b8e362a3a7d"
+  }
+]
