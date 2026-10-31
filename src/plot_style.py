@@ -24,7 +24,9 @@ NAMES = {
 plt.rcParams.update(
     {
         "font.family": "DejaVu Sans",
-        "font.size": 11,
+        "font.size": 16,
+        "xtick.labelsize": 14,
+        "ytick.labelsize": 15,
         "axes.spines.top": False,
         "axes.spines.right": False,
         "axes.labelcolor": INK,

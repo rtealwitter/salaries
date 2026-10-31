@@ -55,7 +55,7 @@ All results below refer to the **15-school plotting cohort**. School labels repe
 
 ### 1. Current salary comparison
 
-[Open the figure](figures/current_salary_comparison.png). Hollow dots show nominal salary; filled dots show purchasing power after regional adjustment. The connecting segment shows the adjustment for the same college. Each column has its own dollar scale.
+[Open the figure](figures/current_salary_comparison.png). Hollow dots show nominal salary; filled dots show purchasing power after regional adjustment. The connecting segment shows the adjustment for the same college. Each column has its own dollar scale. The red annotation gives CMC's nominal → cost-adjusted salary rank within the 15-school cohort; 1st is highest.
 
 | Faculty rank | Highest nominal salary | Highest cost-adjusted salary | CMC: nominal → adjusted rank |
 |---|---|---|---|
@@ -67,7 +67,7 @@ Regional prices materially change the ordering. For assistants, Carleton rises f
 
 ### 2. Historical salary trends
 
-[Open the figure](figures/historical_salary_trends.png). Columns are faculty ranks. The top row shows nominal salaries; the bottom shows regional purchasing power in **2024 dollars**. CMC is red; the blue line and band show the cohort median and 10th–90th percentiles. The bottom row starts in 2008 because RPP starts then.
+[Open the figure](figures/historical_salary_trends.png). Columns are faculty ranks. The row headings distinguish **nominal salary in dollars of each year** from **cost-adjusted salary in 2024 dollars**, which accounts for both regional prices and national inflation. CMC is red; the blue line and band show the cohort median and 10th–90th percentiles. The bottom row starts in 2008 because RPP starts then.
 
 Nominal growth does not necessarily preserve purchasing power. From **2018 to 2024**, CMC's nominal averages rose **11.0% for assistants, 18.3% for associates, and 12.7% for full professors**. After both adjustments, the corresponding changes were **−10.5%, −4.6%, and −9.1%**. These compare changing institutional rank groups, not the same individuals.
 
