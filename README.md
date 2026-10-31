@@ -1,6 +1,6 @@
 # Faculty salaries and purchasing power
 
-A reproducible comparison of faculty pay at highly ranked U.S. liberal arts colleges. The dataset retains **30 civilian colleges and 39 survey years, 1980–2024**. The four figures use the **top 15 civilian colleges in the captured 2027 U.S. News table**, held fixed throughout history, with historical plots starting in **2008**. Assistant, associate, and full professors are analyzed separately.
+A reproducible comparison of faculty pay at highly ranked U.S. liberal arts colleges. The dataset retains **30 civilian colleges and 39 survey years, 1980–2024**. The three figures use the **top 15 civilian colleges in the captured 2027 U.S. News table**, held fixed throughout history, with historical plots starting in **2008**. Assistant, associate, and full professors are analyzed separately.
 
 The latest common observation is **academic year 2024–25 salaries paired with calendar-year 2024 prices**. These are institutional averages, not starting salaries, individual raises, or discipline-specific compensation. Benefits are excluded.
 
@@ -12,7 +12,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 python src/download_data.py    # Restore missing source files; optional for a full clone.
 python src/build_dataset.py    # Rebuild all processed CSVs offline.
-python src/make_figures.py     # Generate the four PNGs and audit their text layout.
+python src/make_figures.py     # Generate the three PNGs and audit their text layout.
 python src/validate.py         # Check data, provenance, arithmetic, and figure outputs.
 ```
 
@@ -49,9 +49,9 @@ Recovered salary years are 1980, 1984, 1985, 1987, 1989, 1990–1999, and 2001�
 
 RPP is a spatial price index: its change alone is **not local inflation**. Metro averages also cannot capture individual housing costs or faculty residence. Claremont uses the large Los Angeles–Long Beach–Anaheim metro. Vassar's selected metro has no RPP before 2016. Early salary contract populations vary, with conversion-method changes in 2012 and 2016. See [methods and source limitations](docs/methods.md) for the exact historical definitions and geographic decisions.
 
-## Reading the four figures
+## Reading the three figures
 
-All results below refer to the **15-school plotting cohort**. School labels repeat across the three rank columns because the orders differ. The comparison and heatmaps are independently sorted by each faculty rank's **2024 nominal salary**, highest first.
+All results below refer to the **15-school plotting cohort**. School labels repeat across the three rank columns because the orders differ. The current salary comparison is independently sorted by each faculty rank's **2024 nominal salary**, highest first.
 
 ### 1. Current salary comparison
 
@@ -79,13 +79,7 @@ Nominal growth does not necessarily preserve purchasing power. From **2018 to 20
 
 **× marks CMC's 2019 reporting break.** All three ranks were reported as 12-month staff in 2019, versus nine-month staff in 2018 and 2020. The nine-month conversion creates the conspicuous dip. It is not a verified pay cut or a proven reporting error. The reported values remain in the data and are disconnected from the CMC trend lines. Dotted vertical lines mark the 2012/2016 conversion changes.
 
-### 3. Relative purchasing-power trends
-
-[Open the figure](figures/relative_purchasing_power_trends.png). Each cell shows `100 × (college adjusted salary / cohort median − 1)` for that year and faculty rank. Red means above the median; blue means below. Gray means unavailable. The × again marks CMC's 2019 reporting break.
-
-CMC's assistant purchasing power was **2.7% below the median in 2018 and 13.0% below in 2024**. Its associates were at the median in 2024; full professors were essentially at the median (0.03% above). Washington and Lee, Carleton, and Grinnell have substantial positive premiums in several rank/year combinations. This is relative position, not absolute growth: a college can remain near the median while purchasing power falls across the group. Early missing RPP values can change the contributing cohort.
-
-### 4. College rank and salary
+### 3. College rank and salary
 
 [Open the figure](figures/college_rank_and_salary.png). Columns are faculty ranks; rows compare nominal and cost-adjusted salaries using identical axes within each column. Lower U.S. News ranks are better, so the highest-ranked colleges are on the left. CMC alone is highlighted in red and bold; every other college uses the same point and label styling. Fine gray lines connect displaced names to their dots; they do not show changes over time.
 

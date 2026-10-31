@@ -1,4 +1,4 @@
-"""Shared colors, college labels, and dollar axes for the four figures."""
+"""Shared colors, college labels, and dollar axes for the three figures."""
 
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter

@@ -29,6 +29,6 @@ Historical mirror overlap,True,2003; 90 observations; maximum difference 0.0
 All ACS endpoint years recovered,True,
 ACS kept separate from cost index,True,
 CMC 2019 break explicitly flagged,True,
-Four PNG figures only,True,
+Three PNG figures only,True,
 Figure text has no overlaps or clipping,True,"Every visible title, legend, caption, axis label, tick, and annotation at 240 DPI"
 Figure cohort and within-cohort ranks,True,15 civilian colleges; cutoff ties retained

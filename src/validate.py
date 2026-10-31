@@ -453,13 +453,13 @@ def validate_figures():
     stems = [
         "current_salary_comparison",
         "historical_salary_trends",
-        "relative_purchasing_power_trends",
         "college_rank_and_salary",
     ]
     checks.append(
         check(
-            "Four PNG figures only",
-            all(
+            "Three PNG figures only",
+            {path.stem for path in (ROOT / "figures").glob("*.png")} == set(stems)
+            and all(
                 (ROOT / "figures" / f"{stem}.png").stat().st_size > 1000
                 for stem in stems
             )

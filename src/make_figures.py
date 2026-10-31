@@ -1,4 +1,4 @@
-"""Generate the four PNG figures for a fixed, selectable college cohort."""
+"""Generate the three PNG figures for a fixed, selectable college cohort."""
 
 import argparse
 import hashlib
@@ -74,13 +74,12 @@ def main():
     audits = [
         comparison(data, year),
         historical_trends(data),
-        relative_trends(data),
         ranking_relationship(data, year),
     ]
     (reports / "figure_layout_audit.json").write_text(
         json.dumps(audits, indent=2) + "\n"
     )
-    print("Generated four main figures, as PNG.")
+    print("Generated three main figures, as PNG.")
 
 
 def finish(fig, stem, caption):
@@ -324,79 +323,6 @@ def draw_history_panel(ax, rank_data, measure, years):
     for year in [2012, 2016]:
         ax.axvline(year, color="#8e9aa2", lw=0.8, ls=":")
     style_money(ax)
-
-
-def relative_trends(data):
-    rank_data = data[data.year >= FIRST_PLOT_YEAR].copy()
-    rank_data["premium"] = 100 * (
-        rank_data.salary_cost_adjusted
-        / rank_data.groupby(["academic_rank", "year"]).salary_cost_adjusted.transform(
-            "median"
-        )
-        - 1
-    )
-    latest = int(rank_data.year.max())
-    years = sorted(rank_data.year.unique())
-    fig, axes = plt.subplots(
-        1, 3, figsize=(24, max(11, data.unitid.nunique() * 0.4 + 3))
-    )
-    fig.subplots_adjust(left=0.11, right=0.98, bottom=0.25, top=0.82, wspace=0.65)
-    cmap = plt.get_cmap("RdBu_r").copy()
-    cmap.set_bad("#e7e7e7")
-    for ax, rank in zip(axes, RANKS):
-        order = nominal_order(data, rank, latest)
-        premiums = (
-            rank_data[rank_data.academic_rank == rank]
-            .pivot(index="college", columns="year", values="premium")
-            .reindex(index=order, columns=years)
-        )
-        heatmap = ax.imshow(
-            premiums,
-            aspect="auto",
-            cmap=cmap,
-            vmin=-30,
-            vmax=30,
-            interpolation="nearest",
-        )
-        ax.set_title(TITLES[rank], loc="left", fontsize=22, pad=15)
-        ticks = [k for k, y in enumerate(years) if y in [2008, 2012, 2016, 2020, 2024]]
-        ax.set_xticks(ticks, [years[k] for k in ticks])
-        college_ticks(ax, order)
-        ax.tick_params(axis="both", length=0, pad=8)
-        cmc_row = order.index(CMC)
-        ax.text(
-            years.index(2019),
-            cmc_row,
-            "×",
-            ha="center",
-            va="center",
-            fontsize=21,
-            color="black",
-        )
-        ax.add_patch(
-            Rectangle(
-                (-0.5, cmc_row - 0.5), len(years), 1, fill=False, edgecolor=RED, lw=1.8
-            )
-        )
-        for spine in ax.spines.values():
-            spine.set_visible(False)
-    axes[1].set_xlabel("Academic year beginning in", labelpad=10)
-    colorbar_axis = fig.add_axes([0.36, 0.13, 0.4, 0.022])
-    colorbar = fig.colorbar(
-        heatmap, cax=colorbar_axis, orientation="horizontal", extend="both"
-    )
-    colorbar.set_label(
-        "Cost-adjusted salary: % above / below cohort median", labelpad=8
-    )
-    colorbar.set_ticks([-30, -15, 0, 15, 30])
-    figure_heading(
-        fig, f"Relative purchasing power, {years[0]}–{latest}", cohort_label(data)
-    )
-    return finish(
-        fig,
-        "relative_purchasing_power_trends",
-        f"× 2019 CMC reporting break. Gray: unavailable. Rows sorted by {latest} nominal salary.\nSources: IPEDS; BEA RPP; U.S. News via College Kickstart.",
-    )
 
 
 def ranking_relationship(data, year):

@@ -14,13 +14,6 @@
     "png_sha256": "3f53858b9455fdf1ca056b2065f80fb3d25e74ae47365c93035d164e6609f44a"
   },
   {
-    "figure": "relative_purchasing_power_trends",
-    "text_items": 76,
-    "overlapping_pairs": [],
-    "clipped_text": [],
-    "png_sha256": "31beea0775414d5c712327f7fb20f4d43c9bd92c9ad34d33d05ae33662d7e8cc"
-  },
-  {
     "figure": "college_rank_and_salary",
     "text_items": 151,
     "overlapping_pairs": [],
