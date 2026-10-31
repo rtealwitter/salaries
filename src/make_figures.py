@@ -15,7 +15,7 @@ from matplotlib.patches import Rectangle
 from matplotlib.ticker import FuncFormatter, MaxNLocator
 
 from common import ROOT
-from figure_layout import audit_text
+from figure_layout import audit_text, resolve_label_overlaps
 from plot_style import BLUE, FOCUS, GRAY, INK, RED, name, style_money
 
 FIG = ROOT / "figures"
@@ -26,22 +26,67 @@ TITLES = {
     "full": "Full professors",
 }
 RANKS = list(TITLES)
-LAYOUT_AUDITS = []
+FIRST_PLOT_YEAR = 2008
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--top-n",
+        type=int,
+        default=15,
+        help="Number of civilian colleges in main figures, including ties at cutoff (default: 15).",
+    )
+    args = parser.parse_args()
+    data, colleges = select_cohort(
+        pd.read_csv(ROOT / "data/processed/combined_long.csv"), args.top_n
+    )
+    data = data[data.year >= FIRST_PLOT_YEAR].copy()
+    if FOCUS[0] not in set(colleges.college):
+        parser.error("The CMC-focused figures require a cohort that includes CMC.")
+    year = int(data.loc[data.salary_cost_adjusted.notna(), "year"].max())
+    reports = ROOT / "reports"
+    reports.mkdir(exist_ok=True)
+    FIG.mkdir(exist_ok=True)
+    colleges.to_csv(reports / "figure_cohort.csv", index=False)
+    data[data.year.eq(year)][
+        [
+            "college",
+            "unitid",
+            "year",
+            "academic_rank",
+            "salary_nominal",
+            "salary_cost_adjusted",
+            "salary_nominal_rank",
+            "salary_cost_adjusted_rank",
+            "salary_rank_improvement",
+        ]
+    ].to_csv(reports / "figure_salary_ranks.csv", index=False)
+    print(cohort_label(data))
+    audits = [
+        comparison(data, year),
+        historical_trends(data),
+        relative_trends(data),
+        ranking_relationship(data, year),
+    ]
+    (reports / "figure_layout_audit.json").write_text(
+        json.dumps(audits, indent=2) + "\n"
+    )
+    print("Generated four main figures, as PNG.")
 
 
 def finish(fig, stem, caption):
     fig.text(0.03, 0.025, caption, fontsize=12, color="#596976", va="bottom")
     fig.set_dpi(240)
-    LAYOUT_AUDITS.append(audit_text(fig, stem))
+    audit = audit_text(fig, stem)
     fig.savefig(
         FIG / f"{stem}.png",
         dpi=240,
         metadata={"Creator": "Faculty salaries reproducible pipeline"},
     )
-    LAYOUT_AUDITS[-1]["png_sha256"] = hashlib.sha256(
-        (FIG / f"{stem}.png").read_bytes()
-    ).hexdigest()
+    audit["png_sha256"] = hashlib.sha256((FIG / f"{stem}.png").read_bytes()).hexdigest()
     plt.close(fig)
+    return audit
 
 
 def select_cohort(data, top_n):
@@ -91,58 +136,6 @@ def ordinal(value):
         else {1: "st", 2: "nd", 3: "rd"}.get(number % 10, "th")
     )
     return f"{number}{suffix}"
-
-
-def resolve_label_overlaps(ax, texts, targets):
-    """Finish automatic layout with deterministic pixel-space separation and audit."""
-    fig = ax.figure
-    fig.canvas.draw()
-    renderer = fig.canvas.get_renderer()
-    initial = {id(t): ax.transData.transform(t.get_position())[1] for t in texts}
-    for iteration in range(600):
-        overlaps = 0
-        for j, a in enumerate(texts):
-            for b in texts[j + 1 :]:
-                aa = a.get_window_extent(renderer).expanded(1.035, 1.12)
-                bb = b.get_window_extent(renderer).expanded(1.035, 1.12)
-                if not aa.overlaps(bb):
-                    continue
-                overlaps += 1
-                lower, upper = (a, b) if initial[id(a)] <= initial[id(b)] else (b, a)
-                lb = lower.get_window_extent(renderer).expanded(1.035, 1.12)
-                ub = upper.get_window_extent(renderer).expanded(1.035, 1.12)
-                shift = (lb.y1 - ub.y0 + 1) / 2
-                for t, delta in [(lower, -shift), (upper, shift)]:
-                    pos = ax.transData.transform(t.get_position())
-                    pos[1] += delta
-                    pos[1] = np.clip(pos[1], ax.bbox.y0 + 12, ax.bbox.y1 - 12)
-                    t.set_position(ax.transData.inverted().transform(pos))
-        if not overlaps:
-            break
-    remaining = sum(
-        a.get_window_extent(renderer).overlaps(b.get_window_extent(renderer))
-        for j, a in enumerate(texts)
-        for b in texts[j + 1 :]
-    )
-    if remaining:
-        raise ValueError(
-            f"{remaining} unresolved text overlaps in {ax.get_title(loc='left')}"
-        )
-    for t, target in zip(texts, targets):
-        distance = np.linalg.norm(
-            ax.transData.transform(t.get_position()) - ax.transData.transform(target)
-        )
-        if distance > 12:
-            ax.annotate(
-                "",
-                xy=target,
-                xytext=t.get_position(),
-                arrowprops=dict(arrowstyle="-", color="#9ba8b1", lw=0.6),
-                zorder=1,
-            )
-    print(
-        f"Label audit: {ax.get_title(loc='left')}: {len(texts)} labels, {remaining} overlaps"
-    )
 
 
 def comparison(data, year):
@@ -241,24 +234,32 @@ def comparison(data, year):
     fig.text(
         0.03, 0.92, f"{year}–{str(year + 1)[-2:]} · {cohort_label(data)}", fontsize=17
     )
-    finish(
+    return finish(
         fig,
         "current_salary_comparison",
         f"CMC ranks: nominal → cost-adjusted within {data.unitid.nunique()} colleges; 1st is highest. Rows sorted by nominal salary.\nNine-month-equivalent averages; {year} prices. Sources: IPEDS; BEA RPP; U.S. News via College Kickstart.",
     )
 
 
-def long_run(data):
-    fig, axes = plt.subplots(2, 3, figsize=(20, 12.5))
+def historical_trends(data):
+    data = data[data.year >= FIRST_PLOT_YEAR]
+    measures = [
+        ("salary_nominal", "Nominal salary · dollars of each year"),
+        ("salary_real_2024", "Real salary · 2024 dollars (national inflation only)"),
+        (
+            "salary_real_cost_adjusted_2024",
+            "Regional purchasing power · 2024 dollars (regional prices + national inflation)",
+        ),
+    ]
+    years = range(FIRST_PLOT_YEAR, int(data.year.max()) + 1)
+    fig, axes = plt.subplots(3, 3, figsize=(20, 17), sharex=True)
     fig.subplots_adjust(
-        left=0.075, right=0.98, bottom=0.17, top=0.78, hspace=0.46, wspace=0.23
+        left=0.075, right=0.98, bottom=0.12, top=0.82, hspace=0.40, wspace=0.23
     )
     for j, rank in enumerate(RANKS):
         rank_data = data[data.academic_rank == rank]
-        for i, col in enumerate(["salary_nominal", "salary_real_cost_adjusted_2024"]):
-            years = range(
-                int(data.year.min()) if i == 0 else 2008, int(data.year.max()) + 1
-            )
+        upper_limit = rank_data[[column for column, _ in measures]].max().max() * 1.08
+        for i, (col, _) in enumerate(measures):
             ax = axes[i, j]
             quantiles = (
                 rank_data.groupby("year")[col]
@@ -288,47 +289,28 @@ def long_run(data):
                 linewidths=2.5,
                 zorder=4,
             )
-            if i == 0:
-                isolated = quantiles.loc[[1980, 1984, 1985, 1987]].dropna()
-                ax.vlines(
-                    isolated.index,
-                    isolated[0.1],
-                    isolated[0.9],
-                    color="#b5c8d3",
-                    lw=3,
-                    zorder=0,
-                )
-                ax.scatter(isolated.index, isolated[0.5], color=BLUE, s=12)
             for year in [2012, 2016]:
                 ax.axvline(year, color="#8e9aa2", lw=0.8, ls=":")
             style_money(ax)
             if i == 0:
                 ax.set_title(TITLES[rank], loc="left", fontsize=21, pad=12)
-            ax.set_ylim(
-                0,
-                rank_data[["salary_nominal", "salary_real_cost_adjusted_2024"]]
-                .max()
-                .max()
-                * 1.08,
-            )
+            ax.set_ylim(0, upper_limit)
+            ax.set_xlim(FIRST_PLOT_YEAR - 0.5, data.year.max() + 0.5)
             ax.yaxis.set_major_locator(MaxNLocator(nbins=5))
-            if i == 1:
-                ax.set_xticks([2008, 2012, 2016, 2020, 2024])
-    fig.text(
-        0.075, 0.85, "Nominal salary · dollars of each year", fontsize=20, weight="bold"
-    )
-    fig.text(
-        0.075,
-        axes[1, 0].get_position().y1 + 0.025,
-        "Cost-adjusted salary · 2024 dollars (regional prices + national inflation)",
-        fontsize=20,
+            ax.set_xticks(list(range(FIRST_PLOT_YEAR, int(data.year.max()) + 1, 4)))
+    for i, (_, title) in enumerate(measures):
+        y = 0.88 if i == 0 else axes[i, 0].get_position().y1 + 0.018
+        fig.text(0.075, y, title, fontsize=20, weight="bold")
+    fig.supxlabel("Academic year beginning in", y=0.075, fontsize=17)
+    fig.suptitle(
+        f"CMC salaries, {FIRST_PLOT_YEAR}–{int(data.year.max())}",
+        x=0.075,
+        y=0.99,
+        ha="left",
+        fontsize=30,
         weight="bold",
     )
-    fig.supxlabel("Academic year beginning in", y=0.105, fontsize=17)
-    fig.suptitle(
-        "CMC salaries over time", x=0.075, y=0.99, ha="left", fontsize=30, weight="bold"
-    )
-    fig.text(0.075, 0.935, cohort_label(data), fontsize=17)
+    fig.text(0.075, 0.95, cohort_label(data), fontsize=17)
     handles = [
         plt.Line2D([], [], color=RED, lw=2.5, label="CMC"),
         plt.Line2D([], [], color=BLUE, lw=1.6, label="Cohort median"),
@@ -336,20 +318,20 @@ def long_run(data):
     ]
     fig.legend(
         handles=handles,
-        bbox_to_anchor=(0.065, 0.915),
+        bbox_to_anchor=(0.065, 0.935),
         loc="upper left",
         ncol=3,
         frameon=False,
     )
-    finish(
+    return finish(
         fig,
         "historical_salary_trends",
-        "× 2019 CMC reporting break; not a verified pay cut. Dotted lines: 2012/2016 conversion changes.\nNine-month-equivalent averages. Sources: IPEDS/HEGIS (early years via Urban); BEA RPP; PCE via FRED.",
+        "× 2019 CMC reporting break; not a verified pay cut. Dotted lines: 2012/2016 conversion changes.\nNine-month-equivalent averages. Sources: NCES IPEDS; BEA RPP; PCE via FRED.",
     )
 
 
 def relative_trends(data):
-    rank_data = data[data.year >= 2008].copy()
+    rank_data = data[data.year >= FIRST_PLOT_YEAR].copy()
     rank_data["premium"] = 100 * (
         rank_data.salary_cost_adjusted
         / rank_data.groupby(["academic_rank", "year"]).salary_cost_adjusted.transform(
@@ -413,7 +395,7 @@ def relative_trends(data):
         weight="bold",
     )
     fig.text(0.03, 0.92, cohort_label(data), fontsize=17)
-    finish(
+    return finish(
         fig,
         "relative_purchasing_power_trends",
         f"× 2019 CMC reporting break. Gray: unavailable. Rows sorted by {latest} nominal salary.\nSources: IPEDS; BEA RPP; U.S. News via College Kickstart.",
@@ -487,54 +469,11 @@ def ranking_relationship(data, year):
     fig.text(
         0.06, 0.93, f"{year}–{str(year + 1)[-2:]} · {cohort_label(data)}", fontsize=17
     )
-    finish(
+    return finish(
         fig,
         "college_rank_and_salary",
         f"Nine-month-equivalent averages; {year} prices. Gray lines connect labels to points.\nSources: IPEDS; BEA RPP; U.S. News via College Kickstart.",
     )
-
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--top-n",
-        type=int,
-        default=15,
-        help="Number of civilian colleges in main figures, including ties at cutoff (default: 15).",
-    )
-    args = parser.parse_args()
-    data, colleges = select_cohort(
-        pd.read_csv(ROOT / "data/processed/combined_long.csv"), args.top_n
-    )
-    if FOCUS[0] not in set(colleges.college):
-        parser.error("The CMC-focused figures require a cohort that includes CMC.")
-    year = int(data.loc[data.salary_cost_adjusted.notna(), "year"].max())
-    reports = ROOT / "reports"
-    reports.mkdir(exist_ok=True)
-    FIG.mkdir(exist_ok=True)
-    colleges.to_csv(reports / "figure_cohort.csv", index=False)
-    data[data.year.eq(year)][
-        [
-            "college",
-            "unitid",
-            "year",
-            "academic_rank",
-            "salary_nominal",
-            "salary_cost_adjusted",
-            "salary_nominal_rank",
-            "salary_cost_adjusted_rank",
-            "salary_rank_improvement",
-        ]
-    ].to_csv(reports / "figure_salary_ranks.csv", index=False)
-    print(cohort_label(data))
-    comparison(data, year)
-    long_run(data)
-    relative_trends(data)
-    ranking_relationship(data, year)
-    (reports / "figure_layout_audit.json").write_text(
-        json.dumps(LAYOUT_AUDITS, indent=2) + "\n"
-    )
-    print("Generated four main figures, as PNG.")
 
 
 if __name__ == "__main__":

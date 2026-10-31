@@ -16,6 +16,25 @@ REPORT.mkdir(exist_ok=True)
 checks = []
 
 
+def main():
+    REPORT.mkdir(exist_ok=True)
+    checks.clear()
+    long_data = read_csv(OUT / "combined_long.csv")
+    wide_data = read_csv(OUT / "combined.csv")
+    colleges = read_csv(OUT / "colleges.csv")
+    sources = read_csv(ROOT / "data/sources.csv").fillna("")
+    validate_panel(long_data, wide_data, colleges)
+    validate_sources(sources)
+    validate_salary_tables(colleges)
+    validate_identities(long_data, colleges)
+    validate_published_values()
+    validate_cmc_display(long_data)
+    validate_historical_mirror()
+    validate_housing_and_flags(long_data)
+    validate_figures()
+    write_summary(long_data, wide_data, colleges)
+
+
 def check(name, condition, detail=""):
     checks.append(dict(check=name, passed=bool(condition), detail=str(detail)))
 
@@ -467,25 +486,6 @@ def write_summary(long_data, wide_data, colleges):
         raise SystemExit(
             f"{len(failures)} validation check(s) failed; see reports/validation_checks.csv"
         )
-
-
-def main():
-    REPORT.mkdir(exist_ok=True)
-    checks.clear()
-    long_data = read_csv(OUT / "combined_long.csv")
-    wide_data = read_csv(OUT / "combined.csv")
-    colleges = read_csv(OUT / "colleges.csv")
-    sources = read_csv(ROOT / "data/sources.csv").fillna("")
-    validate_panel(long_data, wide_data, colleges)
-    validate_sources(sources)
-    validate_salary_tables(colleges)
-    validate_identities(long_data, colleges)
-    validate_published_values()
-    validate_cmc_display(long_data)
-    validate_historical_mirror()
-    validate_housing_and_flags(long_data)
-    validate_figures()
-    write_summary(long_data, wide_data, colleges)
 
 
 if __name__ == "__main__":

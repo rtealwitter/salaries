@@ -1,6 +1,6 @@
 # Faculty salaries and purchasing power
 
-A reproducible comparison of faculty pay at highly ranked U.S. liberal arts colleges. The dataset retains **30 civilian colleges and 39 survey years, 1980–2024**. The four figures use the **top 15 civilian colleges in the captured 2027 U.S. News table**, held fixed throughout history. Assistant, associate, and full professors are analyzed separately.
+A reproducible comparison of faculty pay at highly ranked U.S. liberal arts colleges. The dataset retains **30 civilian colleges and 39 survey years, 1980–2024**. The four figures use the **top 15 civilian colleges in the captured 2027 U.S. News table**, held fixed throughout history, with historical plots starting in **2008**. Assistant, associate, and full professors are analyzed separately.
 
 The latest common observation is **academic year 2024–25 salaries paired with calendar-year 2024 prices**. These are institutional averages, not starting salaries, individual raises, or discipline-specific compensation. Benefits are excluded.
 
@@ -67,9 +67,15 @@ Regional prices materially change the ordering. For assistants, Carleton rises f
 
 ### 2. Historical salary trends
 
-[Open the figure](figures/historical_salary_trends.png). Columns are faculty ranks. The row headings distinguish **nominal salary in dollars of each year** from **cost-adjusted salary in 2024 dollars**, which accounts for both regional prices and national inflation. CMC is red; the blue line and band show the cohort median and 10th–90th percentiles. The bottom row starts in 2008 because RPP starts then.
+[Open the figure](figures/historical_salary_trends.png). All nine panels cover **2008–2024**, with the same time axis and the same dollar scale down each faculty-rank column. The three rows separate the adjustments:
 
-Nominal growth does not necessarily preserve purchasing power. From **2018 to 2024**, CMC's nominal averages rose **11.0% for assistants, 18.3% for associates, and 12.7% for full professors**. After both adjustments, the corresponding changes were **−10.5%, −4.6%, and −9.1%**. These compare changing institutional rank groups, not the same individuals.
+1. **Nominal salary:** dollars of each year, with no price adjustment.
+2. **Real salary:** 2024 dollars, adjusted for national PCE inflation only.
+3. **Regional purchasing power:** 2024 dollars, adjusted for both regional prices and national PCE inflation.
+
+CMC is red; the blue line and band show the cohort median and 10th–90th percentiles. The middle row isolates the effect of national inflation; comparing it with the bottom row shows the additional regional adjustment. All historical figures start in 2008 to use the BEA RPP coverage window. Earlier observations remain in the CSVs.
+
+Nominal growth does not necessarily preserve purchasing power. From **2018 to 2024**, CMC's nominal averages rose **11.0% for assistants, 18.3% for associates, and 12.7% for full professors**. After national inflation alone, the corresponding changes were **−8.4%, −2.4%, and −7.0%**. After both adjustments, they were **−10.5%, −4.6%, and −9.1%**. These compare changing institutional rank groups, not the same individuals.
 
 **× marks CMC's 2019 reporting break.** All three ranks were reported as 12-month staff in 2019, versus nine-month staff in 2018 and 2020. The nine-month conversion creates the conspicuous dip. It is not a verified pay cut or a proven reporting error. The reported values remain in the data and are disconnected from the CMC trend lines. Dotted vertical lines mark the 2012/2016 conversion changes.
 
@@ -90,7 +96,9 @@ Nominal salaries generally decline as the published college rank increases withi
 - **Analysis:** [combined.csv](data/processed/combined.csv) has one college-year per row; [combined_long.csv](data/processed/combined_long.csv) adds a row per faculty rank. [data_dictionary.csv](data/processed/data_dictionary.csv) describes every column. Component CSVs retain salaries, prices, inflation, rent, rankings, identities, and coverage separately.
 - **Figures:** [figure_cohort.csv](reports/figure_cohort.csv) and [figure_salary_ranks.csv](reports/figure_salary_ranks.csv) identify the plotted sample and latest values. [figure_layout_audit.json](reports/figure_layout_audit.json) checks all visible text at export resolution and records the resulting PNG hashes.
 - **Validation:** [validation_summary.json](reports/validation_summary.json) and [validation_checks.csv](reports/validation_checks.csv) summarize checks; the other report CSVs retain the supporting comparisons and quality flags. No exploratory logs or old chart sets are needed.
-- **Code:** the four entry points above call small modules for shared file readers, early salary definitions, Census rent, column documentation, plotting style, and layout checks.
+- **Code:** start with `main()` near the top of [build_dataset.py](src/build_dataset.py) or [make_figures.py](src/make_figures.py). The build script reads the components, joins them, applies the three explicit adjustment formulas, and writes the long/wide panels. The figure script selects the plotting cohort and calls one function per figure. Neither needs network access.
+
+Source-format details are isolated in [ipeds.py](src/ipeds.py), [historical.py](src/historical.py), and [housing.py](src/housing.py). Plot styling and overlap checks are separate from the chart functions. Column descriptions are editable data in [column_definitions.csv](config/column_definitions.csv), rather than a large Python dictionary. The code uses ordinary functions and pandas tables, without a pipeline framework.
 
 **Current validation: 33 checks passed, zero failed.** Checks cover source hashes, identities, year alignment, formulas, ranks, missing/zero handling, DRVHR against salary-detail files, independent published values, figure cohorts, and text layout. All 12 processed CSVs match the captured checksums after the offline rebuild. **Incomplete verification remains explicit:** direct U.S. News access failed; AAUP's numerical exports returned HTTP 404; older original NCES files could not be recovered; six external South Carolina salary/count comparisons disagree and remain documented. See [the detailed validation notes](docs/methods.md#validation-discrepancies-and-access-limitations) before presenting.
 
