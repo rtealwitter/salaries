@@ -4,20 +4,20 @@
     "text_items": 70,
     "overlapping_pairs": [],
     "clipped_text": [],
-    "png_sha256": "b79a3a665a3aede4cc2c637dca09a0f4d80efa1aad8f2f70a7783fa196ccd874"
+    "png_sha256": "938515e1aaa9df7783f11c5e499cd588090c18266c0aa0092a921550e34300df"
   },
   {
     "figure": "historical_salary_trends",
     "text_items": 73,
     "overlapping_pairs": [],
     "clipped_text": [],
-    "png_sha256": "3f53858b9455fdf1ca056b2065f80fb3d25e74ae47365c93035d164e6609f44a"
+    "png_sha256": "fac5a387b45e58b123fcf0911340e9b5123623e18300fbd5e3c293568e703ca4"
   },
   {
     "figure": "college_rank_and_salary",
-    "text_items": 151,
+    "text_items": 154,
     "overlapping_pairs": [],
     "clipped_text": [],
-    "png_sha256": "9e64c1a757187ff5dfb67f761bf083d8fa50b2a216800292d7b8d7df9fedcd83"
+    "png_sha256": "b15a0b67134331c5ab901c7b346e573f41f639b8527b6fd81f1d44cd1a2b5065"
   }
 ]

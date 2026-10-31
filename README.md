@@ -51,7 +51,7 @@ RPP is a spatial price index: its change alone is **not local inflation**. Metro
 
 ## Reading the three figures
 
-All results below refer to the **15-school plotting cohort**. School labels repeat across the three rank columns because the orders differ. The current salary comparison is independently sorted by each faculty rank's **2024 nominal salary**, highest first.
+All results below refer to the **15-school plotting cohort**. School labels repeat across the three rank columns because the orders differ. The current salary comparison is independently sorted by each faculty rank's **2024 nominal salary**, highest first. All three figures use the same width, typography, heading hierarchy, dollar formatting, and CMC highlight. The two current-year figures show identical CMC nominal → cost-adjusted rank annotations; the historical rows distinguish nominal, national-inflation-adjusted, and regional-plus-national adjustments.
 
 ### 1. Current salary comparison
 
@@ -81,7 +81,7 @@ Nominal growth does not necessarily preserve purchasing power. From **2018 to 20
 
 ### 3. College rank and salary
 
-[Open the figure](figures/college_rank_and_salary.png). Columns are faculty ranks; rows compare nominal and cost-adjusted salaries using identical axes within each column. Lower U.S. News ranks are better, so the highest-ranked colleges are on the left. CMC alone is highlighted in red and bold; every other college uses the same point and label styling. Fine gray lines connect displaced names to their dots; they do not show changes over time.
+[Open the figure](figures/college_rank_and_salary.png). Columns are faculty ranks; the red annotations show CMC’s nominal → cost-adjusted salary ranks within the cohort (8th → 15th, 1st → 8th, and 1st → 7th). Large row headings distinguish nominal salary from regional purchasing power, both in 2024 dollars, using identical axes within each column. Lower U.S. News ranks are better, so the highest-ranked colleges are on the left. CMC alone is highlighted in red and bold; every other college uses the same point and label styling. Fine gray lines connect displaced names to their dots; they do not show changes over time.
 
 Nominal salaries generally decline as the published college rank increases within this selected group. After regional adjustment, that pattern is much weaker: Carleton (published rank 16) leads associate purchasing power, and Washington and Lee (rank 12) leads full-professor purchasing power. The plot is descriptive; the small, selected sample and differences in faculty composition do not support a causal claim about college ranking and compensation.
 

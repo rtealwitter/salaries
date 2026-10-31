@@ -11,7 +11,7 @@ import pandas as pd
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
-from matplotlib.ticker import FuncFormatter, MaxNLocator
+from matplotlib.ticker import MaxNLocator
 
 from common import ROOT
 from figure_layout import audit_text, resolve_label_overlaps
@@ -21,8 +21,10 @@ from plot_style import (
     INK,
     RED,
     college_ticks,
+    column_heading,
     figure_heading,
     name,
+    row_heading,
     style_money,
 )
 
@@ -83,7 +85,14 @@ def main():
 
 
 def finish(fig, stem, caption):
-    fig.text(0.03, 0.025, caption, fontsize=12, color="#596976", va="bottom")
+    fig.text(
+        0.045,
+        0.25 / fig.get_figheight(),
+        caption,
+        fontsize=12,
+        color="#596976",
+        va="bottom",
+    )
     fig.set_dpi(240)
     audit = audit_text(fig, stem)
     fig.savefig(
@@ -145,12 +154,17 @@ def ordinal(value):
     return f"{number}{suffix}"
 
 
+def cmc_rank_label(cmc):
+    return f"CMC salary rank: {ordinal(cmc.salary_nominal_rank)} → {ordinal(cmc.salary_cost_adjusted_rank)}"
+
+
 def comparison(data, year):
     latest = data[data.year == year]
-    fig, axes = plt.subplots(
-        1, 3, figsize=(24, max(11, data.unitid.nunique() * 0.4 + 4))
+    height = max(12, data.unitid.nunique() * 0.4 + 5)
+    fig, axes = plt.subplots(1, 3, figsize=(24, height))
+    fig.subplots_adjust(
+        left=0.11, right=0.98, bottom=1.35 / height, top=1 - 2.65 / height, wspace=0.65
     )
-    fig.subplots_adjust(left=0.11, right=0.98, bottom=0.17, top=0.73, wspace=0.65)
     for ax, rank in zip(axes, RANKS):
         order = nominal_order(data, rank, year)
         rank_data = (
@@ -177,27 +191,15 @@ def comparison(data, year):
                 zorder=3,
             )
             ax.scatter(row.salary_cost_adjusted, y, color=color, s=75, zorder=3)
-        ax.set_title(TITLES[rank], loc="left", fontsize=22, pad=42)
-        cmc = rank_data.loc[CMC]
-        ax.text(
-            0,
-            1.02,
-            f"CMC salary rank: {ordinal(cmc.salary_nominal_rank)} → {ordinal(cmc.salary_cost_adjusted_rank)}",
-            transform=ax.transAxes,
-            color=RED,
-            fontsize=16,
-            weight="bold",
-        )
+        column_heading(ax, TITLES[rank], cmc_rank_label(rank_data.loc[CMC]))
         college_ticks(ax, order)
         ax.set_ylim(len(order) - 0.4, -0.7)
-        ax.xaxis.set_major_formatter(FuncFormatter(lambda x, p: f"${x / 1000:,.0f}k"))
+        style_money(ax, axis="x")
         ax.xaxis.set_major_locator(MaxNLocator(nbins=5))
-        ax.grid(axis="x", color="#edf0f2")
-        ax.set_axisbelow(True)
         minimum = rank_data[["salary_nominal", "salary_cost_adjusted"]].min().min()
         maximum = rank_data[["salary_nominal", "salary_cost_adjusted"]].max().max()
         ax.set_xlim(minimum * 0.94, maximum * 1.05)
-    axes[1].set_xlabel("Annual salary (USD)", labelpad=10)
+    fig.supxlabel(f"Annual salary · {year} dollars", y=0.75 / height, fontsize=17)
     handles = [
         plt.Line2D(
             [],
@@ -216,15 +218,16 @@ def comparison(data, year):
             ls="",
             color=BLUE,
             markersize=9,
-            label="Cost-adjusted salary",
+            label="Regional purchasing power",
         ),
     ]
     fig.legend(
         handles=handles,
         loc="upper left",
-        bbox_to_anchor=(0.105, 0.875),
+        bbox_to_anchor=(0.045, 1 - 1.15 / height),
         ncol=2,
         frameon=False,
+        borderaxespad=0,
     )
     figure_heading(
         fig,
@@ -234,7 +237,7 @@ def comparison(data, year):
     return finish(
         fig,
         "current_salary_comparison",
-        f"CMC ranks: nominal → cost-adjusted within {data.unitid.nunique()} colleges; 1st is highest. Rows sorted by nominal salary.\nNine-month-equivalent averages; {year} prices. Sources: IPEDS; BEA RPP; U.S. News via College Kickstart.",
+        f"CMC salary ranks: nominal → cost-adjusted among {data.unitid.nunique()} colleges; 1st is highest. Rows sorted by nominal salary.\nNine-month-equivalent averages. Sources: IPEDS; BEA RPP; U.S. News via College Kickstart.",
     )
 
 
@@ -249,33 +252,34 @@ def historical_trends(data):
         ),
     ]
     years = range(FIRST_PLOT_YEAR, int(data.year.max()) + 1)
-    fig, axes = plt.subplots(3, 3, figsize=(20, 17), sharex=True)
+    height = 18
+    fig, axes = plt.subplots(3, 3, figsize=(24, height), sharex=True)
     fig.subplots_adjust(
-        left=0.075, right=0.98, bottom=0.12, top=0.82, hspace=0.40, wspace=0.23
+        left=0.07,
+        right=0.98,
+        bottom=1.35 / height,
+        top=1 - 2.80 / height,
+        hspace=0.38,
+        wspace=0.23,
     )
     for column, rank in enumerate(RANKS):
+        column_heading(axes[0, column], TITLES[rank])
         rank_data = data[data.academic_rank == rank]
         upper_limit = rank_data[[measure for measure, _ in measures]].max().max() * 1.08
         for row, (measure, _) in enumerate(measures):
             ax = axes[row, column]
             draw_history_panel(ax, rank_data, measure, years)
-            if row == 0:
-                ax.set_title(TITLES[rank], loc="left", fontsize=21, pad=12)
             ax.set_ylim(0, upper_limit)
             ax.set_xlim(FIRST_PLOT_YEAR - 0.5, data.year.max() + 0.5)
             ax.yaxis.set_major_locator(MaxNLocator(nbins=5))
             ax.set_xticks(list(range(FIRST_PLOT_YEAR, int(data.year.max()) + 1, 4)))
     for row, (_, title) in enumerate(measures):
-        y = 0.88 if row == 0 else axes[row, 0].get_position().y1 + 0.018
-        fig.text(0.075, y, title, fontsize=20, weight="bold")
-    fig.supxlabel("Academic year beginning in", y=0.075, fontsize=17)
+        row_heading(axes[row, 0], title)
+    fig.supxlabel("Academic year beginning in", y=0.75 / height, fontsize=17)
     figure_heading(
         fig,
-        f"CMC salaries, {FIRST_PLOT_YEAR}–{int(data.year.max())}",
-        cohort_label(data),
-        x=0.075,
-        title_y=0.99,
-        subtitle_y=0.95,
+        "Faculty salaries over time",
+        f"{FIRST_PLOT_YEAR}–{int(data.year.max())} · {cohort_label(data)}",
     )
     handles = [
         plt.Line2D([], [], color=RED, lw=2.5, label="CMC"),
@@ -284,15 +288,16 @@ def historical_trends(data):
     ]
     fig.legend(
         handles=handles,
-        bbox_to_anchor=(0.065, 0.935),
+        bbox_to_anchor=(0.045, 1 - 1.15 / height),
         loc="upper left",
         ncol=3,
         frameon=False,
+        borderaxespad=0,
     )
     return finish(
         fig,
         "historical_salary_trends",
-        "× 2019 CMC reporting break; not a verified pay cut. Dotted lines: 2012/2016 conversion changes.\nNine-month-equivalent averages. Sources: NCES IPEDS; BEA RPP; PCE via FRED.",
+        "× 2019 CMC reporting break; not a verified pay cut. Dotted lines: 2012/2016 conversion changes.\nNine-month-equivalent averages. Sources: IPEDS; BEA RPP; PCE via FRED; U.S. News via College Kickstart.",
     )
 
 
@@ -327,12 +332,20 @@ def draw_history_panel(ax, rank_data, measure, years):
 
 def ranking_relationship(data, year):
     measures = ["salary_nominal", "salary_cost_adjusted"]
-    fig, axes = plt.subplots(2, 3, figsize=(22, 15))
+    height = 16
+    fig, axes = plt.subplots(2, 3, figsize=(24, height))
     fig.subplots_adjust(
-        left=0.07, right=0.98, bottom=0.12, top=0.86, hspace=0.20, wspace=0.23
+        left=0.07,
+        right=0.98,
+        bottom=1.35 / height,
+        top=1 - 3.15 / height,
+        hspace=0.30,
+        wspace=0.23,
     )
     for column, rank in enumerate(RANKS):
         rank_data = data[data.year.eq(year) & data.academic_rank.eq(rank)]
+        cmc = rank_data[rank_data.college == CMC].iloc[0]
+        column_heading(axes[0, column], TITLES[rank], cmc_rank_label(cmc))
         low = rank_data[measures].min().min() - 10000
         high = rank_data[measures].max().max() + 12000
         for row, measure in enumerate(measures):
@@ -348,8 +361,6 @@ def ranking_relationship(data, year):
             )
             ax.set(xlim=(-1, data.usnews_rank_2027.max() + 4), ylim=(low, high))
             style_money(ax)
-            if row == 0:
-                ax.set_title(TITLES[rank], loc="left", fontsize=22, pad=14)
             ax.xaxis.set_major_locator(MaxNLocator(nbins=5, integer=True))
             ax.yaxis.set_major_locator(MaxNLocator(nbins=5))
             texts = [
@@ -366,25 +377,24 @@ def ranking_relationship(data, year):
             resolve_label_overlaps(
                 ax, texts, list(zip(rank_data.usnews_rank_2027, rank_data[measure]))
             )
-            if column == 0:
-                ax.set_ylabel(
-                    "Nominal salary · dollars"
-                    if row == 0
-                    else "Cost-adjusted salary · dollars",
-                    labelpad=12,
-                )
-    fig.supxlabel("U.S. News rank, 2027 (lower is better)", y=0.07, fontsize=17)
+    row_titles = [
+        f"Nominal salary · {year} dollars",
+        f"Regional purchasing power · {year} dollars (regional prices)",
+    ]
+    for row, title in enumerate(row_titles):
+        row_heading(axes[row, 0], title)
+    fig.supxlabel(
+        "U.S. News rank, 2027 (lower is better)", y=0.75 / height, fontsize=17
+    )
     figure_heading(
         fig,
         "College rank and faculty salaries",
         f"{year}–{str(year + 1)[-2:]} · {cohort_label(data)}",
-        x=0.06,
-        subtitle_y=0.93,
     )
     return finish(
         fig,
         "college_rank_and_salary",
-        f"Nine-month-equivalent averages; {year} prices. Gray lines connect labels to points.\nSources: IPEDS; BEA RPP; U.S. News via College Kickstart.",
+        f"CMC salary ranks: nominal → cost-adjusted among {data.unitid.nunique()} colleges; 1st is highest.\nNine-month-equivalent averages. Gray lines connect labels to points. Sources: IPEDS; BEA RPP; U.S. News via College Kickstart.",
     )
 
 

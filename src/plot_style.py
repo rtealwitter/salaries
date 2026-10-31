@@ -38,9 +38,10 @@ def name(s):
     return NAMES.get(s, s.replace(" College", "").replace(" University", ""))
 
 
-def style_money(ax):
-    ax.yaxis.set_major_formatter(FuncFormatter(lambda x, p: f"${x / 1000:,.0f}k"))
-    ax.grid(axis="y", color="#edf0f2")
+def style_money(ax, axis="y"):
+    money_axis = ax.xaxis if axis == "x" else ax.yaxis
+    money_axis.set_major_formatter(FuncFormatter(lambda x, p: f"${x / 1000:,.0f}k"))
+    ax.grid(axis=axis, color="#edf0f2")
     ax.set_axisbelow(True)
 
 
@@ -53,6 +54,46 @@ def college_ticks(ax, colleges):
             label.set_weight("bold")
 
 
-def figure_heading(fig, title, subtitle, x=0.03, title_y=0.98, subtitle_y=0.92):
-    fig.suptitle(title, x=x, y=title_y, ha="left", fontsize=30, weight="bold")
-    fig.text(x, subtitle_y, subtitle, fontsize=17)
+def figure_heading(fig, title, subtitle):
+    """Use the same physical header spacing, even when figure heights differ."""
+    height = fig.get_figheight()
+    fig.suptitle(
+        title,
+        x=0.045,
+        y=1 - 0.25 / height,
+        ha="left",
+        va="top",
+        fontsize=30,
+        weight="bold",
+    )
+    fig.text(0.045, 1 - 0.80 / height, subtitle, fontsize=17, va="top")
+
+
+def column_heading(ax, title, rank_label=None):
+    fig = ax.figure
+    height = fig.get_figheight()
+    left = ax.get_position().x0
+    fig.text(left, 1 - 1.80 / height, title, fontsize=22, weight="bold", va="top")
+    if rank_label:
+        fig.text(
+            left,
+            1 - 2.20 / height,
+            rank_label,
+            fontsize=16,
+            color=RED,
+            weight="bold",
+            va="top",
+        )
+
+
+def row_heading(ax, title):
+    fig = ax.figure
+    position = ax.get_position()
+    fig.text(
+        position.x0,
+        position.y1 + 0.16 / fig.get_figheight(),
+        title,
+        fontsize=20,
+        weight="bold",
+        va="bottom",
+    )
