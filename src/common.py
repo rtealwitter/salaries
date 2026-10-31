@@ -42,3 +42,20 @@ def numeric(value):
     """Convert a source number, treating negative suppression codes as missing."""
     parsed = pd.to_numeric(value, errors="coerce")
     return np.nan if pd.isna(parsed) or parsed < 0 else float(parsed)
+
+
+def salary_quality(salary, count):
+    """Mask means with no faculty and return the common salary/count flags."""
+    flags = []
+    if count == 0:
+        salary = np.nan
+        flags.append("zero_faculty_undefined_mean")
+    if pd.isna(salary):
+        flags.append("missing_salary")
+    if pd.isna(count):
+        flags.append("missing_count")
+    elif 0 < count < 10:
+        flags.append("small_rank_count_lt10")
+    if salary == 0 and count > 0:
+        flags.append("reported_zero_salary")
+    return salary, flags

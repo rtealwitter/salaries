@@ -4,6 +4,7 @@ from itertools import combinations
 
 import numpy as np
 from matplotlib.text import Text
+from adjustText import adjust_text
 
 
 def audit_text(fig, stem):
@@ -50,34 +51,34 @@ def audit_text(fig, stem):
 
 def resolve_label_overlaps(ax, texts, targets):
     """Finish automatic layout with deterministic pixel-space separation and audit."""
+    np.random.seed(42)
+    adjust_text(texts, ax=ax, expand=(1.15, 1.3), force_text=(0.4, 0.7), iter_lim=1200)
     fig = ax.figure
     fig.canvas.draw()
     renderer = fig.canvas.get_renderer()
     initial = {id(t): ax.transData.transform(t.get_position())[1] for t in texts}
-    for iteration in range(600):
+    for _ in range(600):
         overlaps = 0
-        for j, a in enumerate(texts):
-            for b in texts[j + 1 :]:
-                aa = a.get_window_extent(renderer).expanded(1.035, 1.12)
-                bb = b.get_window_extent(renderer).expanded(1.035, 1.12)
-                if not aa.overlaps(bb):
-                    continue
-                overlaps += 1
-                lower, upper = (a, b) if initial[id(a)] <= initial[id(b)] else (b, a)
-                lb = lower.get_window_extent(renderer).expanded(1.035, 1.12)
-                ub = upper.get_window_extent(renderer).expanded(1.035, 1.12)
-                shift = (lb.y1 - ub.y0 + 1) / 2
-                for t, delta in [(lower, -shift), (upper, shift)]:
-                    pos = ax.transData.transform(t.get_position())
-                    pos[1] += delta
-                    pos[1] = np.clip(pos[1], ax.bbox.y0 + 12, ax.bbox.y1 - 12)
-                    t.set_position(ax.transData.inverted().transform(pos))
+        for a, b in combinations(texts, 2):
+            aa = a.get_window_extent(renderer).expanded(1.035, 1.12)
+            bb = b.get_window_extent(renderer).expanded(1.035, 1.12)
+            if not aa.overlaps(bb):
+                continue
+            overlaps += 1
+            lower, upper = (a, b) if initial[id(a)] <= initial[id(b)] else (b, a)
+            lb = lower.get_window_extent(renderer).expanded(1.035, 1.12)
+            ub = upper.get_window_extent(renderer).expanded(1.035, 1.12)
+            shift = (lb.y1 - ub.y0 + 1) / 2
+            for t, delta in [(lower, -shift), (upper, shift)]:
+                pos = ax.transData.transform(t.get_position())
+                pos[1] += delta
+                pos[1] = np.clip(pos[1], ax.bbox.y0 + 12, ax.bbox.y1 - 12)
+                t.set_position(ax.transData.inverted().transform(pos))
         if not overlaps:
             break
     remaining = sum(
         a.get_window_extent(renderer).overlaps(b.get_window_extent(renderer))
-        for j, a in enumerate(texts)
-        for b in texts[j + 1 :]
+        for a, b in combinations(texts, 2)
     )
     if remaining:
         raise ValueError(

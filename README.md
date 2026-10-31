@@ -87,7 +87,7 @@ CMC's assistant purchasing power was **2.7% below the median in 2018 and 13.0% b
 
 ### 4. College rank and salary
 
-[Open the figure](figures/college_rank_and_salary.png). Columns are faculty ranks; rows compare nominal and cost-adjusted salaries using identical axes within each column. Lower U.S. News ranks are better, so the highest-ranked colleges are on the left. Fine gray lines connect displaced names to their dots; they do not show changes over time.
+[Open the figure](figures/college_rank_and_salary.png). Columns are faculty ranks; rows compare nominal and cost-adjusted salaries using identical axes within each column. Lower U.S. News ranks are better, so the highest-ranked colleges are on the left. CMC alone is highlighted in red and bold; every other college uses the same point and label styling. Fine gray lines connect displaced names to their dots; they do not show changes over time.
 
 Nominal salaries generally decline as the published college rank increases within this selected group. After regional adjustment, that pattern is much weaker: Carleton (published rank 16) leads associate purchasing power, and Washington and Lee (rank 12) leads full-professor purchasing power. The plot is descriptive; the small, selected sample and differences in faculty composition do not support a causal claim about college ranking and compensation.
 
@@ -98,7 +98,15 @@ Nominal salaries generally decline as the published college rank increases withi
 - **Validation:** [validation_summary.json](reports/validation_summary.json) and [validation_checks.csv](reports/validation_checks.csv) summarize checks; the other report CSVs retain the supporting comparisons and quality flags. No exploratory logs or old chart sets are needed.
 - **Code:** start with `main()` near the top of [build_dataset.py](src/build_dataset.py) or [make_figures.py](src/make_figures.py). The build script reads the components, joins them, applies the three explicit adjustment formulas, and writes the long/wide panels. The figure script selects the plotting cohort and calls one function per figure. Neither needs network access.
 
-Source-format details are isolated in [ipeds.py](src/ipeds.py), [historical.py](src/historical.py), and [housing.py](src/housing.py). Plot styling and overlap checks are separate from the chart functions. Column descriptions are editable data in [column_definitions.csv](config/column_definitions.csv), rather than a large Python dictionary. The code uses ordinary functions and pandas tables, without a pipeline framework.
+The remaining scripts have specific jobs:
+
+- [ipeds.py](src/ipeds.py) reads college directories and salary tables; `salary_record()` spells out the three reporting periods. [historical.py](src/historical.py) handles earlier contract definitions. Both use the same missing-salary and small-headcount rules.
+- [housing.py](src/housing.py) reads newer ACS tables or joins older geography/estimate/margin files, then builds records with named source fields.
+- [validate.py](src/validate.py) collects results returned by separate checks for structure, adjustments, sources, identities, and figures. No shared global results list is needed.
+- [plot_style.py](src/plot_style.py) holds shared labels and styling; [figure_layout.py](src/figure_layout.py) places labels and checks the exported layout. The historical grid uses one panel-drawing function for all nine panels.
+- [download_data.py](src/download_data.py) restores missing files and verifies their captured checksums. [schema.py](src/schema.py) writes the column dictionary from [column_definitions.csv](config/column_definitions.csv).
+
+The code uses ordinary functions and pandas tables, without a pipeline framework.
 
 **Current validation: 33 checks passed, zero failed.** Checks cover source hashes, identities, year alignment, formulas, ranks, missing/zero handling, DRVHR against salary-detail files, independent published values, figure cohorts, and text layout. All 12 processed CSVs match the captured checksums after the offline rebuild. **Incomplete verification remains explicit:** direct U.S. News access failed; AAUP's numerical exports returned HTTP 404; older original NCES files could not be recovered; six external South Carolina salary/count comparisons disagree and remain documented. See [the detailed validation notes](docs/methods.md#validation-discrepancies-and-access-limitations) before presenting.
 

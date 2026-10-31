@@ -12,76 +12,82 @@ from pypdf import PdfReader
 from common import OUT, RAW, ROOT, read_csv, source_csv
 
 REPORT = ROOT / "reports"
-REPORT.mkdir(exist_ok=True)
-checks = []
 
 
 def main():
     REPORT.mkdir(exist_ok=True)
-    checks.clear()
+    checks = []
     long_data = read_csv(OUT / "combined_long.csv")
     wide_data = read_csv(OUT / "combined.csv")
     colleges = read_csv(OUT / "colleges.csv")
     sources = read_csv(ROOT / "data/sources.csv").fillna("")
-    validate_panel(long_data, wide_data, colleges)
-    validate_sources(sources)
-    validate_salary_tables(colleges)
-    validate_identities(long_data, colleges)
-    validate_published_values()
-    validate_cmc_display(long_data)
-    validate_historical_mirror()
-    validate_housing_and_flags(long_data)
-    validate_figures()
-    write_summary(long_data, wide_data, colleges)
+    checks.extend(validate_panel(long_data, wide_data, colleges))
+    checks.extend(validate_adjustments(long_data))
+    checks.extend(validate_missing_and_geography(long_data, colleges))
+    checks.extend(validate_sources(sources))
+    checks.extend(validate_salary_tables(colleges))
+    checks.extend(validate_identities(long_data, colleges))
+    checks.extend(validate_published_values())
+    checks.extend(validate_cmc_display(long_data))
+    checks.extend(validate_historical_mirror())
+    checks.extend(validate_housing_and_flags(long_data))
+    checks.extend(validate_figures())
+    write_summary(checks, long_data, wide_data, colleges)
 
 
 def check(name, condition, detail=""):
-    checks.append(dict(check=name, passed=bool(condition), detail=str(detail)))
+    return dict(check=name, passed=bool(condition), detail=str(detail))
 
 
 def validate_panel(long_data, wide_data, colleges):
-    check(
-        "30 fixed civilian colleges",
-        len(colleges) == 30
-        and not colleges.college.str.contains("United States").any(),
-    )
-    check(
-        "Published ranking ties retained",
-        colleges.usnews_rank_2027.max() == 31
-        and (colleges.usnews_rank_2027 == 31).sum() == 3
-        and (colleges.usnews_rank_2027 == 3).sum() == 4,
-    )
-    check(
-        "Unique panel keys",
-        not wide_data.duplicated(["unitid", "year"]).any()
-        and not long_data.duplicated(["unitid", "year", "academic_rank"]).any(),
-    )
-    check(
-        "Complete panel grid",
-        len(wide_data) == len(colleges) * long_data.year.nunique()
-        and len(long_data) == 3 * len(wide_data),
-    )
-    check(
-        "Latest common year",
-        long_data.loc[long_data.salary_cost_adjusted.notna(), "year"].max() == 2024,
-    )
-    check(
-        "Calendar and academic years align",
-        (long_data.cost_year == long_data.year).all()
-        and long_data.apply(
-            lambda r: r.academic_year == f"{r.year}–{str(r.year + 1)[-2:]}", axis=1
-        ).all(),
-    )
-    check(
-        "All 30 colleges observed in 2024",
-        (
-            long_data[long_data.year == 2024][
-                ["salary_nominal", "faculty_count", "rpp"]
-            ].notna()
-        )
-        .all()
-        .all(),
-    )
+    return [
+        check(
+            "30 fixed civilian colleges",
+            len(colleges) == 30
+            and not colleges.college.str.contains("United States").any(),
+        ),
+        check(
+            "Published ranking ties retained",
+            colleges.usnews_rank_2027.max() == 31
+            and (colleges.usnews_rank_2027 == 31).sum() == 3
+            and (colleges.usnews_rank_2027 == 3).sum() == 4,
+        ),
+        check(
+            "Unique panel keys",
+            not wide_data.duplicated(["unitid", "year"]).any()
+            and not long_data.duplicated(["unitid", "year", "academic_rank"]).any(),
+        ),
+        check(
+            "Complete panel grid",
+            len(wide_data) == len(colleges) * long_data.year.nunique()
+            and len(long_data) == 3 * len(wide_data),
+        ),
+        check(
+            "Latest common year",
+            long_data.loc[long_data.salary_cost_adjusted.notna(), "year"].max() == 2024,
+        ),
+        check(
+            "Calendar and academic years align",
+            (long_data.cost_year == long_data.year).all()
+            and long_data.apply(
+                lambda r: r.academic_year == f"{r.year}–{str(r.year + 1)[-2:]}", axis=1
+            ).all(),
+        ),
+        check(
+            "All 30 colleges observed in 2024",
+            (
+                long_data[long_data.year == 2024][
+                    ["salary_nominal", "faculty_count", "rpp"]
+                ].notna()
+            )
+            .all()
+            .all(),
+        ),
+    ]
+
+
+def validate_adjustments(long_data):
+    checks = []
     for expr, col in [
         (long_data.salary_nominal / (long_data.rpp / 100), "salary_cost_adjusted"),
         (
@@ -95,13 +101,17 @@ def validate_panel(long_data, wide_data, colleges):
             "salary_real_cost_adjusted_2024",
         ),
     ]:
-        check(
-            col + " arithmetic",
-            np.allclose(expr, long_data[col], equal_nan=True, rtol=1e-10),
+        checks.append(
+            check(
+                col + " arithmetic",
+                np.allclose(expr, long_data[col], equal_nan=True, rtol=1e-10),
+            )
         )
-    check(
-        "2024 inflation factor is one",
-        long_data.loc[long_data.year == 2024, "inflation_factor_2024"].eq(1).all(),
+    checks.append(
+        check(
+            "2024 inflation factor is one",
+            long_data.loc[long_data.year == 2024, "inflation_factor_2024"].eq(1).all(),
+        )
     )
     for rankcol, valuecol in [
         ("salary_nominal_rank", "salary_nominal"),
@@ -110,51 +120,59 @@ def validate_panel(long_data, wide_data, colleges):
         expected = long_data.groupby(["academic_rank", "year"])[valuecol].rank(
             ascending=False, method="min"
         )
-        check(
-            rankcol + " competition ranks",
-            np.allclose(expected, long_data[rankcol], equal_nan=True),
+        checks.append(
+            check(
+                rankcol + " competition ranks",
+                np.allclose(expected, long_data[rankcol], equal_nan=True),
+            )
         )
-    check(
-        "RPP missing is never extrapolated",
-        long_data.loc[long_data.rpp.isna(), "salary_cost_adjusted"].isna().all(),
-    )
-    check(
-        "Zero headcount has undefined mean",
-        long_data.loc[long_data.faculty_count.eq(0), "salary_nominal"].isna().all(),
-    )
-    check(
-        "Counts nonnegative integers",
-        (
-            (long_data.faculty_count.dropna() >= 0)
-            & (long_data.faculty_count.dropna() % 1 == 0)
-        ).all(),
-    )
-    check(
-        "2024 geographic joins complete",
-        long_data.loc[long_data.year == 2024, "cost_geography"].notna().all(),
-    )
-    check(
-        "Nonmetro is state specific",
-        (
-            colleges.loc[
-                colleges.geography_type.eq("state_nonmetropolitan"), "bea_geofips"
+
+    return checks
+
+
+def validate_missing_and_geography(long_data, colleges):
+    return [
+        check(
+            "RPP missing is never extrapolated",
+            long_data.loc[long_data.rpp.isna(), "salary_cost_adjusted"].isna().all(),
+        ),
+        check(
+            "Zero headcount has undefined mean",
+            long_data.loc[long_data.faculty_count.eq(0), "salary_nominal"].isna().all(),
+        ),
+        check(
+            "Counts nonnegative integers",
+            (
+                (long_data.faculty_count.dropna() >= 0)
+                & (long_data.faculty_count.dropna() % 1 == 0)
+            ).all(),
+        ),
+        check(
+            "2024 geographic joins complete",
+            long_data.loc[long_data.year == 2024, "cost_geography"].notna().all(),
+        ),
+        check(
+            "Nonmetro is state specific",
+            (
+                colleges.loc[
+                    colleges.geography_type.eq("state_nonmetropolitan"), "bea_geofips"
+                ]
+                .astype(str)
+                .str[-3:]
+                == "999"
+            ).all(),
+        ),
+        check(
+            "Salary values have provenance",
+            long_data.loc[
+                long_data.salary_nominal.notna(),
+                ["salary_source", "salary_variable", "source_row_key"],
             ]
-            .astype(str)
-            .str[-3:]
-            == "999"
-        ).all(),
-    )
-    # Each row has direct source file and variable provenance; no sources guessed for missing records.
-    check(
-        "Salary values have provenance",
-        long_data.loc[
-            long_data.salary_nominal.notna(),
-            ["salary_source", "salary_variable", "source_row_key"],
-        ]
-        .notna()
-        .all()
-        .all(),
-    )
+            .notna()
+            .all()
+            .all(),
+        ),
+    ]
 
 
 def validate_sources(sources):
@@ -170,11 +188,13 @@ def validate_sources(sources):
             )
         )
     pd.DataFrame(hashes).to_csv(REPORT / "source_integrity.csv", index=False)
-    check(
-        "Every archived response checksum matches",
-        all(r["passed"] for r in hashes),
-        f"{len(hashes)} distinct archived files",
-    )
+    return [
+        check(
+            "Every archived response checksum matches",
+            all(r["passed"] for r in hashes),
+            f"{len(hashes)} distinct archived files",
+        ),
+    ]
 
 
 def validate_salary_tables(colleges):
@@ -221,19 +241,22 @@ def validate_salary_tables(colleges):
         REPORT / "salary_outlay_reconciliation.csv", index=False
     )
     pd.DataFrame(detail).to_csv(REPORT / "derived_salary_crosscheck.csv", index=False)
-    check(
-        "DRVHR matches SAL detail",
-        all(abs(r["difference"]) < 0.01 for r in detail),
-        f"{len(detail)} rank observations",
-    )
-    check(
-        "Contract-specific outlays reconcile within rounding",
-        max(r["difference"] for r in formula if pd.notna(r["difference"])) < 1.01,
-        f"max difference {pd.DataFrame(formula).difference.max():.4f} dollars",
-    )
+    return [
+        check(
+            "DRVHR matches SAL detail",
+            all(abs(r["difference"]) < 0.01 for r in detail),
+            f"{len(detail)} rank observations",
+        ),
+        check(
+            "Contract-specific outlays reconcile within rounding",
+            max(r["difference"] for r in formula if pd.notna(r["difference"])) < 1.01,
+            f"max difference {pd.DataFrame(formula).difference.max():.4f} dollars",
+        ),
+    ]
 
 
 def validate_identities(long_data, colleges):
+    checks = []
     # Identity audit includes original annual HD and historical mirror directories.
     identity = read_csv(OUT / "institution_identity_audit.csv").merge(
         colleges[["unitid", "college"]], on="unitid", validate="many_to_one"
@@ -254,10 +277,12 @@ def validate_identities(long_data, colleges):
         identity.matches_current_name | identity.accepted_historical_alias
     )
     identity.to_csv(REPORT / "identity_checks.csv", index=False)
-    check(
-        "Institution names/IDs reconcile",
-        identity.verified.all(),
-        f"{len(identity)} identities checked; explicit historical aliases reviewed by UNITID",
+    checks.append(
+        check(
+            "Institution names/IDs reconcile",
+            identity.verified.all(),
+            f"{len(identity)} identities checked; explicit historical aliases reviewed by UNITID",
+        )
     )
     covered = set(zip(identity.unitid, identity.year))
     observed = set(
@@ -266,11 +291,14 @@ def validate_identities(long_data, colleges):
             long_data.loc[long_data.salary_nominal.notna(), "year"],
         )
     )
-    check(
-        "Every observed college-year has directory evidence",
-        observed <= covered,
-        str(sorted(observed - covered)),
+    checks.append(
+        check(
+            "Every observed college-year has directory evidence",
+            observed <= covered,
+            str(sorted(observed - covered)),
+        )
     )
+    return checks
 
 
 def validate_published_values():
@@ -308,11 +336,13 @@ def validate_published_values():
     ext["salary_matches"] = abs(ext.published_salary - ext.ipeds_salary) <= 1
     ext["count_matches"] = ext.published_count == ext.ipeds_count
     ext.to_csv(REPORT / "independent_published_crosschecks.csv", index=False)
-    check(
-        "Independent published values audited",
-        len(ext) == 12 and (ext.salary_matches & ext.count_matches).sum() >= 6,
-        f"{len(ext)} rank observations at four external institutions; {(ext.salary_matches & ext.count_matches).sum()} agree within $1/count; discrepancies retained for review",
-    )
+    return [
+        check(
+            "Independent published values audited",
+            len(ext) == 12 and (ext.salary_matches & ext.count_matches).sum() >= 6,
+            f"{len(ext)} rank observations at four external institutions; {(ext.salary_matches & ext.count_matches).sum()} agree within $1/count; discrepancies retained for review",
+        ),
+    ]
 
 
 def validate_cmc_display(long_data):
@@ -344,11 +374,13 @@ def validate_cmc_display(long_data):
         )
     cmc = pd.DataFrame(cmc)
     cmc.to_csv(REPORT / "cmc_secondary_crosscheck.csv", index=False)
-    check(
-        "CMC secondary published display",
-        cmc.published_salary.eq(cmc.salary).all()
-        & cmc.published_count.eq(cmc["count"]).all(),
-    )
+    return [
+        check(
+            "CMC secondary published display",
+            cmc.published_salary.eq(cmc.salary).all()
+            & cmc.published_count.eq(cmc["count"]).all(),
+        ),
+    ]
 
 
 def validate_historical_mirror():
@@ -372,66 +404,84 @@ def validate_historical_mirror():
     m[
         ["unitid", "academic_rank", "average_salary", "AVESALT", "salary_difference"]
     ].to_csv(REPORT / "urban_overlap_crosscheck.csv", index=False)
-    check(
-        "Historical mirror overlap",
-        len(m) == 90 and m.salary_difference.abs().max() < 1.01,
-        f"2003; {len(m)} observations; maximum difference {m.salary_difference.abs().max()}",
-    )
+    return [
+        check(
+            "Historical mirror overlap",
+            len(m) == 90 and m.salary_difference.abs().max() < 1.01,
+            f"2003; {len(m)} observations; maximum difference {m.salary_difference.abs().max()}",
+        ),
+    ]
 
 
 def validate_housing_and_flags(long_data):
+    checks = []
     h = read_csv(OUT / "city_housing.csv")
-    check("All ACS endpoint years recovered", set(h.year) == set(range(2009, 2025)))
-    check(
-        "ACS kept separate from cost index",
-        long_data.loc[
-            long_data.median_gross_rent.isna() & long_data.rpp.notna(),
-            "salary_cost_adjusted",
-        ]
-        .notna()
-        .all(),
+    checks.append(
+        check("All ACS endpoint years recovered", set(h.year) == set(range(2009, 2025)))
     )
-    check(
-        "CMC 2019 break explicitly flagged",
-        long_data.loc[
-            long_data.unitid.eq(112260) & long_data.year.eq(2019), "quality_flags"
-        ]
-        .str.contains("cmc_2019")
-        .all(),
+    checks.append(
+        check(
+            "ACS kept separate from cost index",
+            long_data.loc[
+                long_data.median_gross_rent.isna() & long_data.rpp.notna(),
+                "salary_cost_adjusted",
+            ]
+            .notna()
+            .all(),
+        )
+    )
+    checks.append(
+        check(
+            "CMC 2019 break explicitly flagged",
+            long_data.loc[
+                long_data.unitid.eq(112260) & long_data.year.eq(2019), "quality_flags"
+            ]
+            .str.contains("cmc_2019")
+            .all(),
+        )
     )
     long_data[
         long_data.quality_flags.fillna("").str.contains(
             "small_rank_count|missing_salary|salary_change_gt20pct|months_worked_changed|check_ipeds"
         )
     ].to_csv(REPORT / "quality_review.csv", index=False)
+    return checks
 
 
 def validate_figures():
+    checks = []
     stems = [
         "current_salary_comparison",
         "historical_salary_trends",
         "relative_purchasing_power_trends",
         "college_rank_and_salary",
     ]
-    check(
-        "Four PNG figures only",
-        all((ROOT / "figures" / f"{stem}.png").stat().st_size > 1000 for stem in stems)
-        and not list((ROOT / "figures").glob("*.svg")),
+    checks.append(
+        check(
+            "Four PNG figures only",
+            all(
+                (ROOT / "figures" / f"{stem}.png").stat().st_size > 1000
+                for stem in stems
+            )
+            and not list((ROOT / "figures").glob("*.svg")),
+        )
     )
     audits = json.loads((REPORT / "figure_layout_audit.json").read_text())
-    check(
-        "Figure text has no overlaps or clipping",
-        {row["figure"] for row in audits} == set(stems)
-        and all(
-            not row["overlapping_pairs"]
-            and not row["clipped_text"]
-            and row["png_sha256"]
-            == hashlib.sha256(
-                (ROOT / "figures" / (row["figure"] + ".png")).read_bytes()
-            ).hexdigest()
-            for row in audits
-        ),
-        "Every visible title, legend, caption, axis label, tick, and annotation at 240 DPI",
+    checks.append(
+        check(
+            "Figure text has no overlaps or clipping",
+            {row["figure"] for row in audits} == set(stems)
+            and all(
+                not row["overlapping_pairs"]
+                and not row["clipped_text"]
+                and row["png_sha256"]
+                == hashlib.sha256(
+                    (ROOT / "figures" / (row["figure"] + ".png")).read_bytes()
+                ).hexdigest()
+                for row in audits
+            ),
+            "Every visible title, legend, caption, axis label, tick, and annotation at 240 DPI",
+        )
     )
     colleges = read_csv(OUT / "colleges.csv")
     cohort = read_csv(REPORT / "figure_cohort.csv")
@@ -444,14 +494,17 @@ def validate_figures():
             ascending=False, method="min"
         )
         valid &= np.allclose(expected, ranks[f"salary_{measure}_rank"], equal_nan=True)
-    check(
-        "Figure cohort and within-cohort ranks",
-        valid,
-        f"{len(cohort)} civilian colleges; cutoff ties retained",
+    checks.append(
+        check(
+            "Figure cohort and within-cohort ranks",
+            valid,
+            f"{len(cohort)} civilian colleges; cutoff ties retained",
+        )
     )
+    return checks
 
 
-def write_summary(long_data, wide_data, colleges):
+def write_summary(checks, long_data, wide_data, colleges):
     result = pd.DataFrame(checks)
     result.to_csv(REPORT / "validation_checks.csv", index=False)
     failures = result[~result.passed]
